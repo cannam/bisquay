@@ -1,0 +1,79 @@
+{
+  "libraries": {
+    "sml-buildscripts": {
+      "pin": "0753a33f4456"
+    },
+    "sml-stringinterpolate": {
+      "pin": "b2ef1dd1d62b"
+    },
+    "sml-log": {
+      "pin": "0084064e40bf"
+    },
+    "sml-smlnj-containers": {
+      "pin": "2c094258f541"
+    },
+    "sml-trie": {
+      "pin": "f78215386849"
+    },
+    "sml-utf8": {
+      "pin": "45d450aedb1f"
+    },
+    "sml-ttl": {
+      "pin": "16094f9666fc"
+    },
+    "sml-svg": {
+      "pin": "991249a8486e"
+    },
+    "sml-simplejson": {
+      "pin": "3ea6adb289e9"
+    },
+    "sml-subxml": {
+      "pin": "900f74b5b2ef"
+    },
+    "sml-wavefile": {
+      "pin": "e4e284191d2a"
+    },
+    "sml-fft": {
+      "pin": "47eeecf2ab8c"
+    },
+    "bsq-signalbits": {
+      "pin": "d9f2f73d8ec1"
+    },
+    "bsq-test": {
+      "pin": "b0e0c40c247e"
+    },
+    "bsq-resampler": {
+      "pin": "7586aaa85906"
+    },
+    "bsq-matrix": {
+      "pin": "4031e1729486"
+    },
+    "bsq-bq": {
+      "pin": "7e77d0494330"
+    },
+    "bsq-samplestreams": {
+      "pin": "241dd32db315"
+    },
+    "bsq-cqt": {
+      "pin": "2abe00cc31b4"
+    },
+    "ext/bqvec": {
+      "pin": "95499bc80035"
+    },
+    "ext/bqfft": {
+      "pin": "5a5fb028fee3"
+    },
+    "ext/bqaudiostream": {
+      "pin": "5e95bb2b5297"
+    },
+    "ext/bqaudioio": {
+      "pin": "367419ef92e9"
+    },
+    "ext/bqresample": {
+      "pin": "4b5d980c766b"
+    },
+    "ext/bqthingfactory": {
+      "pin": "427e5dc9e564"
+    }
+  }
+}
