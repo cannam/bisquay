@@ -63,6 +63,36 @@
 	    "service": "sourcehut",
 	    "owner": "cannam"
 	},
+	"ext/bqvec": {
+	    "vcs": "hg",
+	    "service": "sourcehut",
+	    "owner": "breakfastquay"
+	},
+	"ext/bqfft": {
+	    "vcs": "hg",
+	    "service": "sourcehut",
+	    "owner": "breakfastquay"
+	},
+	"ext/bqaudiostream": {
+	    "vcs": "hg",
+	    "service": "sourcehut",
+	    "owner": "breakfastquay"
+	},
+	"ext/bqaudioio": {
+	    "vcs": "hg",
+	    "service": "sourcehut",
+	    "owner": "breakfastquay"
+	},
+	"ext/bqresample": {
+	    "vcs": "hg",
+	    "service": "sourcehut",
+	    "owner": "breakfastquay"
+	},
+	"ext/bqthingfactory": {
+	    "vcs": "hg",
+	    "service": "sourcehut",
+	    "owner": "breakfastquay"
+	},
 	"bsq-signalbits": {
 	    "vcs": "hg",
 	    "service": "sourcehut",
@@ -97,36 +127,6 @@
 	    "vcs": "hg",
 	    "service": "sourcehut",
 	    "owner": "cannam"
-	},
-	"ext/bqvec": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
-	},
-	"ext/bqfft": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
-	},
-	"ext/bqaudiostream": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
-	},
-	"ext/bqaudioio": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
-	},
-	"ext/bqresample": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
-	},
-	"ext/bqthingfactory": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
 	}
     }
 }
