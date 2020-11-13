@@ -54,7 +54,7 @@ bsq-samplestreams/resampling-fn.sml
 bsq-samplestreams/blockstream.sig
 bsq-samplestreams/blockstream-fn.sml
 bsq-samplestreams/framing-fn.sml
-bsq-samplestreams/padding-fn.sml
+bsq-samplestreams/duration-adapting-fn.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
 bsq-signalbits/mathmisc.sml
