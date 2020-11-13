@@ -4,129 +4,79 @@
     },
     "libraries": {
 	"sml-buildscripts": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-stringinterpolate": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-log": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-smlnj-containers": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-trie": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-utf8": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-ttl": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-svg": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-simplejson": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-subxml": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-wavefile": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-fft": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"ext/bqvec": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqfft": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqaudiostream": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqaudioio": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqresample": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqthingfactory": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "breakfastquay"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"bsq-signalbits": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-test": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-resampler": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-matrix": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-bq": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-samplestreams": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-cqt": {
-	    "vcs": "hg",
-	    "service": "sourcehut",
-	    "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	}
     }
 }
