@@ -9,10 +9,13 @@
 	"sml-stringinterpolate": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"sml-smlnj-containers": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"sml-log": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
-	"sml-smlnj-containers": {
+	"sml-timing": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"sml-trie": {
@@ -76,6 +79,9 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-cqt": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
+	"bsq-waveform": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	}
     }

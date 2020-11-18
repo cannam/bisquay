@@ -1,16 +1,19 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "0753a33f4456"
+      "pin": "a6284fc7a076"
     },
     "sml-stringinterpolate": {
       "pin": "59ec84fe0e28"
     },
-    "sml-log": {
-      "pin": "c72e83e45087"
-    },
     "sml-smlnj-containers": {
       "pin": "2c094258f541"
+    },
+    "sml-log": {
+      "pin": "784808fcf75f"
+    },
+    "sml-timing": {
+      "pin": "d2bc014caac2"
     },
     "sml-trie": {
       "pin": "2d2572df578d"
@@ -49,7 +52,7 @@
       "pin": "367419ef92e9"
     },
     "ext/bqresample": {
-      "pin": "84118d76e4a7"
+      "pin": "1ce50ff2f2a7"
     },
     "ext/bqthingfactory": {
       "pin": "427e5dc9e564"
@@ -64,16 +67,19 @@
       "pin": "cf422470e356"
     },
     "bsq-matrix": {
-      "pin": "48616fd06ef2"
+      "pin": "bc4edab8379d"
     },
     "bsq-bq": {
       "pin": "ec62e26ba013"
     },
     "bsq-samplestreams": {
-      "pin": "b4fb75198978"
+      "pin": "9c3d5c6b99cf"
     },
     "bsq-cqt": {
       "pin": "277b73d01da8"
+    },
+    "bsq-waveform": {
+      "pin": "6971a0e2a182"
     }
   }
 }
