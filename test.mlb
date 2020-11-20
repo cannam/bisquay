@@ -44,6 +44,8 @@ bsq-matrix/complex.sml
 bsq-matrix/complex-tensor.sml
 bsq-matrix/complex-matrix.sig
 bsq-matrix/complex-matrix.sml
+bsq-signalbits/types.sml
+bsq-signalbits/mathmisc.sml
 bsq-signalbits/window.sml
 bsq-samplestreams/samplestream.sig
 bsq-samplestreams/samplestream-fn.sml
@@ -57,7 +59,6 @@ bsq-samplestreams/framing-fn.sml
 bsq-samplestreams/duration-adapting-fn.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
-bsq-signalbits/mathmisc.sml
 bsq-cqt/kernel.sml
 bsq-cqt/cqt.sml
 sml-smlnj-containers/lib-base-sig.sml
