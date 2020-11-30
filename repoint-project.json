@@ -49,7 +49,7 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqaudiostream": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay", "branch": "estimated-duration"
 	},
 	"ext/bqaudioio": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"

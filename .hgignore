@@ -3,4 +3,5 @@ syntax: glob
 .repoint*
 ext
 test
+meson_options.txt
 

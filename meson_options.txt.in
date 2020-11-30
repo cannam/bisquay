@@ -1,0 +1,8 @@
+option(
+  'sml_buildtype',
+  type: 'combo',
+  choices: [
+    'mlton_release', 'mlton_profile', 'mlton_debug', 'mlton_noffi', 'polyml'
+  ],
+  value: 'polyml'
+)

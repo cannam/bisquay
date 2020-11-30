@@ -1,6 +1,6 @@
 
 val all_tests =
-    bq_tests @
+    bq_non_audioio_tests @
     matrix_tests @
     resampler_tests @
     samplestreams_tests @
