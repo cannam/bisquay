@@ -1,5 +1,5 @@
 
-![Bisquay](resources/bisquay.svg)
+![Bisquay](https://hg.sr.ht/~cannam/bisquay/raw/resources/bisquay.svg?rev=tip)
 
 ## To build
 
