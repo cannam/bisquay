@@ -1,5 +1,5 @@
 
-# Bisquay
+![Bisquay](resources/bisquay.svg)
 
 ## To build
 

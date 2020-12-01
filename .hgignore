@@ -4,4 +4,8 @@ syntax: glob
 ext
 test
 meson_options.txt
-
+build
+doc
+.docfiles
+mlmon.out
+*.orig
