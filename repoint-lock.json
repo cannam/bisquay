@@ -10,7 +10,7 @@
       "pin": "2c094258f541"
     },
     "sml-log": {
-      "pin": "595d6743c651"
+      "pin": "8c6732162368"
     },
     "sml-timing": {
       "pin": "8e7afe0326ad"
@@ -64,13 +64,13 @@
       "pin": "b0e0c40c247e"
     },
     "bsq-resampler": {
-      "pin": "cf422470e356"
+      "pin": "2636cbbd80df"
     },
     "bsq-matrix": {
-      "pin": "bc4edab8379d"
+      "pin": "921af23b052b"
     },
     "bsq-bq": {
-      "pin": "256a974981f9"
+      "pin": "e8cf05ada708"
     },
     "bsq-samplestreams": {
       "pin": "276460d994e1"

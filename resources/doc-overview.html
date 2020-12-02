@@ -2,6 +2,100 @@
 <div align=center><img src="bisquay.svg" alt="Bisquay" width="30%"></div>
 
 <p><b>Bisquay</b> is a compendium of code for audio processing
-applications written in Standard ML.</p>
+applications, written in the programming
+language <a href="https://smlfamily.github.io/" target=_blank>Standard
+ML</a>.</p>
+
+<p>Bisquay is a compendium, not a library. The repository itself just
+  contains a <a href="https://github.com/cannam/repoint"
+  target=_blank>Repoint</a> manifest that defines a multitude of
+  modules to pull in as subdirectories, plus a build file to build the
+  tests for them and produce this combined documentation index. A real
+  user could perfectly well pull the individual subdirectories into
+  their project directly, without ever referring to Bisquay
+  itself. Indeed, several of these modules are third-party, or were
+  written for other purposes, and are brought in just because they are
+  useful.</p>
+
+<p>Bisquay does, however, also contain quite a bit of code written
+  specifically for it: these modules live in repositories beginning
+  with <code>bsq_</code>, and they comprise the majority of the
+  signatures and structures listed here. They follow some development
+  principles:
+</p>
+
+<h4>Principles:</h4>
+
+<ul>
+  <li>Compilation is driven from <code>.mlb</code> files
+  <li>The default <code>.mlb</code> files provided should always work
+    with at least <a href="https://polyml.org"
+    target=_blank>Poly/ML</a> (using <code>polybuild</code>, found
+    in <code><a href="https://hg.sr.ht/~cannam/sml-buildscripts"
+    target=_blank>sml-buildscripts</a></code>)
+    and <a href="http://mlton.org/" target=_blank>MLton</a>
+  <li>Some modules may come with alternative implementations that use
+    the foreign-function interface (FFI) support in one compiler or
+    another (primarily MLton) to integrate native platform libraries;
+    these should usually offer the same API as the pure-SML versions,
+    and are not documented separately here
+  <li>The idea is that you should be able to build code with essential
+    functionality using the default <code>.mlb</code> file and
+    Poly/ML, which compiles quite quickly; then rebuild the same code
+    using MLton and the FFI-driven version of the <code>.mlb</code>
+    file for faster performance. Bisquay's Meson build script allows
+    you to choose which build you want
+    via <code>meson_options.txt</code>, so that can be used as a
+    reference
+  <li>Performance is crucial, and a release build using FFI should
+    perform roughly as well as any native implementation. If that
+    means much of the work ends up in FFI code, that's fine. But we
+    must also always have a pure SML equivalent that works, even if
+    it's much slower. This is often a useful discipline anyway
+</ul>
+    
+<h4>Naming conventions:</h4>
+<table cellpadding=5 cellspacing=0 border=0><tr>
+    <td><b>Kind of thing</b></td>
+    <td><b>Naming style</b></td>
+    <td><b>File name, where applicable</b></td>
+  </tr>
+  <tr>
+    <td>Signature</td>
+    <td><code>SIGNATURE_NAME</code></td>
+    <td><code>signature-name.sig</code></td>
+  </tr>
+  <tr>
+    <td>Structure</td>
+    <td><code>StructureName</code></td>
+    <td><code>structure-name.sml</code></td>
+  </tr>
+  <tr>
+    <td>Functor</td>
+    <td><code>FunctorNameFn</code></td>
+    <td><code>functor-name-fn.sml</code></td>
+  </tr>
+  <tr>
+    <td>Variable and function</td>
+    <td><code>variableName</code></td>
+    <td>&ndash;</td>
+  </tr>
+  <tr>
+    <td>Type name</td>
+    <td><code>type_name</code></td>
+    <td>&ndash;</td>
+  </tr>
+  <tr>
+    <td>Datatype constructor</td>
+    <td><code>DATATYPE_CONSTRUCTOR</code></td>
+    <td>&ndash;</td>
+  </tr>
+  <tr>
+    <td>Exception</td>
+    <td><code>ExceptionName</code></td>
+    <td>&ndash;</td>
+  </tr>
+</table>
+</ul>
 
 
