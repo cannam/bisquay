@@ -15,7 +15,7 @@ tasks:
       sudo ln -s /meson-0.56.0/meson.py /usr/bin/meson
       echo '{"accounts": {"sourcehut": "cannam"}}' > .repoint.json
       cd bisquay
-      ./repoint install
+      yes yes | ./repoint install
       meson build --buildtype release
   - build: |
       cd bisquay
