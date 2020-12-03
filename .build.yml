@@ -4,6 +4,8 @@ packages:
   - polyml
   - ninja-build
   - wget
+secrets:
+  - 1011a889-f276-420d-ba69-b2dc27f6c5cc
 sources:
   - hg+https://hg.sr.ht/~cannam/bisquay
 tasks:
