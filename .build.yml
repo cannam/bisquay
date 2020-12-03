@@ -10,10 +10,11 @@ sources:
   - hg+ssh://hg@hg.sr.ht/~cannam/bisquay
 tasks:
   - setup: |
+      ssh-keyscan -H hg.sr.ht >> .ssh/known_hosts
+      echo '{"accounts": {"sourcehut": "cannam"}}' > .repoint.json
       wget https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz
       tar xvf meson-0.56.0.tar.gz
-      sudo ln -s /meson-0.56.0/meson.py /usr/bin/meson
-      echo '{"accounts": {"sourcehut": "cannam"}}' > .repoint.json
+      sudo ln -s meson-0.56.0/meson.py /usr/bin/meson
       cd bisquay
       ./repoint install
       meson build --buildtype release
