@@ -1,0 +1,24 @@
+image: ubuntu/18.04
+packages:
+  - mlton
+  - polyml
+  - ninja-build
+  - wget
+sources:
+  - hg+https://hg.sr.ht/~cannam/bisquay
+tasks:
+  - setup: |
+      wget https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz
+      tar xvf meson-0.56.0.tar.gz
+      ln -s /meson-0.56.0/meson.py /usr/bin/meson
+      cd bisquay
+      ./repoint install
+      meson build --buildtype release
+  - build: |
+      cd bisquay
+      ninja -C build
+triggers:
+  - action: email
+    condition: always
+    to: chris.cannam@breakfastquay.com
+    
