@@ -7,7 +7,7 @@ packages:
 secrets:
   - 1011a889-f276-420d-ba69-b2dc27f6c5cc
 sources:
-  - hg+https://hg.sr.ht/~cannam/bisquay
+  - hg+ssh://hg@hg.sr.ht/~cannam/bisquay
 tasks:
   - setup: |
       wget https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz
@@ -15,7 +15,7 @@ tasks:
       sudo ln -s /meson-0.56.0/meson.py /usr/bin/meson
       echo '{"accounts": {"sourcehut": "cannam"}}' > .repoint.json
       cd bisquay
-      yes yes | ./repoint install
+      ./repoint install
       meson build --buildtype release
   - build: |
       cd bisquay
@@ -24,4 +24,3 @@ triggers:
   - action: email
     condition: always
     to: chris.cannam@breakfastquay.com
-    
