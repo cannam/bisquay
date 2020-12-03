@@ -14,13 +14,17 @@ tasks:
       echo '{"accounts": {"sourcehut": "cannam"}}' > .repoint.json
       wget https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz
       tar xvf meson-0.56.0.tar.gz
-      sudo ln -s meson-0.56.0/meson.py /usr/bin/meson
+      sudo ln -s $(pwd)/meson-0.56.0/meson.py /usr/bin/meson
       cd bisquay
       ./repoint install
+      cat meson_options.txt.in | sed "s/value: 'polyml'/value: 'mlton_noffi'/" > meson_options.txt
       meson build --buildtype release
   - build: |
       cd bisquay
       ninja -C build
+  - test: |
+      cd bisquay
+      ./build/bsq_test
 triggers:
   - action: email
     condition: always
