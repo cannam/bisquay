@@ -4,7 +4,7 @@
       "pin": "a6284fc7a076"
     },
     "sml-stringinterpolate": {
-      "pin": "59ec84fe0e28"
+      "pin": "47f4d833be88"
     },
     "sml-smlnj-containers": {
       "pin": "2c094258f541"
@@ -16,7 +16,7 @@
       "pin": "8e7afe0326ad"
     },
     "sml-trie": {
-      "pin": "2d2572df578d"
+      "pin": "9f9d287bbb52"
     },
     "sml-utf8": {
       "pin": "45d450aedb1f"
@@ -60,8 +60,11 @@
     "bsq-signalbits": {
       "pin": "3584754b0a14"
     },
+    "bsq-json": {
+      "pin": "55263b565ddb"
+    },
     "bsq-test": {
-      "pin": "b0e0c40c247e"
+      "pin": "22b36bb02ec0"
     },
     "bsq-resampler": {
       "pin": "2636cbbd80df"

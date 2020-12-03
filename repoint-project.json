@@ -63,6 +63,9 @@
 	"bsq-signalbits": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-json": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"bsq-test": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},

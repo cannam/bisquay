@@ -1,5 +1,7 @@
 
 val all_tests =
+    [("string-interpolate", string_interpolate_tests)] @
+    trie_tests @
     bq_non_audioio_tests @
     matrix_tests @
     resampler_tests @

@@ -1,20 +1,33 @@
+(* Basis library *)
 $(SML_LIB)/basis/basis.mlb
+
+(* MLton modules for FFI and primitives *)
 $(SML_LIB)/basis/mlton.mlb
+
+(* String interpolation *)
 sml-stringinterpolate/string-interpolate.sig
 sml-stringinterpolate/string-interpolate.sml
 sml-stringinterpolate/string-interpolate-ffi.sml
 sml-stringinterpolate/string-buffer.sig
 sml-stringinterpolate/string-buffer.sml
+
+(* Logging *)
 sml-log/log.sig
 sml-log/log.sml
+
+(* FFT *)
 sml-fft/fft.sig
 sml-fft/fft.sml
 sml-fft/fft-real.sig
 sml-fft/fft-real.sml
+
+(* Resampler *)
 bsq-resampler/sinc.sml
 bsq-resampler/kaiser.sml
 bsq-resampler/resampler.sig
 bsq-resampler/resampler.sml
+
+(* Audio-related API wrappers *)
 bsq-bq/io-result.sig
 bsq-bq/io-result.sml
 bsq-bq/file-extension.sml
@@ -35,6 +48,8 @@ bsq-bq/ffi/bqfft.sml
 bsq-bq/ffi/bqresample.sml
 bsq-bq/ffi/bqaudiostream.sml
 bsq-bq/ffi/bqaudioio.sml
+
+(* Matrices *)
 bsq-matrix/dense-tensor.sig
 bsq-matrix/dense-tensor-fn.sml
 bsq-matrix/ordered-matrix.sig
@@ -49,9 +64,14 @@ bsq-matrix/complex.sml
 bsq-matrix/complex-tensor.sml
 bsq-matrix/complex-matrix.sig
 bsq-matrix/ffi/complex-matrix.sml
+
+(* Signal-processing utilities *)
 bsq-signalbits/types.sml
 bsq-signalbits/mathmisc.sml
 bsq-signalbits/window.sml
+bsq-signalbits/progress.sml
+
+(* Sample and block stream modules *)
 bsq-samplestreams/samplestream.sig
 bsq-samplestreams/samplestream-fn.sml
 bsq-samplestreams/synthetic.sml
@@ -62,14 +82,76 @@ bsq-samplestreams/blockstream.sig
 bsq-samplestreams/blockstream-fn.sml
 bsq-samplestreams/framing-fn.sml
 bsq-samplestreams/duration-adapting-fn.sml
+bsq-samplestreams/random-access-fn.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
+
+(* Constant-Q transform *)
 bsq-cqt/kernel.sml
 bsq-cqt/cqt.sml
+
+(* Containers and sorting, needed for mapped JSON, tries, timing, tests, etc *)
 sml-smlnj-containers/lib-base-sig.sml
 sml-smlnj-containers/lib-base.sml
 sml-smlnj-containers/listsort-sig.sml
 sml-smlnj-containers/list-mergesort.sml
+sml-smlnj-containers/ord-key-sig.sml
+sml-smlnj-containers/ord-set-sig.sml
+sml-smlnj-containers/ord-map-sig.sml
+sml-smlnj-containers/redblack-set-fn.sml
+sml-smlnj-containers/redblack-map-fn.sml
+sml-smlnj-containers/int-redblack-map.sml
+sml-smlnj-containers/hash-key-sig.sml
+sml-smlnj-containers/hash-table-rep.sml
+sml-smlnj-containers/mono-hash-table-sig.sml
+sml-smlnj-containers/hash-table-fn.sml
+
+(* JSON parser and serialiser *)
+sml-simplejson/json.sml
+bsq-json/json-mapped.sml
+bsq-json/json-object-fields.sml
+
+(* SVG structure and serialiser *)
+sml-svg/svg.sml
+
+(* Waveform renderer *)
+bsq-waveform/waveform-renderer.sig
+bsq-waveform/summarising-renderer.sml
+bsq-waveform/interpolating-renderer.sml
+bsq-waveform/waveform-renderer.sml
+
+(* Timing logger for profiling *)
+sml-timing/timing.sig
+sml-timing/timing.sml
+
+(* Trie containers *)
+sml-trie/trie-map.sig
+sml-trie/trie.sig
+sml-trie/pattern-match-trie-map.sig
+sml-trie/pattern-match-trie.sig
+sml-trie/trie-map-fn.sml
+sml-trie/trie-map-keyadapter-fn.sml
+sml-trie/list-trie-map-fn.sml
+sml-trie/vector-trie-map-fn.sml
+sml-trie/bitmapped-vector.sml
+sml-trie/btrie-node-map-fn.sml
+sml-trie/mtrie-node-map-fn.sml
+sml-trie/atrie-node-map-fn.sml
+sml-trie/word32-trie-map.sml
+sml-trie/trie-fn.sml
+sml-trie/pattern-match-trie-fn.sml
+sml-trie/persistent-hash-map.sig
+sml-trie/persistent-hash-map-fn.sml
+sml-trie/list-tries.sml
+sml-trie/vector-tries.sml
+sml-trie/string-tries.sml
+sml-trie/string-hash-map.sml
+sml-trie/persistent-array.sig
+sml-trie/persistent-array.sml
+sml-trie/persistent-queue.sig
+sml-trie/persistent-queue.sml
+
+(* Tests *)
 bsq-bq/test/tests.sig
 bsq-bq/test/test-support.sml
 bsq-bq/test/test-bqvec.sml
@@ -80,6 +162,7 @@ bsq-bq/test/test-bqaudioio.sml
 bsq-bq/test/test-all.sml
 bsq-test/tests.sig
 bsq-test/support.sml
+sml-stringinterpolate/test.sml
 bsq-matrix/test-checks.sml
 bsq-matrix/test.sml
 bsq-resampler/test-kaiser.sml
@@ -87,6 +170,10 @@ bsq-resampler/test-resampler.sml
 bsq-resampler/test.sml
 bsq-samplestreams/test.sml
 bsq-cqt/test.sml
+sml-trie/test-support.sml
+sml-trie/test.sml
+
+(* Test runner *)
 bsq-test/run.sml
 test.sml
 main.sml
