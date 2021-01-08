@@ -109,6 +109,12 @@ bsq-json/json-object-fields.sml
 (* SVG structure and serialiser *)
 sml-svg/svg.sml
 
+(* CSV file parser *)
+sml-csv/csv-splitter.sig
+sml-csv/csv-splitter.sml
+sml-csv/csv-reader.sig
+sml-csv/csv-reader.sml
+
 (* Waveform renderer *)
 bsq-waveform/waveform-renderer.sig
 bsq-waveform/summarising-renderer.sml
@@ -158,6 +164,7 @@ bsq-bq/test/test-all.sml
 bsq-test/tests.sig
 bsq-test/support.sml
 sml-stringinterpolate/test.sml
+sml-csv/test.sml
 bsq-matrix/test-checks.sml
 bsq-matrix/test.sml
 bsq-resampler/test-kaiser.sml

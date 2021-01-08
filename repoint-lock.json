@@ -3,6 +3,9 @@
     "sml-buildscripts": {
       "pin": "a6284fc7a076"
     },
+    "sml-csv": {
+      "pin": "b4f14f58ca04"
+    },
     "sml-stringinterpolate": {
       "pin": "47f4d833be88"
     },
@@ -58,7 +61,7 @@
       "pin": "427e5dc9e564"
     },
     "bsq-signalbits": {
-      "pin": "3584754b0a14"
+      "pin": "9c2d552b1f11"
     },
     "bsq-json": {
       "pin": "55263b565ddb"
@@ -73,7 +76,7 @@
       "pin": "921af23b052b"
     },
     "bsq-bq": {
-      "pin": "e8cf05ada708"
+      "pin": "81c21cc389e6"
     },
     "bsq-samplestreams": {
       "pin": "276460d994e1"
