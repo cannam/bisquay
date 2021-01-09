@@ -1,13 +1,13 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "a6284fc7a076"
+      "pin": "22ad24e00e51"
     },
     "sml-csv": {
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "47f4d833be88"
+      "pin": "955199f6d206"
     },
     "sml-smlnj-containers": {
       "pin": "2c094258f541"
@@ -43,22 +43,22 @@
       "pin": "61b8c3438f1e"
     },
     "ext/bqvec": {
-      "pin": "c3a8b10a15de"
+      "pin": "90fcebe85b1d"
     },
     "ext/bqfft": {
-      "pin": "f0e8d0fcfc48"
+      "pin": "6cd2e32140f7"
     },
     "ext/bqaudiostream": {
-      "pin": "2d403c39d0ff"
+      "pin": "12d7a4e64b65"
     },
     "ext/bqaudioio": {
-      "pin": "367419ef92e9"
+      "pin": "a83725aa74bb"
     },
     "ext/bqresample": {
-      "pin": "ef0686917159"
+      "pin": "0df996c6f2cc"
     },
     "ext/bqthingfactory": {
-      "pin": "427e5dc9e564"
+      "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
       "pin": "9c2d552b1f11"
