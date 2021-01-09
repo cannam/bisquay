@@ -37,7 +37,7 @@
       "pin": "900f74b5b2ef"
     },
     "sml-wavefile": {
-      "pin": "04d4993491fe"
+      "pin": "6b5e20aaf281"
     },
     "sml-fft": {
       "pin": "61b8c3438f1e"
@@ -76,7 +76,7 @@
       "pin": "921af23b052b"
     },
     "bsq-bq": {
-      "pin": "81c21cc389e6"
+      "pin": "be37e449aa48"
     },
     "bsq-samplestreams": {
       "pin": "276460d994e1"
