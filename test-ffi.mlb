@@ -168,8 +168,10 @@ bsq-bq/test/test-bqaudioio.sml
 bsq-bq/test/test-all.sml
 bsq-test/tests.sig
 bsq-test/support.sml
+bsq-test/run.sml
 sml-stringinterpolate/test.sml
 sml-csv/test.sml
+bsq-signalbits/test.sml
 bsq-matrix/test-checks.sml
 bsq-matrix/test.sml
 bsq-resampler/test-kaiser.sml
@@ -180,7 +182,6 @@ bsq-cqt/test.sml
 sml-trie/test-support.sml
 sml-trie/test.sml
 
-(* Test runner *)
-bsq-test/run.sml
+(* Run tests *)
 test.sml
 main.sml

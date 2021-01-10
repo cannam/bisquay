@@ -4,6 +4,7 @@ val all_tests =
     trie_tests @
     [("csv", csv_tests)] @
     bq_non_audioio_tests @
+    signalbits_tests @
     matrix_tests @
     resampler_tests @
     samplestreams_tests @
