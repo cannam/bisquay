@@ -19,7 +19,7 @@ using SML code only, set `sml_buildtype` to `polyml` in
 `meson_options.txt`.
 
 For a release build, with C code via FFI for the fast bits, set
-`sml_buildtype to `mlton_release` in `meson_options.txt` and provide
+`sml_buildtype` to `mlton_release` in `meson_options.txt` and provide
 the `--buildtype release` option when running `meson`.
 
 Remember you need to delete the whole `build` directory and re-run
