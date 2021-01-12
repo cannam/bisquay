@@ -46,34 +46,34 @@
       "pin": "90fcebe85b1d"
     },
     "ext/bqfft": {
-      "pin": "6cd2e32140f7"
+      "pin": "7ee762bb3c0b"
     },
     "ext/bqaudiostream": {
       "pin": "410257d0237b"
     },
     "ext/bqaudioio": {
-      "pin": "a83725aa74bb"
+      "pin": "66aaf093e668"
     },
     "ext/bqresample": {
-      "pin": "0df996c6f2cc"
+      "pin": "ca43790feeca"
     },
     "ext/bqthingfactory": {
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "a4ea45e292fe"
+      "pin": "0be116a0cedc"
     },
     "bsq-json": {
       "pin": "55263b565ddb"
     },
     "bsq-test": {
-      "pin": "22b36bb02ec0"
+      "pin": "245687fd7214"
     },
     "bsq-resampler": {
       "pin": "2636cbbd80df"
     },
     "bsq-matrix": {
-      "pin": "921af23b052b"
+      "pin": "fc208ed8983d"
     },
     "bsq-bq": {
       "pin": "be37e449aa48"
