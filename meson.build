@@ -299,6 +299,7 @@ else
             '-output', '@OUTPUT@',
             '@INPUT@',
             ffi_bundle_target,
+            meson.current_source_dir() / 'sml-stringinterpolate/strfromd.c',
         ],
         depends: [
             bq_lib,
