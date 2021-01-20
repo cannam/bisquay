@@ -51,6 +51,7 @@ bsq-matrix/ordered-matrix.sig
 bsq-matrix/ordered-matrix-fn.sml
 bsq-matrix/arithmetic-matrix.sig
 bsq-matrix/arithmetic-matrix-fn.sml
+bsq-matrix/int-vector.sml
 bsq-matrix/int-tensor.sml
 bsq-matrix/real-tensor.sml
 bsq-matrix/real-matrix.sig

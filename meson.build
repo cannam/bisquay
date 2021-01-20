@@ -1,7 +1,11 @@
 project(
     'Bisquay',
     'cpp',  # For the FFI bits; the SML code is built via "custom targets"
-    default_options: [ 'cpp_std=c++14' ]
+    default_options: [
+      'cpp_std=c++14',
+      'warning_level=3',
+      'buildtype=release',
+    ]
     )
 
 run_target(
