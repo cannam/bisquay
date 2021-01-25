@@ -1,4 +1,4 @@
-image: ubuntu/lts
+image: ubuntu/20.10
 packages:
   - mlton
   - polyml
