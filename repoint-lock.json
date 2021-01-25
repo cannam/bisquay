@@ -16,7 +16,7 @@
       "pin": "fc0f3468e6bb"
     },
     "sml-timing": {
-      "pin": "8e7afe0326ad"
+      "pin": "062aacf1ad93"
     },
     "sml-trie": {
       "pin": "9f9d287bbb52"
@@ -49,7 +49,7 @@
       "pin": "7ee762bb3c0b"
     },
     "ext/bqaudiostream": {
-      "pin": "410257d0237b"
+      "pin": "21143a0b95f7"
     },
     "ext/bqaudioio": {
       "pin": "66aaf093e668"
@@ -61,7 +61,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "a3adfd5e2a2c"
+      "pin": "bc7ffe33e4e1"
     },
     "bsq-json": {
       "pin": "55263b565ddb"
