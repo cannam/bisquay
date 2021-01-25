@@ -69,6 +69,7 @@ bsq-matrix/ffi/complex-matrix.sml
 bsq-signalbits/types.sml
 bsq-signalbits/realtime.sig
 bsq-signalbits/realtime.sml
+bsq-signalbits/pitch.sml
 bsq-signalbits/mathmisc.sml
 bsq-signalbits/window.sml
 bsq-signalbits/progress.sml
