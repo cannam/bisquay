@@ -1,8 +1,9 @@
-image: ubuntu/20.10
+image: archlinux
 packages:
   - mlton
   - polyml
-  - ninja-build
+  - ninja
+  - meson
   - wget
 secrets:
   - 1011a889-f276-420d-ba69-b2dc27f6c5cc
@@ -12,9 +13,6 @@ tasks:
   - setup: |
       ssh-keyscan -H hg.sr.ht >> .ssh/known_hosts
       echo '{"accounts": {"sourcehut": "cannam"}}' > .repoint.json
-      wget https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz
-      tar xvf meson-0.56.0.tar.gz
-      sudo ln -s $(pwd)/meson-0.56.0/meson.py /usr/bin/meson
   - build: |
       cd bisquay
       ./repoint install
