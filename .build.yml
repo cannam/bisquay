@@ -15,22 +15,16 @@ tasks:
       wget https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz
       tar xvf meson-0.56.0.tar.gz
       sudo ln -s $(pwd)/meson-0.56.0/meson.py /usr/bin/meson
-  - subrepos: |
+  - build: |
       cd bisquay
       ./repoint install
-  - build_poly: |
-      cd bisquay
       meson build_poly -Dsml_buildtype=polyml
-      ninja -C build_poly
-  - build_mlton_noffi: |
-      cd bisquay
       meson build_mlton_noffi -Dsml_buildtype=mlton_noffi
+      ninja -C build_poly
       ninja -C build_mlton_noffi
-  - test_poly: |
+  - test: |
       cd bisquay
       ./build_poly/bsq_test
-  - test_mlton_noffi: |
-      cd bisquay
       ./build_mlton_noffi/bsq_test
 triggers:
   - action: email
