@@ -63,6 +63,8 @@ bsq-matrix/complex-matrix.sml
 
 (* Signal-processing utilities *)
 bsq-signalbits/types.sml
+bsq-signalbits/realtime.sig
+bsq-signalbits/realtime.sml
 bsq-signalbits/mathmisc.sml
 bsq-signalbits/window.sml
 bsq-signalbits/progress.sml

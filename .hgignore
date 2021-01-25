@@ -5,7 +5,9 @@ ext
 test
 meson_options.txt
 build
+build_*
 doc
 .docfiles
 mlmon.out
 *.orig
+test-sml
