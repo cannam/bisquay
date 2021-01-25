@@ -15,17 +15,16 @@ tasks:
       wget https://github.com/mesonbuild/meson/releases/download/0.56.0/meson-0.56.0.tar.gz
       tar xvf meson-0.56.0.tar.gz
       sudo ln -s $(pwd)/meson-0.56.0/meson.py /usr/bin/meson
-  - build: |
       cd bisquay
       ./repoint install
-      meson build_poly -Dsml_buildtype=polyml
-      meson build_mlton_noffi -Dsml_buildtype=mlton_noffi
-      ninja -C build_poly
-      ninja -C build_mlton_noffi
+      cat meson_options.txt.in | sed "s/value: 'polyml'/value: 'mlton_noffi'/" > meson_options.txt
+      meson build --buildtype release
+  - build: |
+      cd bisquay
+      ninja -C build
   - test: |
       cd bisquay
-      ./build_poly/bsq_test
-      ./build_mlton_noffi/bsq_test
+      ./build/bsq_test
 triggers:
   - action: email
     condition: always
