@@ -114,6 +114,9 @@ sml-simplejson/json.sml
 bsq-json/json-mapped.sml
 bsq-json/json-object-fields.sml
 
+(* XML parser and serialiser *)
+sml-subxml/subxml.sml
+
 (* SVG structure and serialiser *)
 sml-svg/svg.sml
 

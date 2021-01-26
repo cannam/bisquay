@@ -34,7 +34,7 @@
       "pin": "ae04bfe3da88"
     },
     "sml-subxml": {
-      "pin": "900f74b5b2ef"
+      "pin": "86067e7017f2"
     },
     "sml-wavefile": {
       "pin": "6b5e20aaf281"
@@ -61,7 +61,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "c0eb6f823802"
+      "pin": "a31921332b35"
     },
     "bsq-json": {
       "pin": "55263b565ddb"
