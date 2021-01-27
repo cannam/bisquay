@@ -21,10 +21,13 @@ tasks:
       meson build_mlton_noffi -Dsml_buildtype=mlton_noffi
       ninja -C build_poly
       ninja -C build_mlton_noffi
+      # Test whether a build using default-int32 MLton also works:
+      mlton test-sml.mlb
   - test: |
       cd bisquay
       ./build_poly/bsq_test
       ./build_mlton_noffi/bsq_test
+      ./test-sml
 triggers:
   - action: email
     condition: always
