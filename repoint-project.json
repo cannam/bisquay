@@ -82,16 +82,13 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-samplestreams": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
-            "branch": "time"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-cqt": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
-            "branch": "time"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-waveform": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
-            "branch": "time"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	}
     }
 }
