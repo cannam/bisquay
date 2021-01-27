@@ -134,10 +134,10 @@ if get_option('sml_buildtype') == 'polyml'
         output: bsq_test_output,
         depfile: 'bsq_test.deps',
         command: [
-            meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-            meson.current_source_dir() / 'sml-buildscripts/polybuild',
-            '-o', '@OUTPUT@',
-            '@INPUT@',
+          meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
+          meson.current_source_dir() / 'sml-buildscripts/polybuild',
+          '-o', '@OUTPUT@',
+          '@INPUT@',
         ],
         build_by_default: true,
         )
@@ -152,10 +152,11 @@ elif get_option('sml_buildtype') == 'mlton_noffi'
         output: bsq_test_output,
         depfile: 'bsq_test.deps',
         command: [
-            meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-            mlton,
-            '-output', '@OUTPUT@',
-            '@INPUT@',
+          meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
+          mlton,
+          '-default-type', 'int64',
+          '-output', '@OUTPUT@',
+          '@INPUT@',
         ],
         build_by_default: true,
         )
@@ -223,8 +224,12 @@ else
         input: 'bsq-bq/ffi/export-bqaudioio.sml',
         output: 'export.h',
         command: [
-            mlton, '-default-ann', 'allowFFI true',
-            '-export-header', '@OUTPUT@', '-stop', 'tc', '@INPUT@']
+          mlton,
+          '-default-type', 'int64',
+          '-default-ann', 'allowFFI true',
+          '-export-header', '@OUTPUT@',
+          '-stop', 'tc',
+          '@INPUT@']
         )
     
     ffi_impl_header_target = custom_target(
@@ -232,8 +237,12 @@ else
         input: 'bsq-bq/ffi/import-bqvec.sml',
         output: 'impl.h',
         command: [
-            mlton, '-default-ann', 'allowFFI true',
-            '-export-header', '@OUTPUT@', '-stop', 'tc', '@INPUT@']
+          mlton,
+          '-default-type', 'int64',
+          '-default-ann', 'allowFFI true',
+          '-export-header', '@OUTPUT@',
+          '-stop', 'tc',
+          '@INPUT@']
         )
     
     ffi_bundle_archive = static_library(
@@ -295,6 +304,7 @@ else
             mlton,
             mlton_profile_opts,
             mlton_debug_opts,
+            '-default-type', 'int64',
             '-default-ann', 'allowFFI true',
             '-default-ann', 'allowPrim true',
             '-link-opt', '-L.',
