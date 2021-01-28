@@ -34,7 +34,7 @@
       "pin": "ae04bfe3da88"
     },
     "sml-subxml": {
-      "pin": "86067e7017f2"
+      "pin": "7b667f4146be"
     },
     "sml-wavefile": {
       "pin": "6b5e20aaf281"
@@ -61,7 +61,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "7fee0ef7ed6c"
+      "pin": "8002e1ce3d6b"
     },
     "bsq-json": {
       "pin": "55263b565ddb"
@@ -79,13 +79,13 @@
       "pin": "13b90a6bd97b"
     },
     "bsq-samplestreams": {
-      "pin": "736829612e50"
+      "pin": "d550d90640a0"
     },
     "bsq-cqt": {
-      "pin": "ab5cee4551a1"
+      "pin": "095a0064145c"
     },
     "bsq-waveform": {
-      "pin": "5a8eabe0eff9"
+      "pin": "9b259b2cbda5"
     }
   }
 }
