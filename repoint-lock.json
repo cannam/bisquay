@@ -7,7 +7,7 @@
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "839313ee2307"
+      "pin": "b853550f45b0"
     },
     "sml-smlnj-containers": {
       "pin": "2c094258f541"
@@ -67,25 +67,25 @@
       "pin": "55263b565ddb"
     },
     "bsq-test": {
-      "pin": "5c790a31e2ec"
+      "pin": "961e7a025973"
     },
     "bsq-resampler": {
       "pin": "2636cbbd80df"
     },
     "bsq-matrix": {
-      "pin": "0e0d1fed2dfd"
+      "pin": "90b05076e0a5"
     },
     "bsq-bq": {
       "pin": "13b90a6bd97b"
     },
     "bsq-samplestreams": {
-      "pin": "7cc0e3dc0d0c"
+      "pin": "32886a5c23dc"
     },
     "bsq-cqt": {
-      "pin": "095a0064145c"
+      "pin": "69f7c97d6c29"
     },
     "bsq-waveform": {
-      "pin": "515e832197d5"
+      "pin": "9eb3e32e08fe"
     }
   }
 }

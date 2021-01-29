@@ -60,6 +60,8 @@ bsq-matrix/int-tensor.sml
 bsq-matrix/real-tensor.sml
 bsq-matrix/real-matrix.sig
 bsq-matrix/ffi/real-matrix.sml
+bsq-matrix/real32-tensor.sml
+bsq-matrix/real32-matrix.sml
 bsq-matrix/complex.sml
 bsq-matrix/complex-tensor.sml
 bsq-matrix/complex-matrix.sig
