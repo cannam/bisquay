@@ -12,6 +12,9 @@
 	"sml-stringinterpolate": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"sml-smlnj-base64": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"sml-smlnj-containers": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},

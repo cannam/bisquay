@@ -9,6 +9,9 @@
     "sml-stringinterpolate": {
       "pin": "b853550f45b0"
     },
+    "sml-smlnj-base64": {
+      "pin": "be0fe9bb81d3"
+    },
     "sml-smlnj-containers": {
       "pin": "2c094258f541"
     },
