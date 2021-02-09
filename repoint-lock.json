@@ -52,10 +52,10 @@
       "pin": "7ee762bb3c0b"
     },
     "ext/bqaudiostream": {
-      "pin": "21143a0b95f7"
+      "pin": "530f3ad687a7"
     },
     "ext/bqaudioio": {
-      "pin": "66aaf093e668"
+      "pin": "818954587967"
     },
     "ext/bqresample": {
       "pin": "ca43790feeca"
@@ -82,13 +82,16 @@
       "pin": "709707d79620"
     },
     "bsq-samplestreams": {
-      "pin": "6ca204ea9502"
+      "pin": "1a9a2eb360c1"
     },
     "bsq-cqt": {
       "pin": "7ed80efa3006"
     },
     "bsq-waveform": {
       "pin": "c8f8e3482a7a"
+    },
+    "ext/smldoc": {
+      "pin": "8b09c0c6045dd68154d8cceff90b9892f207cf64"
     }
   }
 }

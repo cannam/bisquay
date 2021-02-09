@@ -92,6 +92,9 @@
 	},
 	"bsq-waveform": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
-	}
+	},
+        "ext/smldoc": {
+            "vcs": "git", "service": "github", "owner": "cannam"
+        }
     }
 }
