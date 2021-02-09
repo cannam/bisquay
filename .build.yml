@@ -23,6 +23,8 @@ tasks:
       ninja -C build_mlton_noffi
       # Test whether a build using default-int32 MLton also works:
       mlton test-sml.mlb
+      # And build the documentation:
+      meson compile -C build_mlton_noffi doc
   - test: |
       cd bisquay
       ./build_poly/bsq_test

@@ -7,7 +7,11 @@
 set -e
 
 cd "${MESON_SOURCE_ROOT}"
+rm -rf doc
 mkdir -p doc
+if [ ! -x ext/smldoc/src/mlton/smldoc ]; then 
+    ( cd ext/smldoc ; make -f Makefile.mlton )
+fi
 cp resources/screen.css resources/bisquay.svg doc/
 ./sml-buildscripts/mlb-expand test-sml.mlb | grep -v '/test[-.]' > .docfiles
-smldoc --nowarn --overview=resources/doc-overview.html --windowtitle=Bisquay --header=Bisquay --charset=UTF-8 --stylesheet=screen.css -d doc -a .docfiles 
+ext/smldoc/src/mlton/smldoc --nowarn --overview=resources/doc-overview.html --windowtitle=Bisquay --header=Bisquay --charset=UTF-8 --stylesheet=screen.css -d doc -a .docfiles 
