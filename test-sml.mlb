@@ -71,6 +71,7 @@ bsq-signalbits/pitch.sml
 bsq-signalbits/mathmisc.sml
 bsq-signalbits/seqmisc.sml
 bsq-signalbits/window.sml
+bsq-signalbits/autocorrelation.sml
 bsq-signalbits/progress.sml
 
 (* Sample and block stream modules *)
