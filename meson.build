@@ -10,7 +10,7 @@ project(
 
 run_target(
   'doc',
-  command: 'scripts/doc.sh'
+  command: meson.current_source_dir() / 'scripts/doc.sh'
 )
 
 if meson.get_compiler('cpp').get_id() == 'msvc'
