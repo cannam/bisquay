@@ -93,6 +93,9 @@
 	"bsq-waveform": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-dtw": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"bsq-vamp": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},

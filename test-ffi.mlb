@@ -73,6 +73,7 @@ bsq-signalbits/realtime.sig
 bsq-signalbits/realtime.sml
 bsq-signalbits/pitch.sml
 bsq-signalbits/mathmisc.sml
+bsq-signalbits/normalise.sml
 bsq-signalbits/seqmisc.sml
 bsq-signalbits/window.sml
 bsq-signalbits/autocorrelation.sml
@@ -112,6 +113,13 @@ sml-smlnj-containers/hash-key-sig.sml
 sml-smlnj-containers/hash-table-rep.sml
 sml-smlnj-containers/mono-hash-table-sig.sml
 sml-smlnj-containers/hash-table-fn.sml
+
+(* Vamp plugin API *)
+bsq-vamp/vamp.sig
+
+(* Dynamic time-warping *)
+bsq-dtw/dtw.sig
+bsq-dtw/naive-dtw.sml
 
 (* JSON parser and serialiser *)
 sml-simplejson/json.sml

@@ -64,7 +64,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "86dd307ad9bb"
+      "pin": "cca466ae9437"
     },
     "bsq-json": {
       "pin": "55263b565ddb"
@@ -89,6 +89,9 @@
     },
     "bsq-waveform": {
       "pin": "c8f8e3482a7a"
+    },
+    "bsq-dtw": {
+      "pin": "825ea9bac0cc"
     },
     "bsq-vamp": {
       "pin": "8789d1426aff"
