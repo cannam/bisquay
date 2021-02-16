@@ -74,6 +74,8 @@ bsq-signalbits/realtime.sml
 bsq-signalbits/pitch.sml
 bsq-signalbits/mathmisc.sml
 bsq-signalbits/normalise.sml
+bsq-signalbits/distance.sig
+bsq-signalbits/distance.sml
 bsq-signalbits/seqmisc.sml
 bsq-signalbits/window.sml
 bsq-signalbits/autocorrelation.sml
