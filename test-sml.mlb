@@ -109,6 +109,9 @@ sml-smlnj-containers/hash-table-rep.sml
 sml-smlnj-containers/mono-hash-table-sig.sml
 sml-smlnj-containers/hash-table-fn.sml
 
+(* Vamp plugin API *)
+bsq-vamp/vamp.sig
+
 (* JSON parser and serialiser *)
 sml-simplejson/json.sml
 bsq-json/json-mapped.sml
