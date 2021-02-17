@@ -117,7 +117,7 @@ bsq-vamp/vamp.sig
 
 (* Dynamic time-warping *)
 bsq-dtw/dtw.sig
-bsq-dtw/naive-dtw.sml
+bsq-dtw/naive-dtw-fn.sml
 
 (* JSON parser and serialiser *)
 sml-simplejson/json.sml
