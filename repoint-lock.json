@@ -76,13 +76,13 @@
       "pin": "a4622efba17f"
     },
     "bsq-matrix": {
-      "pin": "40f4990d0acb"
+      "pin": "e9204974b13b"
     },
     "bsq-bq": {
       "pin": "709707d79620"
     },
     "bsq-samplestreams": {
-      "pin": "1b70b128b9ef"
+      "pin": "f61e17d5887f"
     },
     "bsq-cqt": {
       "pin": "9b84c4b7cf96"
