@@ -133,6 +133,10 @@ sml-subxml/subxml.sml
 (* SVG structure and serialiser *)
 sml-svg/svg.sml
 
+(* Image file loader *)
+bsq-image/image-reader.sig
+bsq-image/ppm-reader.sml
+
 (* CSV file parser *)
 sml-csv/csv-splitter.sig
 sml-csv/csv-splitter.sml

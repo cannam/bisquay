@@ -40,13 +40,13 @@
       "pin": "7b667f4146be"
     },
     "sml-wavefile": {
-      "pin": "6b5e20aaf281"
+      "pin": "7f2f179d69f0"
     },
     "sml-fft": {
       "pin": "61b8c3438f1e"
     },
     "ext/bqvec": {
-      "pin": "35fce1c93dd7"
+      "pin": "a6fe6119a7f4"
     },
     "ext/bqfft": {
       "pin": "7ee762bb3c0b"
@@ -92,6 +92,9 @@
     },
     "bsq-dtw": {
       "pin": "5ac46927d51a"
+    },
+    "bsq-image": {
+      "pin": "f9955cba7f35"
     },
     "bsq-vamp": {
       "pin": "8789d1426aff"

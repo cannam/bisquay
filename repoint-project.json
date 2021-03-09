@@ -96,6 +96,9 @@
 	"bsq-dtw": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-image": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"bsq-vamp": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
