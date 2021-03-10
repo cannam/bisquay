@@ -64,10 +64,10 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "6dfab6697190"
+      "pin": "35eaf895bd56"
     },
     "bsq-json": {
-      "pin": "55263b565ddb"
+      "pin": "da4b2fbfb383"
     },
     "bsq-test": {
       "pin": "28dd8feb5750"
@@ -91,13 +91,13 @@
       "pin": "0c0a940a4b9b"
     },
     "bsq-dtw": {
-      "pin": "5ac46927d51a"
+      "pin": "e5fd91afb8b5"
     },
     "bsq-image": {
       "pin": "e07d6838a712"
     },
     "bsq-vamp": {
-      "pin": "8789d1426aff"
+      "pin": "0990bda9a481"
     },
     "ext/smldoc": {
       "pin": "8b09c0c6045dd68154d8cceff90b9892f207cf64"
