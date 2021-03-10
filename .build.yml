@@ -16,9 +16,9 @@ tasks:
   - build: |
       cd bisquay
       ./repoint install
-#      meson build_poly -Dsml_buildtype=polyml
+      #      meson build_poly -Dsml_buildtype=polyml
       meson build_mlton_noffi -Dsml_buildtype=mlton_noffi
-#      ninja -C build_poly
+      #      ninja -C build_poly
       ninja -C build_mlton_noffi
       # Test whether a build using default-int32 MLton also works:
       mlton test-sml.mlb
@@ -26,7 +26,7 @@ tasks:
       meson compile -C build_mlton_noffi doc
   - test: |
       cd bisquay
-#      ./build_poly/bsq_test
+      #      ./build_poly/bsq_test
       ./build_mlton_noffi/bsq_test
       ./test-sml
       ./scripts/check-individual-builds.sh
