@@ -29,7 +29,6 @@ tasks:
 #      ./build_poly/bsq_test
       ./build_mlton_noffi/bsq_test
       ./test-sml
-  - check_subrepos: |
       ./scripts/check-individual-builds.sh
 triggers:
   - action: email
