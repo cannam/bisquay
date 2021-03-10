@@ -134,6 +134,7 @@ sml-subxml/subxml.sml
 sml-svg/svg.sml
 
 (* Image file loader *)
+bsq-image/image.sml
 bsq-image/image-reader.sig
 bsq-image/ppm-reader.sml
 
