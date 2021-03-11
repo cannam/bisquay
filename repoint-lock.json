@@ -43,7 +43,7 @@
       "pin": "e75a70bff2a9"
     },
     "sml-fft": {
-      "pin": "61b8c3438f1e"
+      "pin": "d686d3c53e30"
     },
     "ext/bqvec": {
       "pin": "a6fe6119a7f4"
@@ -94,7 +94,7 @@
       "pin": "e5fd91afb8b5"
     },
     "bsq-image": {
-      "pin": "e07d6838a712"
+      "pin": "6d0797a81cbe"
     },
     "bsq-vamp": {
       "pin": "0990bda9a481"

@@ -138,8 +138,11 @@ sml-subxml/subxml.sml
 sml-svg/svg.sml
 
 (* Image file loader *)
+bsq-image/image.sml
 bsq-image/image-reader.sig
+bsq-image/image-writer.sig
 bsq-image/ppm-reader.sml
+bsq-image/ppm-writer.sml
 
 (* CSV file parser *)
 sml-csv/csv-splitter.sig
