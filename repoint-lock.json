@@ -46,10 +46,10 @@
       "pin": "d686d3c53e30"
     },
     "ext/bqvec": {
-      "pin": "a6fe6119a7f4"
+      "pin": "28061e655245"
     },
     "ext/bqfft": {
-      "pin": "0a3ea5307359"
+      "pin": "e8d739f7e80d"
     },
     "ext/bqaudiostream": {
       "pin": "530f3ad687a7"
