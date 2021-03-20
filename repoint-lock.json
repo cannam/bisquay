@@ -1,7 +1,7 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "85cd6b632306"
+      "pin": "e8d1bf7465c1"
     },
     "sml-csv": {
       "pin": "b4f14f58ca04"
@@ -82,13 +82,13 @@
       "pin": "53cb1a03f4de"
     },
     "bsq-samplestreams": {
-      "pin": "5bfe223d2c04"
+      "pin": "7135b23c6c62"
     },
     "bsq-cqt": {
       "pin": "20f91cbc8003"
     },
     "bsq-waveform": {
-      "pin": "3e467a8d1e05"
+      "pin": "e1e5b04aacf4"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
