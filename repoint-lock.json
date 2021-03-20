@@ -7,7 +7,7 @@
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "b853550f45b0"
+      "pin": "265a70376c2f"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
@@ -16,10 +16,10 @@
       "pin": "2c094258f541"
     },
     "sml-log": {
-      "pin": "fc0f3468e6bb"
+      "pin": "bb9f3506dc51"
     },
     "sml-timing": {
-      "pin": "062aacf1ad93"
+      "pin": "3a16cac43724"
     },
     "sml-trie": {
       "pin": "9f9d287bbb52"
@@ -64,31 +64,31 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "35eaf895bd56"
+      "pin": "424770580cde"
     },
     "bsq-json": {
-      "pin": "da4b2fbfb383"
+      "pin": "95434a9b9796"
     },
     "bsq-test": {
-      "pin": "28dd8feb5750"
+      "pin": "5a3783503aa0"
     },
     "bsq-resampler": {
-      "pin": "a4622efba17f"
+      "pin": "2110818b4da2"
     },
     "bsq-matrix": {
-      "pin": "e6539af72602"
+      "pin": "2f1e894250c0"
     },
     "bsq-bq": {
-      "pin": "53cb1a03f4de"
+      "pin": "cf593c91381d"
     },
     "bsq-samplestreams": {
-      "pin": "7135b23c6c62"
+      "pin": "6276ab8dd693"
     },
     "bsq-cqt": {
-      "pin": "20f91cbc8003"
+      "pin": "757ab224a6f0"
     },
     "bsq-waveform": {
-      "pin": "e1e5b04aacf4"
+      "pin": "cd2978b175db"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
