@@ -24,6 +24,9 @@
 	"sml-timing": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"sml-i18n": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"sml-trie": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
