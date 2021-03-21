@@ -7,7 +7,7 @@
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "885ac3d05ab4"
+      "pin": "1c2fc6154e05"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
@@ -22,7 +22,7 @@
       "pin": "3a16cac43724"
     },
     "sml-i18n": {
-      "pin": "88ed1572637e"
+      "pin": "1f54f815c146"
     },
     "sml-trie": {
       "pin": "9f9d287bbb52"

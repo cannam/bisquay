@@ -3,6 +3,7 @@ val all_tests =
     [("string-interpolate", string_interpolate_tests)] @
     trie_tests @
     [("csv", csv_tests)] @
+    [("i18n", i18n_tests)] @
     bq_non_audioio_tests @
     signalbits_tests @
     matrix_tests @

@@ -150,6 +150,14 @@ sml-csv/csv-reader.sml
 sml-smlnj-base64/base64-sig.sml
 sml-smlnj-base64/base64.sml
 
+(* Translation lookup *)
+sml-i18n/string-map.sml
+sml-i18n/number.sml
+sml-i18n/message-loader.sig
+sml-i18n/ts-loader.sml
+sml-i18n/i18n.sig
+sml-i18n/i18n.sml
+
 (* Waveform renderer *)
 bsq-waveform/waveform-renderer.sig
 bsq-waveform/summarising-renderer.sml
@@ -201,6 +209,7 @@ bsq-test/support.sml
 bsq-test/run.sml
 sml-stringinterpolate/test.sml
 sml-csv/test.sml
+sml-i18n/test.sml
 bsq-signalbits/test.sml
 bsq-matrix/test-checks.sml
 bsq-matrix/test.sml
