@@ -114,6 +114,9 @@ sml-smlnj-containers/hash-key-sig.sml
 sml-smlnj-containers/hash-table-rep.sml
 sml-smlnj-containers/mono-hash-table-sig.sml
 sml-smlnj-containers/hash-table-fn.sml
+sml-smlnj-containers/int-hash-table.sml
+sml-smlnj-containers/fifo-sig.sml
+sml-smlnj-containers/fifo.sml
 
 (* Vamp plugin API *)
 bsq-vamp/vamp.sig
@@ -195,6 +198,58 @@ sml-trie/persistent-array.sml
 sml-trie/persistent-queue.sig
 sml-trie/persistent-queue.sml
 
+(* UTF-8 encoder and decoder *)
+sml-utf8/encoder.sml
+sml-utf8/decoder.sml
+sml-utf8/simple-wide-string.sig
+sml-utf8/simple-wide-string.sml
+sml-utf8/codepoint-io.sig
+sml-utf8/codepoint-io.sml
+
+(* RDF/Turtle parser, serialiser, in-memory datastore *)
+sml-ttl/src/rdf-base/codepointset.sml
+sml-ttl/src/rdf-base/string-compare.sml
+sml-ttl/src/rdf-base/iri.sig
+sml-ttl/src/rdf-base/iri.sml
+sml-ttl/src/rdf-base/rdf-node.sig
+sml-ttl/src/rdf-base/rdf-node.sml
+sml-ttl/src/rdf-base/rdf-triple.sig
+sml-ttl/src/rdf-base/rdf-triple.sml
+sml-ttl/src/rdf-base/rdf-standard-iris.sml
+sml-ttl/src/rdf-base/prefix.sig
+sml-ttl/src/rdf-base/prefix.sml
+sml-ttl/src/rdf-base/matcher.sig
+sml-ttl/src/rdf-base/collection.sig
+sml-ttl/src/rdf-base/collection-gatherer-fn.sml
+sml-ttl/src/rdf-base/collection-expander.sml
+sml-ttl/src/parse-serialise/base-iri.sml
+sml-ttl/src/parse-serialise/source.sml
+sml-ttl/src/parse-serialise/file-extension.sml
+sml-ttl/src/parse-serialise/file-type.sml
+sml-ttl/src/parse-serialise/rdf-parser.sig
+sml-ttl/src/parse-serialise/rdf-parser-fn.sml
+sml-ttl/src/parse-serialise/rdf-serialiser.sig
+sml-ttl/src/parse-serialise/encode.sml
+sml-ttl/src/parse-serialise/prefix-table.sig
+sml-ttl/src/parse-serialise/prefix-table.sml
+sml-ttl/src/parse-serialise/ntriples-codepoints.sml
+sml-ttl/src/parse-serialise/ntriples-serialiser.sml
+sml-ttl/src/parse-serialise/turtle-codepoints.sml
+sml-ttl/src/parse-serialise/turtle-parser.sml
+sml-ttl/src/parse-serialise/turtle-serialiser.sml
+sml-ttl/src/store/index.sig
+sml-ttl/src/store/index.sml
+sml-ttl/src/store/store.sig
+sml-ttl/src/store/store.sml
+sml-ttl/src/store/property.sig
+sml-ttl/src/store/property.sml
+sml-ttl/src/store-io/store-io.sig
+sml-ttl/src/store-io/store-loader.sml
+sml-ttl/src/store-io/store-exporter.sml
+sml-ttl/src/converter/rdf-converter.sig
+sml-ttl/src/converter/rdf-converter-fn.sml
+sml-ttl/src/converter/rdf-converters.sml
+
 (* Tests *)
 bsq-bq/test/tests.sig
 bsq-bq/test/test-support.sml
@@ -218,6 +273,18 @@ bsq-resampler/test-resampler.sml
 bsq-resampler/test.sml
 bsq-samplestreams/test.sml
 bsq-cqt/test.sml
+sml-ttl/test/test-dir.sml
+sml-ttl/test/test-prefix.sml
+sml-ttl/test/test-property.sml
+sml-ttl/test/test-index.sml
+sml-ttl/test/test-store.sml
+sml-ttl/test/test-collection.sml
+sml-ttl/test/test-turtle-parser.sml
+sml-ttl/test/test-turtle-spec.sml
+sml-ttl/test/test-curated.sml
+sml-ttl/test/test-all.sml
+(* Trie defines its own TestSupport structure not quite compatible *)
+(* with our earlier one, so it has to be tested last *)
 sml-trie/test-support.sml
 sml-trie/test.sml
 
