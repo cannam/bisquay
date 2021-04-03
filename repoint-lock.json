@@ -7,7 +7,7 @@
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "62a9d832ddcb"
+      "pin": "be5618f6c24d"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
@@ -79,13 +79,13 @@
       "pin": "2110818b4da2"
     },
     "bsq-matrix": {
-      "pin": "7c5b2851cc7a"
+      "pin": "355deda9ad3b"
     },
     "bsq-bq": {
       "pin": "cf593c91381d"
     },
     "bsq-samplestreams": {
-      "pin": "3e309bfc3b51"
+      "pin": "2fce92aa2c94"
     },
     "bsq-cqt": {
       "pin": "923a354b463e"
