@@ -85,13 +85,13 @@
       "pin": "cf593c91381d"
     },
     "bsq-samplestreams": {
-      "pin": "2fce92aa2c94"
+      "pin": "b6622ded3c61"
     },
     "bsq-cqt": {
       "pin": "923a354b463e"
     },
     "bsq-waveform": {
-      "pin": "d6dd9a4b6cb8"
+      "pin": "b969cc40e0c6"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
