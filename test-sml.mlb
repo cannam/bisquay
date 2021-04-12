@@ -162,15 +162,15 @@ sml-i18n/ts-loader.sml
 sml-i18n/i18n.sig
 sml-i18n/i18n.sml
 
+(* Timing logger for profiling *)
+sml-timing/timing.sig
+sml-timing/timing.sml
+
 (* Waveform renderer *)
 bsq-waveform/waveform-renderer.sig
 bsq-waveform/summarising-renderer.sml
 bsq-waveform/interpolating-renderer.sml
 bsq-waveform/waveform-renderer.sml
-
-(* Timing logger for profiling *)
-sml-timing/timing.sig
-sml-timing/timing.sml
 
 (* Trie containers *)
 sml-trie/trie-map.sig
