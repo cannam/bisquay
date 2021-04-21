@@ -1,13 +1,13 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "65ba80bf9c8b"
+      "pin": "1e8b2de96700"
     },
     "sml-csv": {
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "be5618f6c24d"
+      "pin": "0e50b2756d1e"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
@@ -19,7 +19,7 @@
       "pin": "bb9f3506dc51"
     },
     "sml-timing": {
-      "pin": "b4daadfeb1c2"
+      "pin": "f19c8a31e377"
     },
     "sml-i18n": {
       "pin": "1f54f815c146"
@@ -82,16 +82,16 @@
       "pin": "bbd4aef6b8e5"
     },
     "bsq-bq": {
-      "pin": "d007c374908b"
+      "pin": "458fce09e91d"
     },
     "bsq-samplestreams": {
-      "pin": "3c34eb3646c2"
+      "pin": "4bc04f8efa26"
     },
     "bsq-cqt": {
       "pin": "923a354b463e"
     },
     "bsq-waveform": {
-      "pin": "2b368d97edde"
+      "pin": "1a5205d77946"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
