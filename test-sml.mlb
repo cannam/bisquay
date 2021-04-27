@@ -138,6 +138,7 @@ sml-subxml/subxml.sml
 
 (* SVG structure and serialiser *)
 sml-svg/svg.sml
+sml-svg/shorten.sml
 
 (* Image file loader *)
 bsq-image/image.sml
