@@ -315,7 +315,7 @@ else
       '-output', '@OUTPUT@',
       '@INPUT@',
       ffi_bundle_target,
-      meson.current_source_dir() / 'sml-stringinterpolate/strfromd.c',
+      meson.current_source_dir() / 'sml-stringinterpolate/number-string.c',
       meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
     ],
     depends: [
