@@ -19,7 +19,9 @@ tasks:
       #      meson build_poly -Dsml_buildtype=polyml
       meson build_mlton_noffi -Dsml_buildtype=mlton_noffi
       #      ninja -C build_poly
-      ninja -C build_mlton_noffi
+      # Two whole build targets with MLton runs us out of memory
+      # unless -j1 is specified:
+      ninja -j1 -C build_mlton_noffi
       # Test whether a build using default-int32 MLton also works:
       mlton test-sml.mlb
       # And build the documentation:
