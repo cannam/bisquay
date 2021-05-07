@@ -108,6 +108,9 @@
 	"bsq-windowsshim": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-perftest": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
         "ext/smldoc": {
             "vcs": "git", "service": "github", "owner": "cannam"
         }
