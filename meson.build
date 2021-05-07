@@ -127,6 +127,18 @@ bsq_test_output = [
   'bsq_test'
 ]
 
+perftest_files_sml_only = [
+  'bsq-perftest/perftest-sml.mlb'
+]
+
+perftest_files_ffi = [
+  'bsq-perftest/perftest-ffi.mlb'
+]
+
+perftest_output = [
+  'bsq_perftest'
+]
+
 if get_option('sml_buildtype') == 'polyml'
 
   bsq_test_target = custom_target(
@@ -134,6 +146,20 @@ if get_option('sml_buildtype') == 'polyml'
     input: bsq_test_files_sml_only,
     output: bsq_test_output,
     depfile: 'bsq_test.deps',
+    command: [
+      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
+      meson.current_source_dir() / 'sml-buildscripts/polybuild',
+      '-o', '@OUTPUT@',
+      '@INPUT@',
+    ],
+    build_by_default: true,
+  )
+
+  perftest_target = custom_target(
+    'bsq_perftest',
+    input: perftest_files_sml_only,
+    output: perftest_output,
+    depfile: 'bsq_perftest.deps',
     command: [
       meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
       meson.current_source_dir() / 'sml-buildscripts/polybuild',
@@ -152,6 +178,21 @@ elif get_option('sml_buildtype') == 'mlton_noffi'
     input: bsq_test_files_sml_only,
     output: bsq_test_output,
     depfile: 'bsq_test.deps',
+    command: [
+      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
+      mlton,
+      '-default-type', 'int64',
+      '-output', '@OUTPUT@',
+      '@INPUT@',
+    ],
+    build_by_default: true,
+  )
+
+  perftest_target = custom_target(
+    'bsq_perftest',
+    input: perftest_files_sml_only,
+    output: perftest_output,
+    depfile: 'bsq_perftest.deps',
     command: [
       meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
       mlton,
@@ -269,14 +310,14 @@ else
     ],
   )
 
-  bsq_test_link_opts = []
+  mlton_link_opts = []
   foreach opt : platform_feature_libs
-    bsq_test_link_opts += '-link-opt'
-    bsq_test_link_opts += opt
+    mlton_link_opts += '-link-opt'
+    mlton_link_opts += opt
   endforeach
   foreach opt : platform_general_libs
-    bsq_test_link_opts += '-link-opt'
-    bsq_test_link_opts += opt
+    mlton_link_opts += '-link-opt'
+    mlton_link_opts += opt
   endforeach
 
   mlton_profile_opts = []
@@ -311,7 +352,36 @@ else
       '-default-ann', 'allowPrim true',
       '-link-opt', '-L.',
       '-link-opt', '-lbq',
-      bsq_test_link_opts,
+      mlton_link_opts,
+      '-output', '@OUTPUT@',
+      '@INPUT@',
+      ffi_bundle_target,
+      meson.current_source_dir() / 'sml-stringinterpolate/number-string.c',
+      meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
+    ],
+    depends: [
+      bq_lib,
+      ffi_bundle_target,
+    ],
+    build_by_default: true,
+  )
+  
+  perftest_target = custom_target(
+    'bsq_perftest',
+    input: perftest_files_ffi,
+    output: perftest_output,
+    depfile: 'bsq_perftest.deps',
+    command: [
+      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
+      mlton,
+      mlton_profile_opts,
+      mlton_debug_opts,
+      '-default-type', 'int64',
+      '-default-ann', 'allowFFI true',
+      '-default-ann', 'allowPrim true',
+      '-link-opt', '-L.',
+      '-link-opt', '-lbq',
+      mlton_link_opts,
       '-output', '@OUTPUT@',
       '@INPUT@',
       ffi_bundle_target,
