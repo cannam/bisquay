@@ -49,6 +49,12 @@ for dir in sml-* bsq-* ; do
       elif [ -f "$name".mlb ]; then
           ( "$sml" "$name".mlb ) > "$tmpfile" 2>&1 ||
               fail "Build failed using $name.mlb"
+      elif [ -f "$dir"-sml.mlb ]; then # sometimes in opposition to $dir-ffi.mlb
+          ( "$sml" "$dir"-sml.mlb ) > "$tmpfile" 2>&1 ||
+              fail "Build failed using $dir-sml.mlb"
+      elif [ -f "$name"-sml.mlb ]; then
+          ( "$sml" "$name"-sml.mlb ) > "$tmpfile" 2>&1 ||
+              fail "Build failed using $name-sml.mlb"
       else
           echo > "$tmpfile"
           fail "No way to build in directory $dir"
