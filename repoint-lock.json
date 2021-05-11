@@ -108,6 +108,9 @@
     "bsq-perftest": {
       "pin": "1dbecf2d7092"
     },
+    "bsq-rrloop": {
+      "pin": "6a383ec1ed6f"
+    },
     "ext/smldoc": {
       "pin": "8b09c0c6045dd68154d8cceff90b9892f207cf64"
     }
