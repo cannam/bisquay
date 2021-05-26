@@ -11,10 +11,10 @@ if [ ! -f "$infile" ]; then
    exit 1
 fi
 
-buildtypes="polyml mlton_release"
+buildtypes="polyml mlton_noffi mlton_release"
 
 for b in $buildtypes; do
-    if [ -d "tmp_perfbuild_$b" ]; then
+    if [ -f "tmp_perfbuild_$b/build.ninja" ]; then
         meson "tmp_perfbuild_$b" -D"sml_buildtype=$b" --reconfigure
     else 
         meson "tmp_perfbuild_$b" -D"sml_buildtype=$b"
@@ -34,10 +34,16 @@ hg log -r$(hg id | sed 's/+//' | awk '{ print $1; }') |
     grep '^date:' |
     sed 's/^date: */Commit date: /'
 
+#for counter in 1 2 3; do
+for counter in 1; do
+
 echo
 echo -ne "\t\t\t"
 for b in $buildtypes; do
-    echo -ne "$b\t\t"
+    case "$b" in
+        polyml) echo -ne "$b\t\t" ;; # shorter text, two tabs
+        *) echo -ne "$b\t" ;; # longer text, one tab
+    esac
 done
 echo
 
@@ -57,6 +63,8 @@ for test in $tests; do
         echo -ne "$elapsed\t\t"
     done
     echo
+done
+
 done
 
 echo

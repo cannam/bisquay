@@ -61,13 +61,13 @@
       "pin": "818954587967"
     },
     "ext/bqresample": {
-      "pin": "ca43790feeca"
+      "pin": "9697f9a50c01"
     },
     "ext/bqthingfactory": {
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "3bf3aa08c456"
+      "pin": "045f9dd9b9d7"
     },
     "bsq-json": {
       "pin": "95434a9b9796"

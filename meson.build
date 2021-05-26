@@ -34,7 +34,7 @@ if build_machine.system() == 'windows'
   platform_feature_defines = [
     '-DHAVE_IPP',
     '-DUSE_IPP_STATIC',
-    '-DHAVE_LIBSAMPLERATE',
+    '-DUSE_BQRESAMPLER',
     '-DHAVE_PORTAUDIO',
     '-DHAVE_MEDIAFOUNDATION',
     '-DHAVE_OPUS',
@@ -63,7 +63,7 @@ elif build_machine.system() == 'darwin'
                        language: 'cpp'
                       )
   platform_feature_defines = [
-    '-DHAVE_LIBSAMPLERATE',
+    '-DUSE_BQRESAMPLER',
     '-DHAVE_PORTAUDIO',
     '-DHAVE_COREAUDIO',
     '-DHAVE_VDSP',
@@ -89,7 +89,7 @@ elif build_machine.system() == 'linux'
   platform_feature_defines = [
     '-DHAVE_IPP',
     '-DUSE_IPP_STATIC',
-    '-DHAVE_LIBSAMPLERATE',
+    '-DUSE_BQRESAMPLER',
     '-DHAVE_PORTAUDIO',
     '-DHAVE_LIBPULSE',
     '-DHAVE_JACK',
@@ -220,6 +220,7 @@ else
     'ext/bqaudiostream/src/AudioWriteStreamFactory.cpp',
     'ext/bqfft/src/FFT.cpp',
     'ext/bqresample/src/Resampler.cpp',
+    'ext/bqresample/src/BQResampler.cpp',
     'ext/bqvec/src/Allocators.cpp',
     'ext/bqvec/src/Barrier.cpp',
     'ext/bqvec/src/VectorOpsComplex.cpp',
