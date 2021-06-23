@@ -86,7 +86,8 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-bq": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "resampler"
 	},
 	"bsq-samplestreams": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
@@ -95,7 +96,8 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-waveform": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "resampler"
 	},
 	"bsq-dtw": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
