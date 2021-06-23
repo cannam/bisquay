@@ -8,6 +8,9 @@ project(
   ]
 )
 
+system = host_machine.system()
+architecture = host_machine.cpu_family()
+
 run_target(
   'doc',
   command: meson.current_source_dir() / 'scripts/doc.sh'
@@ -29,7 +32,7 @@ if meson.get_compiler('cpp').get_id() == 'msvc'
   )
 endif
 
-if build_machine.system() == 'windows'
+if system == 'windows'
 
   platform_feature_defines = [
     '-DHAVE_IPP',
@@ -55,7 +58,7 @@ if build_machine.system() == 'windows'
     '-lportaudio', '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-logg', '-lmfplat', '-lmfreadwrite', '-lmfuuid', '-lpropsys', '-lws2_32', '-lgdi32', '-lcomdlg32', '-loleaut32', '-limm32', '-lwinmm', '-lwinspool', '-lole32', '-luser32', '-ladvapi32', '-lmsimg32', '-lshell32', '-lnetapi32', '-lwtsapi32', '-lkernel32', '-lversion', '-ldwmapi', '-luserenv', '-luuid',
   ]
   
-elif build_machine.system() == 'darwin'
+elif system == 'darwin'
 
   add_global_arguments([
                         '-mmacosx-version-min=10.13',
@@ -74,17 +77,50 @@ elif build_machine.system() == 'darwin'
     'ext/turbotdeps/macos/include',
     'ext/turbotdeps/macos/include/opus',
   ]
-  platform_feature_libs = [
-    '-mmacosx-version-min=10.13',
-    '-L../ext/turbotdeps/macos/lib-amd64',
+  
+  if architecture == 'aarch64'
+    add_global_arguments(
+      [
+	'-mmacosx-version-min=11',
+	'-arch', 'arm64'
+      ],
+      language: 'cpp'
+    )
+    platform_feature_libs = [
+      '-mmacosx-version-min=11',
+      '-arch', 'arm64',
+      '-L../ext/turbotdeps/macos/lib-arm64',
+      '-lc++'
+    ]
+  elif architecture == 'x86_64'
+    add_global_arguments(
+      [
+	'-mmacosx-version-min=10.13',
+	'-arch', 'x86_64',
+      ],
+      language: 'cpp'
+    )
+    platform_feature_libs = [
+      '-mmacosx-version-min=10.13',
+      '-arch', 'x86_64',
+      '-L../ext/turbotdeps/macos/lib-amd64',
+      '-lc++'
+    ]
+  else # begin architecture != 'aarch64' or 'x86_64'
+    error('Build for architecture ' + architecture + ' is not supported on this platform')
+  endif # end architecture
+
+  platform_feature_libs += [
     '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-logg', '-lportaudio',
-    '-framework', 'Accelerate', '-framework', 'CoreAudio', '-framework', 'AudioUnit', '-framework', 'AudioToolbox',
+    '-framework', 'Accelerate', '-framework', 'CoreAudio',
+    '-framework', 'AudioUnit', '-framework', 'AudioToolbox',
+    '-framework', 'CoreFoundation', '-framework', 'CoreServices',
   ]
   platform_general_libs = [
     '-lc++'
   ]
 
-elif build_machine.system() == 'linux'
+elif system == 'linux'
 
   platform_feature_defines = [
     '-DHAVE_IPP',
@@ -313,11 +349,11 @@ else
 
   mlton_link_opts = []
   foreach opt : platform_feature_libs
-    mlton_link_opts += '-link-opt'
+    mlton_link_opts += '-link-opt-quote'
     mlton_link_opts += opt
   endforeach
   foreach opt : platform_general_libs
-    mlton_link_opts += '-link-opt'
+    mlton_link_opts += '-link-opt-quote'
     mlton_link_opts += opt
   endforeach
 
@@ -336,6 +372,23 @@ else
     mlton_debug_opts = [
       '-const', 'Exn.keepHistory true',
     ]
+  endif
+
+  mlton_system_opts = [
+      '-codegen', 'c',
+      '-chunk-tail-call', 'false',
+  ]
+
+  if system == 'darwin'
+    if architecture == 'aarch64'
+      mlton_system_opts += [
+	'-cc-opt', '-mmacosx-version-min=11',
+      ]
+    elif architecture == 'x86_64'
+      mlton_system_opts += [
+	'-cc-opt', '-mmacosx-version-min=10.13',
+      ]
+    endif
   endif
   
   bsq_test_target = custom_target(

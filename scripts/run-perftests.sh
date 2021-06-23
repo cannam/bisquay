@@ -34,8 +34,8 @@ hg log -r$(hg id | sed 's/+//' | awk '{ print $1; }') |
     grep '^date:' |
     sed 's/^date: */Commit date: /'
 
-#for counter in 1 2 3; do
-for counter in 1; do
+for counter in 1 2 3; do
+#for counter in 1; do
 
 echo
 echo -ne "\t\t\t"
@@ -55,11 +55,18 @@ for test in $tests; do
             polyml) args="--minheap 500M";;
             *) ;;
         esac
-        elapsed=$(/usr/bin/time "tmp_perfbuild_$b/bsq_perftest" \
-                                $args "$test" "$infile" 2>&1 |
-                      fmt -1 |
-                      grep elapsed |
-                      sed 's/elapsed//')
+	if [ -d /Applications ]; then
+            elapsed=$(/usr/bin/time "tmp_perfbuild_$b/bsq_perftest" \
+                                    $args "$test" "$infile" 2>&1 >/dev/null |
+			  grep 'real' |
+			  awk '{ print $1; }')
+	else 
+            elapsed=$(/usr/bin/time "tmp_perfbuild_$b/bsq_perftest" \
+                                    $args "$test" "$infile" 2>&1 |
+			  fmt -1 |
+			  grep elapsed |
+			  sed 's/elapsed//')
+	fi
         echo -ne "$elapsed\t\t"
     done
     echo
