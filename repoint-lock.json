@@ -7,7 +7,7 @@
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "3726eab2c28a"
+      "pin": "9973aaad085d"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
@@ -110,6 +110,9 @@
     },
     "bsq-rrloop": {
       "pin": "7a3ff765015a"
+    },
+    "ext/ryu": {
+      "pin": "6f85836b6389dce334692829d818cdedb28bfa00"
     },
     "ext/smldoc": {
       "pin": "8b09c0c6045dd68154d8cceff90b9892f207cf64"

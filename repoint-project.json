@@ -115,6 +115,9 @@
 	"bsq-rrloop": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+        "ext/ryu": {
+            "vcs": "git", "service": "github", "owner": "ulfjack"
+        },
         "ext/smldoc": {
             "vcs": "git", "service": "github", "owner": "cannam"
         }
