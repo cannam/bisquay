@@ -34,8 +34,7 @@ hg log -r$(hg id | sed 's/+//' | awk '{ print $1; }') |
     grep '^date:' |
     sed 's/^date: */Commit date: /'
 
-for counter in 1 2 3; do
-#for counter in 1; do
+for counter in 1 2; do
 
 echo
 echo -ne "\t\t\t"
