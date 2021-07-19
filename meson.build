@@ -151,6 +151,30 @@ elif system == 'linux'
 endif
 
 
+sml_buildscripts = meson.current_source_dir() / 'sml-buildscripts'
+
+if system == 'windows'
+  bsq_test_name = 'bsq_test.exe'
+  bsq_perftest_name = 'bsq_perftest.exe'
+  mlb_deps_program = sml_buildscripts / 'with-mlb-dependencies.bat'
+  polybuild_program = sml_buildscripts / 'polybuild.bat'
+  mlton_program = meson.current_source_dir() / 'ext/mlton-windows-clang/mlton.bat'
+  if meson.get_compiler('cpp').get_id() == 'msvc'
+    cl_gnu_compatibility_hack_defines = [
+      '-D__attribute__=;//',
+    ]
+  else
+    cl_gnu_compatibility_hack_defines = []
+  endif
+else
+  bsq_test_name = 'bsq_test'
+  bsq_perftest_name = 'bsq_perftest'
+  mlb_deps_program = sml_buildscripts / 'with-mlb-dependencies'
+  polybuild_program = sml_buildscripts / 'polybuild'
+  mlton_program = find_program('mlton')
+  cl_gnu_compatibility_hack_defines = []
+endif
+
 bsq_test_files_sml_only = [
   'test-sml.mlb'
 ]
@@ -160,7 +184,7 @@ bsq_test_files_ffi = [
 ]
 
 bsq_test_output = [
-  'bsq_test'
+  bsq_test_name
 ]
 
 perftest_files_sml_only = [
@@ -172,7 +196,7 @@ perftest_files_ffi = [
 ]
 
 perftest_output = [
-  'bsq_perftest'
+  bsq_perftest_name
 ]
 
 if get_option('sml_buildtype') == 'polyml'
@@ -183,8 +207,8 @@ if get_option('sml_buildtype') == 'polyml'
     output: bsq_test_output,
     depfile: 'bsq_test.deps',
     command: [
-      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-      meson.current_source_dir() / 'sml-buildscripts/polybuild',
+      mlb_deps_program,
+      polybuild_program,
       '-o', '@OUTPUT@',
       '@INPUT@',
     ],
@@ -197,8 +221,8 @@ if get_option('sml_buildtype') == 'polyml'
     output: perftest_output,
     depfile: 'bsq_perftest.deps',
     command: [
-      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-      meson.current_source_dir() / 'sml-buildscripts/polybuild',
+      mlb_deps_program,
+      polybuild_program,
       '-o', '@OUTPUT@',
       '@INPUT@',
     ],
@@ -207,16 +231,14 @@ if get_option('sml_buildtype') == 'polyml'
 
 elif get_option('sml_buildtype') == 'mlton_noffi'
   
-  mlton = find_program('mlton')
-
   bsq_test_target = custom_target(
     'bsq_test',
     input: bsq_test_files_sml_only,
     output: bsq_test_output,
     depfile: 'bsq_test.deps',
     command: [
-      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-      mlton,
+      mlb_deps_program,
+      mlton_program,
       '-default-type', 'int64',
       '-output', '@OUTPUT@',
       '@INPUT@',
@@ -230,8 +252,8 @@ elif get_option('sml_buildtype') == 'mlton_noffi'
     output: perftest_output,
     depfile: 'bsq_perftest.deps',
     command: [
-      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-      mlton,
+      mlb_deps_program,
+      mlton_program,
       '-default-type', 'int64',
       '-output', '@OUTPUT@',
       '@INPUT@',
@@ -296,7 +318,6 @@ else
     build_by_default: false,
   )
 
-  mlton = find_program('mlton')
   ar = find_program('ar')
 
   ffi_export_header_target = custom_target(
@@ -304,7 +325,8 @@ else
     input: 'bsq-bq/ffi/export-bqaudioio.sml',
     output: 'export.h',
     command: [
-      mlton,
+      mlb_deps_program,
+      mlton_program,
       '-default-type', 'int64',
       '-default-ann', 'allowFFI true',
       '-export-header', '@OUTPUT@',
@@ -317,7 +339,8 @@ else
     input: 'bsq-bq/ffi/import-bqvec.sml',
     output: 'impl.h',
     command: [
-      mlton,
+      mlb_deps_program,
+      mlton_program,
       '-default-type', 'int64',
       '-default-ann', 'allowFFI true',
       '-export-header', '@OUTPUT@',
@@ -397,8 +420,8 @@ else
     output: bsq_test_output,
     depfile: 'bsq_test.deps',
     command: [
-      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-      mlton,
+      mlb_deps_program,
+      mlton_program,
       mlton_profile_opts,
       mlton_debug_opts,
       '-default-type', 'int64',
@@ -426,8 +449,8 @@ else
     output: perftest_output,
     depfile: 'bsq_perftest.deps',
     command: [
-      meson.current_source_dir() / 'sml-buildscripts/with-mlb-dependencies',
-      mlton,
+      mlb_deps_program,
+      mlton_program,
       mlton_profile_opts,
       mlton_debug_opts,
       '-default-type', 'int64',

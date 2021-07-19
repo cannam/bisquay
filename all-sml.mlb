@@ -1,3 +1,6 @@
+(* Windows compatibility shim - must be before Basis library *)
+bsq-windowsshim/windowsshim.sml
+
 (* Basis library *)
 $(SML_LIB)/basis/basis.mlb
 

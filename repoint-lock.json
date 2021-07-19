@@ -1,7 +1,10 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "1e8b2de96700"
+      "pin": "8c87f672bf33"
+    },
+    "ext/mlton-windows-clang": {
+      "pin": "97625087ed65"
     },
     "sml-csv": {
       "pin": "b4f14f58ca04"
