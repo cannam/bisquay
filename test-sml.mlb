@@ -23,6 +23,7 @@ bsq-resampler/test-kaiser.sml
 bsq-resampler/test-resampler.sml
 bsq-resampler/test.sml
 bsq-samplestreams/test.sml
+bsq-randomaccess/test.sml
 bsq-cqt/test.sml
 sml-ttl/test/test-dir.sml
 sml-ttl/test/test-prefix.sml

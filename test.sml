@@ -13,6 +13,7 @@ fun all_tests () =
     prefixed "signalbits" signalbits_tests @
     prefixed "matrix" matrix_tests @
     prefixed "samplestreams" samplestreams_tests @
+    prefixed "randomaccess" randomaccess_tests @
     prefixed "cqt" cqt_tests
 
 fun main () =

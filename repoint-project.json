@@ -94,6 +94,9 @@
 	"bsq-samplestreams": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-randomaccess": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"bsq-cqt": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},

@@ -88,7 +88,10 @@
       "pin": "5fe64acec88a"
     },
     "bsq-samplestreams": {
-      "pin": "49b12b5dd2a0"
+      "pin": "e809422fe266"
+    },
+    "bsq-randomaccess": {
+      "pin": "a29c7fdb65c9"
     },
     "bsq-cqt": {
       "pin": "cd8af54fa8ec"

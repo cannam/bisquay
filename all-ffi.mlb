@@ -147,12 +147,15 @@ bsq-samplestreams/blockstream-fn.sml
 bsq-samplestreams/audiofile.sml
 bsq-samplestreams/framing-fn.sml
 bsq-samplestreams/duration-adapting-fn.sml
-bsq-samplestreams/random-access-fn.sml
 bsq-samplestreams/summarising-fn.sml
-bsq-samplestreams/peak-tower.sig
-bsq-samplestreams/peak-tower.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
+
+(* Random access sample modules *)
+bsq-randomaccess/randomaccess-fn.sml
+bsq-randomaccess/summarising-fn.sml
+bsq-randomaccess/peak-tower.sig
+bsq-randomaccess/peak-tower.sml
 
 (* Constant-Q transform *)
 bsq-cqt/kernel.sml
