@@ -156,6 +156,8 @@ bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/summarising-fn.sml
 bsq-randomaccess/peak-tower.sig
 bsq-randomaccess/peak-tower.sml
+bsq-randomaccess/spectrogram.sig
+bsq-randomaccess/spectrogram-fn.sml
 
 (* Constant-Q transform *)
 bsq-cqt/kernel.sml
