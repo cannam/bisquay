@@ -35,8 +35,7 @@ endif
 if system == 'windows'
 
   platform_feature_defines = [
-    '-DHAVE_IPP',
-    '-DUSE_IPP_STATIC',
+    '-DUSE_BUILTIN_FFT',
     '-DUSE_BQRESAMPLER',
     '-DHAVE_PORTAUDIO',
     '-DHAVE_MEDIAFOUNDATION',
@@ -48,13 +47,10 @@ if system == 'windows'
   platform_feature_includedirs = [
     'ext/turbotdeps/win32-msvc/include',
     'ext/turbotdeps/win32-msvc/include/opus',
-    'c:/Program Files (x86)/IntelSWTools/compilers_and_libraries/windows/ipp/include',
   ]
   platform_feature_libs = [
     '-NODEFAULTLIB:MSVCRT',
     '-L../ext/turbotdeps/win32-msvc/lib',
-    '-LC:/Program Files (x86)/IntelSWTools/compilers_and_libraries/windows/ipp/lib/ia32',
-    '-lippsmt', '-lippvmmt', '-lippcoremt',
     '-lportaudio', '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-logg', '-lmfplat', '-lmfreadwrite', '-lmfuuid', '-lpropsys', '-lws2_32', '-lgdi32', '-lcomdlg32', '-loleaut32', '-limm32', '-lwinmm', '-lwinspool', '-lole32', '-luser32', '-ladvapi32', '-lmsimg32', '-lshell32', '-lnetapi32', '-lwtsapi32', '-lkernel32', '-lversion', '-ldwmapi', '-luserenv', '-luuid',
   ]
   
@@ -123,8 +119,7 @@ elif system == 'darwin'
 elif system == 'linux'
 
   platform_feature_defines = [
-    '-DHAVE_IPP',
-    '-DUSE_IPP_STATIC',
+    '-DUSE_BUILTIN_FFT',
     '-DUSE_BQRESAMPLER',
     '-DHAVE_PORTAUDIO',
     '-DHAVE_LIBPULSE',
@@ -136,12 +131,9 @@ elif system == 'linux'
     '-DUSE_PTHREADS',
   ]
   platform_feature_includedirs = [
-    '/opt/intel/ipp/include',
     '/usr/include/opus',
   ]
   platform_feature_libs = [
-    '-L/opt/intel/ipp/lib/intel64',
-    '-Wl,-Bstatic', '-lipps', '-lippvm', '-lippcore', '-Wl,-Bdynamic',
     '-lcblas',
     '-lportaudio', '-lpulse', '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-loggz', '-lfishsound', '-logg', '-ldl', '-lz',
   ]
