@@ -45,8 +45,7 @@ ML</a>.</p>
     using MLton and the FFI-driven version of the <code>.mlb</code>
     file for faster performance. Bisquay's Meson build script allows
     you to choose which build you want
-    via <code>meson_options.txt</code>, so that can be used as a
-    reference
+    via configuration options, listed in <code>meson_options.txt</code>
   <li>Performance is crucial, and a release build using FFI should
     perform roughly as well as any native implementation. If that
     means much of the work ends up in FFI code, that's fine. But we
