@@ -6,7 +6,7 @@
 Requires the Meson build system and either MLton or Poly/ML SML
 compiler (or both).
 
-The default build uses Poly/ML, for a development build with the
+The default build uses Poly/ML, producing a development build with the
 quickest compile time and turnaround, using pure SML code only:
 
 1. Run `./repoint install` to bring in all the code
