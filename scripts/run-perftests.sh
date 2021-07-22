@@ -1,6 +1,8 @@
 #!/bin/bash
 
 set -eu
+set -o pipefail
+
 if [ ! -f scripts/run-perftests.sh ] ; then
     echo "This must be run from the project root directory"
     exit 1
@@ -11,6 +13,8 @@ if [ ! -f "$infile" ]; then
    exit 1
 fi
 
+# Not mlton_profile for general repeated testing - it just takes too
+# long to build (even longer than mlton_release)
 buildtypes="polyml mlton_noffi mlton_release"
 
 for b in $buildtypes; do
@@ -19,7 +23,10 @@ for b in $buildtypes; do
     else 
         meson "tmp_perfbuild_$b" -D"sml_buildtype=$b"
     fi
-    ninja -C "tmp_perfbuild_$b"
+    time ninja -C "tmp_perfbuild_$b"
+    echo
+    echo "Built $b"
+    echo
 done
 
 tests=$(tmp_perfbuild_polyml/bsq_perftest |
