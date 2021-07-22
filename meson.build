@@ -386,6 +386,8 @@ else
   if get_option('sml_buildtype') == 'mlton_debug'
     mlton_debug_opts = [
       '-const', 'Exn.keepHistory true',
+      '-cc-opt', '-g',
+      '-link-opt', '-g',
     ]
   endif
 
@@ -414,6 +416,7 @@ else
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_system_opts,
       mlton_profile_opts,
       mlton_debug_opts,
       '-default-type', 'int64',
@@ -443,6 +446,7 @@ else
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_system_opts,
       mlton_profile_opts,
       mlton_debug_opts,
       '-default-type', 'int64',
