@@ -160,8 +160,10 @@ bsq-randomaccess/spectrogram.sig
 bsq-randomaccess/spectrogram-fn.sml
 
 (* Constant-Q transform *)
-bsq-cqt/kernel.sml
+bsq-cqt/cqkernel.sml
 bsq-cqt/cqt.sml
+bsq-cqt/cqspectrogram-fn.sml
+bsq-cqt/chromagram-fn.sml
 
 (* Vamp plugin API *)
 bsq-vamp/vamp.sig
