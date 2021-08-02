@@ -23,7 +23,7 @@ for b in $buildtypes; do
     else 
         meson "tmp_perfbuild_$b" -D"sml_buildtype=$b"
     fi
-    time ninja -C "tmp_perfbuild_$b"
+    time ninja -C "tmp_perfbuild_$b" bsq_perftest
     echo
     echo "Built $b"
     echo
