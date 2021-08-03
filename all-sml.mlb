@@ -140,6 +140,8 @@ bsq-samplestreams/channel-adapting-fn.sml
 bsq-samplestreams/resampling-fn.sml
 bsq-samplestreams/blockstream.sig
 bsq-samplestreams/blockstream-fn.sml
+bsq-samplestreams/complex-blockstream.sig
+bsq-samplestreams/complex-blockstream-fn.sml
 bsq-samplestreams/audiofile.sml
 bsq-samplestreams/framing-fn.sml
 bsq-samplestreams/duration-adapting-fn.sml
