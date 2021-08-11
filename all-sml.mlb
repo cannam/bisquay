@@ -148,6 +148,8 @@ bsq-samplestreams/duration-adapting-fn.sml
 bsq-samplestreams/summarising-fn.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
+bsq-samplestreams/frequency-component.sig
+bsq-samplestreams/frequency-component-fn.sml
 
 (* Random access sample modules *)
 bsq-randomaccess/randomaccess-fn.sml
