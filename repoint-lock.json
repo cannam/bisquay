@@ -61,7 +61,7 @@
       "pin": "530f3ad687a7"
     },
     "ext/bqaudioio": {
-      "pin": "818954587967"
+      "pin": "7a8667ea7a7a"
     },
     "ext/bqresample": {
       "pin": "9697f9a50c01"
@@ -88,7 +88,7 @@
       "pin": "5fe64acec88a"
     },
     "bsq-samplestreams": {
-      "pin": "3435056de46c"
+      "pin": "18cde6a2d959"
     },
     "bsq-randomaccess": {
       "pin": "d7c27deb3c08"
