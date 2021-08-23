@@ -183,6 +183,8 @@ bsq-rrloop/response.sig
 bsq-rrloop/rrloop.sig
 bsq-rrloop/rrloop-support.sig
 bsq-rrloop/rrloop-support.sml
+bsq-rrloop/rrloop-types-fn.sml
+bsq-rrloop/rrloop-managed-fn.sml
 bsq-rrloop/rrloop-stdio-fn.sml
 
 (* XML parser and serialiser *)
