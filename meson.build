@@ -150,7 +150,7 @@ if system == 'windows'
   bsq_perftest_name = 'bsq_perftest.exe'
   mlb_deps_program = sml_buildscripts / 'with-mlb-dependencies.bat'
   polybuild_program = sml_buildscripts / 'polybuild.bat'
-  mlton_program = meson.current_source_dir() / 'ext/mlton-windows-clang/mlton.bat'
+  mlton_program = meson.current_source_dir() / 'ext/mlton-cutdown/windows/mlton.bat'
   if meson.get_compiler('cpp').get_id() == 'msvc'
     cl_gnu_compatibility_hack_defines = [
       '-D__attribute__=;//',

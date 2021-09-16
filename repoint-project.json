@@ -6,7 +6,7 @@
 	"sml-buildscripts": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
-        "ext/mlton-windows-clang": {
+        "ext/mlton-cutdown": {
             "vcs": "hg", "service": "sourcehut", "owner": "cannam"
         },
 	"sml-csv": {

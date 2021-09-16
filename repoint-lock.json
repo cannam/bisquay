@@ -3,8 +3,8 @@
     "sml-buildscripts": {
       "pin": "b13071b1dbbf"
     },
-    "ext/mlton-windows-clang": {
-      "pin": "97625087ed65"
+    "ext/mlton-cutdown": {
+      "pin": "80b0ac2514bc"
     },
     "sml-csv": {
       "pin": "b4f14f58ca04"
@@ -22,7 +22,7 @@
       "pin": "bb9f3506dc51"
     },
     "sml-timing": {
-      "pin": "f19c8a31e377"
+      "pin": "bc2171d06006"
     },
     "sml-i18n": {
       "pin": "1f54f815c146"
@@ -91,7 +91,7 @@
       "pin": "18cde6a2d959"
     },
     "bsq-randomaccess": {
-      "pin": "d7c27deb3c08"
+      "pin": "0023ba2fad7b"
     },
     "bsq-cqt": {
       "pin": "2a6e749acf71"
@@ -115,7 +115,7 @@
       "pin": "6b04dd77af9f"
     },
     "bsq-rrloop": {
-      "pin": "ca6dcb0bd4a5"
+      "pin": "36e83e5760e5"
     },
     "ext/smldoc": {
       "pin": "8b09c0c6045dd68154d8cceff90b9892f207cf64"
