@@ -100,6 +100,7 @@ bsq-signalbits/summarise.sml
 bsq-signalbits/distance.sig
 bsq-signalbits/distance.sml
 bsq-signalbits/seqmisc.sml
+bsq-signalbits/listmisc.sml
 bsq-signalbits/window.sig
 bsq-signalbits/window.sml
 bsq-signalbits/autocorrelation.sml
@@ -152,6 +153,8 @@ bsq-samplestreams/frequency-component.sig
 bsq-samplestreams/frequency-component-fn.sml
 
 (* Random access sample modules *)
+bsq-randomaccess/randomaccess.sig
+bsq-randomaccess/randomaccess.sml
 bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/summarising-fn.sml
 bsq-randomaccess/peak-tower.sig
