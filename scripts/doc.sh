@@ -14,4 +14,4 @@ if [ ! -x ext/smldoc/src/mlton/smldoc ]; then
 fi
 cp resources/screen.css resources/bisquay.svg doc/
 ./sml-buildscripts/mlb-expand test-sml.mlb | grep -v '/test[-.]' > .docfiles
-ext/smldoc/src/mlton/smldoc --nowarn --overview=resources/doc-overview.html --windowtitle=Bisquay --header=Bisquay --charset=UTF-8 --stylesheet=screen.css -d doc -a .docfiles 
+ext/smldoc/src/mlton/smldoc --nowarn --markdown --overview=resources/doc-overview.html --windowtitle=Bisquay --header=Bisquay --charset=UTF-8 --stylesheet=screen.css -d doc -a .docfiles 
