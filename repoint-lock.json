@@ -52,7 +52,7 @@
       "pin": "d686d3c53e30"
     },
     "ext/bqvec": {
-      "pin": "506df70f7466"
+      "pin": "eb5c0e8e5b6f"
     },
     "ext/bqfft": {
       "pin": "4f44b459b35f"
@@ -82,16 +82,16 @@
       "pin": "36d14a2bcc88"
     },
     "bsq-matrix": {
-      "pin": "b7de37d12100"
+      "pin": "e468c7042888"
     },
     "bsq-bq": {
-      "pin": "5fe64acec88a"
+      "pin": "ceccc348ce3b"
     },
     "bsq-samplestreams": {
-      "pin": "6615b535c1b4"
+      "pin": "6e846e13d6c0"
     },
     "bsq-randomaccess": {
-      "pin": "8439bb96def3"
+      "pin": "65814ecef25d"
     },
     "bsq-cqt": {
       "pin": "2a6e749acf71"

@@ -138,7 +138,7 @@ elif system == 'linux'
     '-lportaudio', '-lpulse', '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-loggz', '-lfishsound', '-logg', '-ldl', '-lz',
   ]
   platform_general_libs = [
-    '-lpthread', '-lstdc++', '-lGL'
+    '-lpthread', '-lstdc++',
   ]
 endif
 
