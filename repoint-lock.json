@@ -82,22 +82,22 @@
       "pin": "36d14a2bcc88"
     },
     "bsq-matrix": {
-      "pin": "3bf454fdc6f8"
+      "pin": "f71e0aa36f54"
     },
     "bsq-bq": {
       "pin": "ceccc348ce3b"
     },
     "bsq-samplestreams": {
-      "pin": "0b8e8f5481e9"
+      "pin": "77c572789c5d"
     },
     "bsq-randomaccess": {
-      "pin": "7347a64382bc"
+      "pin": "49862bc9df77"
     },
     "bsq-cqt": {
       "pin": "43c4f8944224"
     },
     "bsq-waveform": {
-      "pin": "cec31ec9c2ec"
+      "pin": "43d01db37464"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
