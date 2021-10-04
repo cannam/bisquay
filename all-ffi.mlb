@@ -238,6 +238,10 @@ sml-utf8/simple-wide-string.sml
 sml-utf8/codepoint-io.sig
 sml-utf8/codepoint-io.sml
 
+(* Simplistic plotting *)
+bsq-plot/plot.sig
+bsq-plot/plot.sml
+
 (* RDF/Turtle parser, serialiser, in-memory datastore *)
 sml-ttl/src/rdf-base/codepointset.sml
 sml-ttl/src/rdf-base/string-compare.sml

@@ -118,6 +118,9 @@
 	"bsq-perftest": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-plot": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"bsq-rrloop": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
