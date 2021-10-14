@@ -105,6 +105,7 @@ bsq-signalbits/distance.sig
 bsq-signalbits/distance.sml
 bsq-signalbits/seqmisc.sml
 bsq-signalbits/listmisc.sml
+bsq-signalbits/greek.sml
 bsq-signalbits/window.sig
 bsq-signalbits/window.sml
 bsq-signalbits/autocorrelation.sml
