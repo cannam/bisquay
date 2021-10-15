@@ -104,6 +104,7 @@ bsq-signalbits/listmisc.sml
 bsq-signalbits/greek.sml
 bsq-signalbits/window.sig
 bsq-signalbits/window.sml
+bsq-signalbits/convolve.sml
 bsq-signalbits/autocorrelation.sml
 bsq-signalbits/progress.sml
 
@@ -158,6 +159,7 @@ bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/summarising-fn.sml
 bsq-randomaccess/peak-tower.sig
 bsq-randomaccess/peak-tower.sml
+bsq-randomaccess/component-summary-tower.sml
 bsq-randomaccess/spectrogram.sig
 bsq-randomaccess/spectrogram-fn.sml
 
