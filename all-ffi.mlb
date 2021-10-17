@@ -33,6 +33,9 @@ sml-smlnj-containers/hash-table-fn.sml
 sml-smlnj-containers/int-hash-table.sml
 sml-smlnj-containers/fifo-sig.sml
 sml-smlnj-containers/fifo.sml
+sml-smlnj-containers/mono-array-fn.sml
+sml-smlnj-containers/mono-array-sort-sig.sml
+sml-smlnj-containers/array-qsort-fn.sml
 
 (* Timing logger for profiling *)
 sml-timing/timing.sig

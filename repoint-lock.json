@@ -16,7 +16,7 @@
       "pin": "be0fe9bb81d3"
     },
     "sml-smlnj-containers": {
-      "pin": "2c094258f541"
+      "pin": "692fb3882a3a"
     },
     "sml-log": {
       "pin": "bb9f3506dc51"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "a263b482b9ce"
+      "pin": "f18578d9613b"
     },
     "bsq-json": {
       "pin": "95434a9b9796"
@@ -88,13 +88,13 @@
       "pin": "ceccc348ce3b"
     },
     "bsq-samplestreams": {
-      "pin": "d57ebfa6b44c"
+      "pin": "d61161042a88"
     },
     "bsq-randomaccess": {
       "pin": "8ef15eb26888"
     },
     "bsq-cqt": {
-      "pin": "8eacfc1d2e17"
+      "pin": "ba90a4d067f6"
     },
     "bsq-waveform": {
       "pin": "43d01db37464"
