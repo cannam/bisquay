@@ -51,9 +51,11 @@ for b in $buildtypes; do
         *) echo -ne "$b\t" ;; # longer text, one tab
     esac
 done
-echo
+echo -e "mem/polyml\tmem/release"
 
 for test in $tests; do
+    mem_polyml=
+    mem_release=
     echo -ne "   $test\t\t"
     for b in $buildtypes; do
         args=""
@@ -61,21 +63,30 @@ for test in $tests; do
             polyml) args="--minheap 500M";;
             *) ;;
         esac
+        mem="(n/a)"
 	if [ -d /Applications ]; then
             elapsed=$(/usr/bin/time "tmp_perfbuild_$b/bsq_perftest" \
                                     $args "$test" "$infile" 2>&1 >/dev/null |
 			  grep 'real' |
 			  awk '{ print $1; }')
 	else 
-            elapsed=$(/usr/bin/time "tmp_perfbuild_$b/bsq_perftest" \
-                                    $args "$test" "$infile" 2>&1 |
-			  fmt -1 |
-			  grep elapsed |
-			  sed 's/elapsed//')
+            measurements=$(/usr/bin/time -f '\n%E %M' \
+                                         "tmp_perfbuild_$b/bsq_perftest" \
+                                         $args "$test" "$infile" 2>&1 |
+			       tail -1)
+            elapsed=$(echo "$measurements" | awk '{ print $1; }')
+            mem=$(echo "$measurements" | awk '{ print $2; }')
+            mem=$(($mem / 1024))
+            mem="$mem"M
 	fi
+        case "$b" in
+            polyml) mem_polyml="$mem";;
+            mlton_release) mem_release="$mem";;
+            *) ;;
+        esac
         echo -ne "$elapsed\t\t"
     done
-    echo
+    echo -e "$mem_polyml\t\t$mem_release"
 done
 
 done
