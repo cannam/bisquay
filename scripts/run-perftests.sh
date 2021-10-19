@@ -60,7 +60,7 @@ for test in $tests; do
     for b in $buildtypes; do
         args=""
         case "$b" in
-            polyml) args="--minheap 500M";;
+            polyml) args="--minheap 200M";;
             *) ;;
         esac
         mem="(n/a)"
