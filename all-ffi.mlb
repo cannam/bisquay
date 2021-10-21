@@ -110,7 +110,10 @@ bsq-signalbits/listmisc.sml
 bsq-signalbits/greek.sml
 bsq-signalbits/window.sig
 bsq-signalbits/window.sml
+bsq-signalbits/convolve.sig
 bsq-signalbits/convolve.sml
+bsq-signalbits/window-post.sig
+bsq-signalbits/window-post.sml
 bsq-signalbits/autocorrelation.sml
 bsq-signalbits/progress.sml
 
