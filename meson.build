@@ -392,17 +392,18 @@ else
   endif
 
   mlton_system_opts = [
-      '-codegen', 'c',
       '-chunk-tail-call', 'false',
   ]
 
   if system == 'darwin'
     if architecture == 'aarch64'
       mlton_system_opts += [
-	'-cc-opt', '-mmacosx-version-min=11',
+        '-codegen', 'c',
+        '-cc-opt', '-mmacosx-version-min=11',
       ]
     elif architecture == 'x86_64'
       mlton_system_opts += [
+        '-codegen', 'c',
 	'-cc-opt', '-mmacosx-version-min=10.13',
       ]
     endif
@@ -448,6 +449,7 @@ else
       mlb_deps_program,
       mlton_program,
       mlton_system_opts,
+      '-codegen', 'c',
       mlton_profile_opts,
       mlton_debug_opts,
       '-default-type', 'int64',
