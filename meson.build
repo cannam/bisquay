@@ -355,9 +355,8 @@ else
     input: ffi_bundle_archive,
     output: 'bsq-bq_ffi_impl-bundle.cpp.o',
     command: [
-      ar,
-      'x',
-      '@INPUT@',
+      'cp',
+      '@INPUT@.p/bsq-bq_ffi_impl-bundle.cpp.o',
       '@OUTPUT@'
     ],
   )
