@@ -10,7 +10,7 @@
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "0f0a1bbf1710"
+      "pin": "82b6a5a4fc8d"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
@@ -19,7 +19,7 @@
       "pin": "3da179a6ce0c"
     },
     "sml-log": {
-      "pin": "bb9f3506dc51"
+      "pin": "0207c63837fe"
     },
     "sml-timing": {
       "pin": "bc2171d06006"
@@ -55,7 +55,7 @@
       "pin": "eb5c0e8e5b6f"
     },
     "ext/bqfft": {
-      "pin": "4f44b459b35f"
+      "pin": "3560080ff66c"
     },
     "ext/bqaudiostream": {
       "pin": "530f3ad687a7"
@@ -88,10 +88,10 @@
       "pin": "36689f8d0ae2"
     },
     "bsq-samplestreams": {
-      "pin": "d1d9ee010479"
+      "pin": "89d6ed452fd3"
     },
     "bsq-randomaccess": {
-      "pin": "a8837facfd7e"
+      "pin": "80659da08f80"
     },
     "bsq-cqt": {
       "pin": "ba90a4d067f6"

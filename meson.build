@@ -310,7 +310,7 @@ else
     build_by_default: false,
   )
 
-  ar = find_program('ar')
+  cp = find_program('cp')
 
   ffi_export_header_target = custom_target(
     'ffi_export_header',
@@ -355,7 +355,7 @@ else
     input: ffi_bundle_archive,
     output: 'bsq-bq_ffi_impl-bundle.cpp.o',
     command: [
-      'cp',
+      cp,
       '@INPUT@.p/bsq-bq_ffi_impl-bundle.cpp.o',
       '@OUTPUT@'
     ],
