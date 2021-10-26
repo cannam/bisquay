@@ -73,7 +73,8 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"bsq-signalbits": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "flat-everything"
 	},
 	"bsq-json": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
@@ -85,13 +86,15 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-matrix": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "flat-everything"
 	},
 	"bsq-bq": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-samplestreams": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "flat-everything"
 	},
 	"bsq-randomaccess": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
