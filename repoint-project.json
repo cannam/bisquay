@@ -67,8 +67,7 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqresample": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
-            "branch": "resampler"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"ext/bqthingfactory": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
