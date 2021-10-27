@@ -31,6 +31,8 @@ sml-smlnj-containers/fifo-sig.sml
 sml-smlnj-containers/fifo.sml
 sml-smlnj-containers/array-sort-sig.sml
 sml-smlnj-containers/array-qsort.sml
+sml-smlnj-containers/mono-array-sort-sig.sml
+sml-smlnj-containers/array-qsort-fn.sml
 
 (* Timing logger for profiling *)
 sml-timing/timing.sig
