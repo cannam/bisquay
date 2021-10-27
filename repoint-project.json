@@ -97,7 +97,8 @@
             "branch": "flat-everything"
 	},
 	"bsq-randomaccess": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "flat-everything"
 	},
 	"bsq-cqt": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
