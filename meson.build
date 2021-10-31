@@ -430,6 +430,7 @@ else
       ffi_bundle_target,
       meson.current_source_dir() / 'sml-stringinterpolate/number-string.c',
       meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
+      meson.current_source_dir() / 'bsq-rrloop/ffi/rr-support.c',
       meson.current_source_dir() / 'bsq-signalbits/ffi/window-post.c',
     ],
     depends: [
@@ -462,6 +463,7 @@ else
       ffi_bundle_target,
       meson.current_source_dir() / 'sml-stringinterpolate/number-string.c',
       meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
+      meson.current_source_dir() / 'bsq-rrloop/ffi/rr-support.c',
       meson.current_source_dir() / 'bsq-signalbits/ffi/window-post.c',
     ],
     depends: [
