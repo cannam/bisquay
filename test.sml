@@ -11,6 +11,7 @@ fun all_tests () =
     prefixed "resampler" resampler_tests @
     bq_non_audioio_tests @
     prefixed "signalbits" signalbits_tests @
+    prefixed "complex" complex_tests @
     prefixed "matrix" matrix_tests @
     prefixed "samplestreams" samplestreams_tests @
     prefixed "randomaccess" randomaccess_tests @

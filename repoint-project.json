@@ -85,6 +85,9 @@
 	"bsq-resampler": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-complex": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"bsq-matrix": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
             "branch": "flat-everything"
