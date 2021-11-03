@@ -15,6 +15,7 @@ fun all_tests () =
     prefixed "matrix" matrix_tests @
     prefixed "samplestreams" samplestreams_tests @
     prefixed "randomaccess" randomaccess_tests @
+    prefixed "component" component_tests @
     prefixed "cqt" cqt_tests
 
 fun main () =
