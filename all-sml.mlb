@@ -169,18 +169,23 @@ bsq-samplestreams/framing-fn.sml
 bsq-samplestreams/summarising-fn.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
-bsq-samplestreams/frequency-component.sig
-bsq-samplestreams/frequency-component-fn.sml
 
 (* Random access sample modules *)
 bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/summarising-fn.sml
-bsq-randomaccess/peak-tower.sig
-bsq-randomaccess/peak-tower.sml
-bsq-randomaccess/component-summary-tower.sml
+bsq-randomaccess/summary-tower.sig
+bsq-randomaccess/summary-tower.sml
 bsq-randomaccess/spectrogram.sig
 bsq-randomaccess/spectrogram-fn.sml
+
+(* Component and frequency-component streams and random-access *)
+bsq-component/component-types.sml
+bsq-component/component-selector.sml
+bsq-component/component-blockstream.sig
+bsq-component/component-blockstream-fn.sml
+bsq-component/frequency-component-fn.sml
+bsq-component/component-summary-tower.sml
 
 (* Constant-Q transform *)
 bsq-cqt/cqkernel.sml

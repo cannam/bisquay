@@ -99,6 +99,9 @@
 	"bsq-randomaccess": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
+	"bsq-component": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
 	"bsq-cqt": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
