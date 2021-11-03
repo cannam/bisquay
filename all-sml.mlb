@@ -31,6 +31,8 @@ sml-smlnj-containers/fifo-sig.sml
 sml-smlnj-containers/fifo.sml
 sml-smlnj-containers/array-sort-sig.sml
 sml-smlnj-containers/array-qsort.sml
+sml-smlnj-containers/mono-array-sort-sig.sml
+sml-smlnj-containers/array-qsort-fn.sml
 
 (* Timing logger for profiling *)
 sml-timing/timing.sig
@@ -69,6 +71,21 @@ bsq-bq/sml/wavfilewritestream.sml
 bsq-bq/sml/bqaudiostream.sml 
 bsq-bq/sml/bqaudioio.sml
 
+(* Complex numbers and containers *)
+bsq-complex/complex.sig
+bsq-complex/complex.sml
+bsq-complex/polar.sml
+bsq-complex/flat-vector.sig
+bsq-complex/flat-array.sig
+bsq-complex/flat-2-vector-fn.sml
+bsq-complex/flat-2-array-fn.sml
+bsq-complex/complex-vector.sig
+bsq-complex/complex-array.sig
+bsq-complex/complex-vector.sml
+bsq-complex/complex-array.sml
+bsq-complex/polar-vector.sml
+bsq-complex/polar-array.sml
+
 (* Matrices *)
 bsq-matrix/dense-tensor.sig
 bsq-matrix/dense-tensor-fn.sml
@@ -84,9 +101,6 @@ bsq-matrix/real-matrix.sml
 bsq-matrix/real32-vector.sml
 bsq-matrix/real32-tensor.sml
 bsq-matrix/real32-matrix.sml
-bsq-matrix/complex.sig
-bsq-matrix/complex.sml
-bsq-matrix/polar.sml
 bsq-matrix/complex-tensor.sml
 bsq-matrix/complex-matrix.sig
 bsq-matrix/complex-matrix.sml

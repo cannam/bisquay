@@ -67,7 +67,7 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqresample": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
 	},
 	"ext/bqthingfactory": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "breakfastquay"
@@ -82,6 +82,9 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-resampler": {
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	},
+	"bsq-complex": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-matrix": {

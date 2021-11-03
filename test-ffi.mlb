@@ -17,6 +17,7 @@ sml-stringinterpolate/test.sml
 sml-csv/test.sml
 sml-i18n/test.sml
 bsq-signalbits/test.sml
+bsq-complex/test.sml
 bsq-matrix/test-checks.sml
 bsq-matrix/test.sml
 bsq-resampler/test-kaiser.sml
