@@ -27,4 +27,10 @@ fun main () =
                (all_tests ()))
      then OS.Process.exit OS.Process.success
      else OS.Process.exit OS.Process.failure)
+    handle ex =>
+           (TextIO.output (TextIO.stdErr,
+                           "Exception caught at top level: " ^ exnMessage ex ^
+                           "\n");
+            OS.Process.exit OS.Process.failure)
+                                          
 
