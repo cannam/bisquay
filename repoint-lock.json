@@ -34,7 +34,7 @@
       "pin": "fe154fc33446"
     },
     "sml-ttl": {
-      "pin": "b2151637c816"
+      "pin": "c39c10d29da1"
     },
     "sml-svg": {
       "pin": "359d422b5ef3"
@@ -94,16 +94,16 @@
       "pin": "40cb14f70f38"
     },
     "bsq-randomaccess": {
-      "pin": "cfa72ab76072"
+      "pin": "923aefd74781"
     },
     "bsq-component": {
-      "pin": "051913e665b3"
+      "pin": "02c43c0de68d"
     },
     "bsq-cqt": {
       "pin": "b22e463418f3"
     },
     "bsq-waveform": {
-      "pin": "42ab5748e75c"
+      "pin": "42c4391250e9"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"

@@ -180,7 +180,7 @@ bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/summarising-fn.sml
 bsq-randomaccess/summary-tower.sig
-bsq-randomaccess/summary-tower.sml
+bsq-randomaccess/summary-tower-fn.sml
 bsq-randomaccess/spectrogram.sig
 bsq-randomaccess/spectrogram-fn.sml
 
