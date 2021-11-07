@@ -4,5 +4,12 @@ option(
   choices: [
     'mlton_release', 'mlton_profile', 'mlton_debug', 'mlton_noffi', 'polyml'
   ],
-  value: 'polyml'
+  value: 'polyml',
+  description: 'Compiler and build mode to use for SML code. The polyml and mlton_noffi builds are pure SML; the rest use C/C++ FFI code.'
+)
+option(
+  'ipp_path',
+  type: 'string',
+  value: '',
+  description: 'Path to Intel IPP libraries, if IPP is to be used. Leave empty otherwise. Only relevant to MLton builds using FFI.'
 )

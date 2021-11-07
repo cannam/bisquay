@@ -11,6 +11,9 @@ project(
 system = host_machine.system()
 architecture = host_machine.cpu_family()
 
+ipp_path = get_option('ipp_path')
+sml_buildtype = get_option('sml_buildtype')
+
 run_target(
   'doc',
   command: meson.current_source_dir() / 'scripts/doc.sh'
@@ -53,6 +56,19 @@ if system == 'windows'
     '-L../ext/turbotdeps/win32-msvc/lib',
     '-lportaudio', '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-logg', '-lmfplat', '-lmfreadwrite', '-lmfuuid', '-lpropsys', '-lws2_32', '-lgdi32', '-lcomdlg32', '-loleaut32', '-limm32', '-lwinmm', '-lwinspool', '-lole32', '-luser32', '-ladvapi32', '-lmsimg32', '-lshell32', '-lnetapi32', '-lwtsapi32', '-lkernel32', '-lversion', '-ldwmapi', '-luserenv', '-luuid',
   ]
+
+  if ipp_path != ''
+    platform_feature_defines += [
+      '-DHAVE_IPP',
+    ]
+    platform_feature_includedirs += [
+      ipp_path / 'include'
+    ]
+    platform_feature_libs += [
+      '-L' + (ipp_path / 'lib/intel64'),
+      '-lippsmt', '-lippvmmt', '-lippcoremt',
+    ]
+  endif
   
 elif system == 'darwin'
 
@@ -116,6 +132,10 @@ elif system == 'darwin'
     '-lc++'
   ]
 
+  if ipp_path != ''
+    error('IPP is not used on this platform, ipp_path should be left empty')
+  endif
+
 elif system == 'linux'
 
   platform_feature_defines = [
@@ -140,6 +160,20 @@ elif system == 'linux'
   platform_general_libs = [
     '-lpthread', '-lstdc++',
   ]
+
+  if ipp_path != ''
+    platform_feature_defines += [
+      '-DHAVE_IPP',
+    ]
+    platform_feature_includedirs += [
+      ipp_path / 'include'
+    ]
+    platform_feature_libs += [
+      '-L' + (ipp_path / 'lib/intel64'),
+      '-Wl,-Bstatic', '-lipps', '-lippvm', '-lippcore', '-Wl,-Bdynamic',
+    ]
+  endif # end ipp_path
+
 endif
 
 
@@ -191,7 +225,7 @@ perftest_output = [
   bsq_perftest_name
 ]
 
-if get_option('sml_buildtype') == 'polyml'
+if sml_buildtype == 'polyml'
 
   bsq_test_target = custom_target(
     'bsq_test',
@@ -221,7 +255,7 @@ if get_option('sml_buildtype') == 'polyml'
     build_by_default: true,
   )
 
-elif get_option('sml_buildtype') == 'mlton_noffi'
+elif sml_buildtype == 'mlton_noffi'
   
   bsq_test_target = custom_target(
     'bsq_test',
@@ -372,7 +406,7 @@ else
   endforeach
 
   mlton_profile_opts = []
-  if get_option('sml_buildtype') == 'mlton_profile'
+  if sml_buildtype == 'mlton_profile'
     mlton_profile_opts = [
       '-profile', 'time',
       '-profile-stack', 'true',
@@ -382,7 +416,7 @@ else
   endif
 
   mlton_debug_opts = []
-  if get_option('sml_buildtype') == 'mlton_debug'
+  if sml_buildtype == 'mlton_debug'
     mlton_debug_opts = [
       '-const', 'Exn.keepHistory true',
       '-cc-opt', '-g',

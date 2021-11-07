@@ -17,11 +17,22 @@ fi
 # long to build (even longer than mlton_release)
 buildtypes="polyml mlton_noffi mlton_release"
 
+ippdir=/opt/intel/ipp
+if [ -d "$ippdir" ]; then
+    buildtypes="$buildtypes mlton_ipp"
+fi
+
 for b in $buildtypes; do
+    sml_buildtype="$b"
+    extra_args=""
+    if [ "$b" = "mlton_ipp" ]; then
+        sml_buildtype="mlton_release"
+        extra_args="-Dipp_path=$ippdir"
+    fi
     if [ -f "tmp_perfbuild_$b/build.ninja" ]; then
-        meson "tmp_perfbuild_$b" -D"sml_buildtype=$b" --reconfigure
+        meson "tmp_perfbuild_$b" -D"sml_buildtype=$sml_buildtype" $extra_args --reconfigure
     else 
-        meson "tmp_perfbuild_$b" -D"sml_buildtype=$b"
+        meson "tmp_perfbuild_$b" -D"sml_buildtype=$sml_buildtype" $extra_args
     fi
     time ninja -C "tmp_perfbuild_$b" bsq_perftest
     echo
