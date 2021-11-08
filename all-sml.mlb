@@ -167,6 +167,7 @@ bsq-samplestreams/audiofile.sml
 bsq-samplestreams/duration-adapting-fn.sml
 bsq-samplestreams/framing-fn.sml
 bsq-samplestreams/summarising-fn.sml
+bsq-samplestreams/frequency-domain-types.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
 
@@ -195,6 +196,7 @@ bsq-cqt/cqspectrogram-fn.sml
 bsq-cqt/chromagram-fn.sml
 
 (* Vamp plugin API *)
+bsq-vamp/vamp-types.sml
 bsq-vamp/vamp.sig
 
 (* Dynamic time-warping *)
@@ -224,6 +226,7 @@ sml-svg/svg.sml
 sml-svg/shorten.sml
 
 (* Image file loader *)
+bsq-image/image.sig
 bsq-image/image.sml
 bsq-image/image-reader.sig
 bsq-image/image-writer.sig
