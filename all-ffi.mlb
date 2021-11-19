@@ -160,6 +160,7 @@ sml-trie/persistent-queue.sig
 sml-trie/persistent-queue.sml
 
 (* Sample and block stream modules *)
+bsq-samplestreams/samplestream-types.sml
 bsq-samplestreams/samplestream.sig
 bsq-samplestreams/samplestream-fn.sml
 bsq-samplestreams/synthetic.sml
