@@ -99,7 +99,7 @@
 	},
 	"bsq-randomaccess": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
-            "branch": "seekable"
+            "branch": "read-budget"
 	},
 	"bsq-component": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
