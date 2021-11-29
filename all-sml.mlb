@@ -173,6 +173,7 @@ bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
 
 (* Random access sample modules *)
+bsq-randomaccess/randomaccess-types.sml
 bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/summarising-fn.sml

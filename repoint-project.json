@@ -110,7 +110,8 @@
             "branch": "seekable"
 	},
 	"bsq-waveform": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "read-budget"
 	},
 	"bsq-dtw": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
