@@ -151,6 +151,8 @@ sml-trie/string-tries.sml
 sml-trie/string-hash-map.sml
 sml-trie/persistent-array.sig
 sml-trie/persistent-array.sml
+sml-trie/persistent-array-slice.sig
+sml-trie/persistent-array-slice.sml
 sml-trie/persistent-queue.sig
 sml-trie/persistent-queue.sml
 

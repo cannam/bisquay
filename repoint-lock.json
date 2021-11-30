@@ -28,7 +28,7 @@
       "pin": "1f54f815c146"
     },
     "sml-trie": {
-      "pin": "e6af5b3bc732"
+      "pin": "e38f893c9ca8"
     },
     "sml-utf8": {
       "pin": "fe154fc33446"
@@ -94,7 +94,7 @@
       "pin": "e7c42dcde939"
     },
     "bsq-randomaccess": {
-      "pin": "6a580ed9604e"
+      "pin": "1fd278b7fe6f"
     },
     "bsq-component": {
       "pin": "fae3fa87601e"
