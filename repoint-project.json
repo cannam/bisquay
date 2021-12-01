@@ -126,7 +126,8 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-perftest": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "read-budget"
 	},
 	"bsq-plot": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"

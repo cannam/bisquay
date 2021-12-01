@@ -1,7 +1,7 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "b13071b1dbbf"
+      "pin": "c34ab9a28379"
     },
     "ext/mlton-cutdown": {
       "pin": "80b0ac2514bc"
@@ -28,7 +28,7 @@
       "pin": "1f54f815c146"
     },
     "sml-trie": {
-      "pin": "07224b7b6012"
+      "pin": "df6ba7eaf295"
     },
     "sml-utf8": {
       "pin": "fe154fc33446"
@@ -94,7 +94,7 @@
       "pin": "e7c42dcde939"
     },
     "bsq-randomaccess": {
-      "pin": "5545668b7c04"
+      "pin": "f811dc196c52"
     },
     "bsq-component": {
       "pin": "fae3fa87601e"
@@ -103,7 +103,7 @@
       "pin": "5b7cced760a6"
     },
     "bsq-waveform": {
-      "pin": "8f613edc3f7a"
+      "pin": "d7f490ea9a77"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
@@ -118,7 +118,7 @@
       "pin": "152b25e2b9d7"
     },
     "bsq-perftest": {
-      "pin": "418b27429e90"
+      "pin": "28b258421c14"
     },
     "bsq-plot": {
       "pin": "fc92588867ea"
