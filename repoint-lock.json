@@ -91,10 +91,10 @@
       "pin": "c90702597f9f"
     },
     "bsq-samplestreams": {
-      "pin": "e7c42dcde939"
+      "pin": "be17e59ead42"
     },
     "bsq-randomaccess": {
-      "pin": "e115d60094a2"
+      "pin": "d32f9c2bb368"
     },
     "bsq-component": {
       "pin": "fae3fa87601e"
