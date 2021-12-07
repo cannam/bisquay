@@ -28,7 +28,7 @@
       "pin": "1f54f815c146"
     },
     "sml-trie": {
-      "pin": "df6ba7eaf295"
+      "pin": "a50862ffc9f0"
     },
     "sml-utf8": {
       "pin": "fe154fc33446"
@@ -94,7 +94,7 @@
       "pin": "be17e59ead42"
     },
     "bsq-randomaccess": {
-      "pin": "c5eede42046e"
+      "pin": "e7b6ba6436a5"
     },
     "bsq-component": {
       "pin": "fae3fa87601e"
@@ -118,7 +118,7 @@
       "pin": "152b25e2b9d7"
     },
     "bsq-perftest": {
-      "pin": "28b258421c14"
+      "pin": "e7c7686f240e"
     },
     "bsq-plot": {
       "pin": "fc92588867ea"

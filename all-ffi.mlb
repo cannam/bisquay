@@ -180,6 +180,10 @@ bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
 
 (* Random access sample modules *)
+bsq-randomaccess/sparse-persistent-array.sig
+bsq-randomaccess/sparse-persistent-array.sml
+bsq-randomaccess/sparse-persistent-array-slice.sig
+bsq-randomaccess/sparse-persistent-array-slice.sml
 bsq-randomaccess/randomaccess-types.sml
 bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
