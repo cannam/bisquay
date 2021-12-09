@@ -28,7 +28,7 @@
       "pin": "1f54f815c146"
     },
     "sml-trie": {
-      "pin": "a50862ffc9f0"
+      "pin": "89310846066c"
     },
     "sml-utf8": {
       "pin": "fe154fc33446"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "fd1e1f82a0f2"
+      "pin": "1e5bfc2dbc0b"
     },
     "bsq-json": {
       "pin": "95434a9b9796"
@@ -91,19 +91,19 @@
       "pin": "c90702597f9f"
     },
     "bsq-samplestreams": {
-      "pin": "be17e59ead42"
+      "pin": "dd491227b33e"
     },
     "bsq-randomaccess": {
-      "pin": "e7b6ba6436a5"
+      "pin": "d0fdde24d153"
     },
     "bsq-component": {
-      "pin": "fae3fa87601e"
+      "pin": "a7c209171f5e"
     },
     "bsq-cqt": {
       "pin": "5b7cced760a6"
     },
     "bsq-waveform": {
-      "pin": "ae2fbea0ce39"
+      "pin": "43160bfb657b"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
@@ -118,7 +118,7 @@
       "pin": "152b25e2b9d7"
     },
     "bsq-perftest": {
-      "pin": "e7c7686f240e"
+      "pin": "a44422286b7c"
     },
     "bsq-plot": {
       "pin": "fc92588867ea"
