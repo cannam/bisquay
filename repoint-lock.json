@@ -19,7 +19,7 @@
       "pin": "3da179a6ce0c"
     },
     "sml-log": {
-      "pin": "ece686d599d4"
+      "pin": "8b9297d69100"
     },
     "sml-timing": {
       "pin": "23e6b95d7172"
@@ -124,7 +124,7 @@
       "pin": "fc92588867ea"
     },
     "bsq-rrloop": {
-      "pin": "dcb39ed82ede"
+      "pin": "1dc696378cdf"
     },
     "ext/smldoc": {
       "pin": "166aca4550cd0598bb0de255586c32206e61a3ee"
