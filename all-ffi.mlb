@@ -285,6 +285,7 @@ bsq-plot/plot.sig
 bsq-plot/plot.sml
 
 (* RDF/Turtle parser, serialiser, in-memory datastore *)
+sml-ttl/src/rdf-base/log.sml
 sml-ttl/src/rdf-base/codepointset.sml
 sml-ttl/src/rdf-base/string-compare.sml
 sml-ttl/src/rdf-base/iri.sig
