@@ -1,7 +1,7 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "b13071b1dbbf"
+      "pin": "c34ab9a28379"
     },
     "ext/mlton-cutdown": {
       "pin": "80b0ac2514bc"
@@ -19,22 +19,22 @@
       "pin": "3da179a6ce0c"
     },
     "sml-log": {
-      "pin": "0207c63837fe"
+      "pin": "8b9297d69100"
     },
     "sml-timing": {
-      "pin": "bc2171d06006"
+      "pin": "23e6b95d7172"
     },
     "sml-i18n": {
       "pin": "1f54f815c146"
     },
     "sml-trie": {
-      "pin": "9f9d287bbb52"
+      "pin": "89310846066c"
     },
     "sml-utf8": {
       "pin": "fe154fc33446"
     },
     "sml-ttl": {
-      "pin": "c39c10d29da1"
+      "pin": "606236f5d8fc"
     },
     "sml-svg": {
       "pin": "359d422b5ef3"
@@ -70,16 +70,16 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "fd1e1f82a0f2"
+      "pin": "5688fed8c64e"
     },
     "bsq-json": {
       "pin": "95434a9b9796"
     },
     "bsq-test": {
-      "pin": "8bccc8e9061f"
+      "pin": "da8248ad2657"
     },
     "bsq-resampler": {
-      "pin": "da192282a069"
+      "pin": "a59417e6c462"
     },
     "bsq-complex": {
       "pin": "ca7b57af2123"
@@ -88,22 +88,22 @@
       "pin": "704c94a59b82"
     },
     "bsq-bq": {
-      "pin": "c90702597f9f"
+      "pin": "e3a308a3275e"
     },
     "bsq-samplestreams": {
-      "pin": "7b2b1d56ebb5"
+      "pin": "4b031391e9f3"
     },
     "bsq-randomaccess": {
-      "pin": "e7b4a4fb9c1d"
+      "pin": "dd7815797688"
     },
     "bsq-component": {
-      "pin": "d1d713797d91"
+      "pin": "50bcd585b39d"
     },
     "bsq-cqt": {
-      "pin": "1b80262e24b9"
+      "pin": "75a00ea3e24c"
     },
     "bsq-waveform": {
-      "pin": "ba22709b713f"
+      "pin": "631a4696990e"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
@@ -118,13 +118,13 @@
       "pin": "152b25e2b9d7"
     },
     "bsq-perftest": {
-      "pin": "418b27429e90"
+      "pin": "b0bf5da25ea0"
     },
     "bsq-plot": {
       "pin": "fc92588867ea"
     },
     "bsq-rrloop": {
-      "pin": "33a9d6109c7b"
+      "pin": "1dc696378cdf"
     },
     "ext/smldoc": {
       "pin": "166aca4550cd0598bb0de255586c32206e61a3ee"

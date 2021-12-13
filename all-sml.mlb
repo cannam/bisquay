@@ -10,6 +10,7 @@ sml-stringinterpolate/string-buffer.sml
 (* Logging *)
 sml-log/log.sig
 sml-log/log.sml
+sml-log/category-log-fn.sml
 
 (* Containers and sorting, needed for mapped JSON, tries, timing, tests, etc *)
 sml-smlnj-containers/lib-base-sig.sml
@@ -151,10 +152,13 @@ sml-trie/string-tries.sml
 sml-trie/string-hash-map.sml
 sml-trie/persistent-array.sig
 sml-trie/persistent-array.sml
+sml-trie/persistent-array-slice.sig
+sml-trie/persistent-array-slice.sml
 sml-trie/persistent-queue.sig
 sml-trie/persistent-queue.sml
 
 (* Sample and block stream modules *)
+bsq-samplestreams/samplestream-types.sml
 bsq-samplestreams/samplestream.sig
 bsq-samplestreams/samplestream-fn.sml
 bsq-samplestreams/synthetic.sml
@@ -172,6 +176,11 @@ bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
 
 (* Random access sample modules *)
+bsq-randomaccess/sparse-persistent-array.sig
+bsq-randomaccess/sparse-persistent-array.sml
+bsq-randomaccess/sparse-persistent-array-slice.sig
+bsq-randomaccess/sparse-persistent-array-slice.sml
+bsq-randomaccess/randomaccess-types.sml
 bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/summarising-fn.sml
@@ -252,6 +261,7 @@ sml-i18n/i18n.sig
 sml-i18n/i18n.sml
 
 (* Waveform renderer *)
+bsq-waveform/waveform-types.sml
 bsq-waveform/waveform-renderer.sig
 bsq-waveform/summarising-renderer.sml
 bsq-waveform/interpolating-renderer.sml
@@ -270,6 +280,7 @@ bsq-plot/plot.sig
 bsq-plot/plot.sml
 
 (* RDF/Turtle parser, serialiser, in-memory datastore *)
+sml-ttl/src/rdf-base/log.sml
 sml-ttl/src/rdf-base/codepointset.sml
 sml-ttl/src/rdf-base/string-compare.sml
 sml-ttl/src/rdf-base/iri.sig
