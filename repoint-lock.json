@@ -19,10 +19,10 @@
       "pin": "3da179a6ce0c"
     },
     "sml-log": {
-      "pin": "0207c63837fe"
+      "pin": "ece686d599d4"
     },
     "sml-timing": {
-      "pin": "bc2171d06006"
+      "pin": "23e6b95d7172"
     },
     "sml-i18n": {
       "pin": "1f54f815c146"
@@ -79,7 +79,7 @@
       "pin": "8bccc8e9061f"
     },
     "bsq-resampler": {
-      "pin": "b21d5b384783"
+      "pin": "aef00eae1c86"
     },
     "bsq-complex": {
       "pin": "ca7b57af2123"
@@ -91,19 +91,19 @@
       "pin": "c90702597f9f"
     },
     "bsq-samplestreams": {
-      "pin": "ead972f96908"
+      "pin": "024cad868bc9"
     },
     "bsq-randomaccess": {
-      "pin": "a3dac7a0bed0"
+      "pin": "a267d4345534"
     },
     "bsq-component": {
-      "pin": "5fd54dd7c581"
+      "pin": "3a9ae969fc45"
     },
     "bsq-cqt": {
-      "pin": "a0dbf46729f6"
+      "pin": "cc3f46f16772"
     },
     "bsq-waveform": {
-      "pin": "2fe7bcbdff08"
+      "pin": "dee5e4ab6da4"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
@@ -124,7 +124,7 @@
       "pin": "fc92588867ea"
     },
     "bsq-rrloop": {
-      "pin": "33a9d6109c7b"
+      "pin": "27544918e3cb"
     },
     "ext/smldoc": {
       "pin": "166aca4550cd0598bb0de255586c32206e61a3ee"
