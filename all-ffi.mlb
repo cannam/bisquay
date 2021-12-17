@@ -85,6 +85,8 @@ bsq-complex/flat-vector.sig
 bsq-complex/flat-array.sig
 bsq-complex/flat-2-vector-fn.sml
 bsq-complex/flat-2-array-fn.sml
+bsq-complex/flat-3-vector-fn.sml
+bsq-complex/flat-3-array-fn.sml
 bsq-complex/complex-vector.sig
 bsq-complex/complex-array.sig
 bsq-complex/complex-vector.sml
