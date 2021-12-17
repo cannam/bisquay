@@ -100,7 +100,8 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-component": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "time-offset-again"
 	},
 	"bsq-cqt": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
@@ -121,7 +122,8 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-perftest": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
+            "branch": "time-offset-again"
 	},
 	"bsq-plot": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
