@@ -198,6 +198,7 @@ bsq-randomaccess/spectrogram-fn.sml
 
 (* Component and frequency-component streams and random-access *)
 bsq-component/component-types.sml
+bsq-component/ffi/component-sort.sml
 bsq-component/component-selector.sig
 bsq-component/component-selector.sml
 bsq-component/component-blockstream.sig
