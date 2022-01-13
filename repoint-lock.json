@@ -82,7 +82,7 @@
       "pin": "a59417e6c462"
     },
     "bsq-complex": {
-      "pin": "4c4a15783f6e"
+      "pin": "215cbece4628"
     },
     "bsq-matrix": {
       "pin": "704c94a59b82"
@@ -91,10 +91,10 @@
       "pin": "e3a308a3275e"
     },
     "bsq-samplestreams": {
-      "pin": "78c9593b6051"
+      "pin": "290aa13a2b4d"
     },
     "bsq-randomaccess": {
-      "pin": "51394894f36c"
+      "pin": "937a7d862409"
     },
     "bsq-component": {
       "pin": "1c6ec2f233b3"
