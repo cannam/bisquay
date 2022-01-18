@@ -16,7 +16,8 @@ fun all_tests () =
     prefixed "samplestreams" samplestreams_tests @
     prefixed "randomaccess" randomaccess_tests @
     prefixed "component" component_tests @
-    prefixed "cqt" cqt_tests
+    prefixed "cqt" cqt_tests @
+    prefixed "hmm" hmm_tests
 
 fun main () =
     (Log.resetElapsedTime ();

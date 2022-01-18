@@ -27,6 +27,7 @@ bsq-samplestreams/test.sml
 bsq-randomaccess/test.sml
 bsq-component/test.sml
 bsq-cqt/test.sml
+bsq-hmm/test.sml
 sml-ttl/test/test-dir.sml
 sml-ttl/test/test-prefix.sml
 sml-ttl/test/test-property.sml
