@@ -105,6 +105,9 @@
     "bsq-waveform": {
       "pin": "631a4696990e"
     },
+    "bsq-hmm": {
+      "pin": "e1a6c59d7eb0"
+    },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
     },
@@ -128,9 +131,6 @@
     },
     "ext/smldoc": {
       "pin": "166aca4550cd0598bb0de255586c32206e61a3ee"
-    },
-    "bsq-hmm": {
-      "pin": "5940aa17cd79"
     }
   }
 }
