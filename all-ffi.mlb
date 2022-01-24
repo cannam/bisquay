@@ -133,6 +133,7 @@ bsq-signalbits/window-post-ffi.sml
 bsq-signalbits/autocorrelation.sml
 bsq-signalbits/mean-filter.sml
 bsq-signalbits/median-filter.sml
+bsq-signalbits/dct.sml
 bsq-signalbits/progress.sml
 
 (* Trie containers *)
