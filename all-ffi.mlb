@@ -284,6 +284,10 @@ bsq-waveform/summarising-renderer.sml
 bsq-waveform/interpolating-renderer.sml
 bsq-waveform/waveform-renderer.sml
 
+(* Pitch tracking *)
+bsq-pitchtrack/pitch-state-model.sml
+bsq-pitchtrack/cepstral-pitchtrack.sml
+
 (* UTF-8 encoder and decoder *)
 sml-utf8/encoder.sml
 sml-utf8/decoder.sml
