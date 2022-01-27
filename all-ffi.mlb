@@ -116,12 +116,13 @@ bsq-signalbits/realtime.sig
 bsq-signalbits/realtime.sml
 bsq-signalbits/pitch.sml
 bsq-signalbits/mathmisc.sml
+bsq-signalbits/vecmisc.sml
+bsq-signalbits/seqmisc.sml
+bsq-signalbits/listmisc.sml
 bsq-signalbits/normalise.sml
 bsq-signalbits/summarise.sml
 bsq-signalbits/distance.sig
 bsq-signalbits/distance.sml
-bsq-signalbits/seqmisc.sml
-bsq-signalbits/listmisc.sml
 bsq-signalbits/greek.sml
 bsq-signalbits/window.sig
 bsq-signalbits/window.sml
