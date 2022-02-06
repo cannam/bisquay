@@ -218,9 +218,9 @@ bsq-vamp/vamp.sig
 bsq-hmm/hmm.sig
 bsq-hmm/hmm.sml
 bsq-hmm/sparse-state-model.sig
-bsq-hmm/sparse-state-model.sml
+bsq-hmm/sparse-state-model-fn.sml
 bsq-hmm/sparse-hmm.sig
-bsq-hmm/sparse-hmm.sml
+bsq-hmm/sparse-hmm-fn.sml
 
 (* Dynamic time-warping *)
 bsq-dtw/dtw.sig
@@ -282,7 +282,8 @@ bsq-waveform/interpolating-renderer.sml
 bsq-waveform/waveform-renderer.sml
 
 (* Pitch tracking *)
-bsq-pitchtrack/pitch-state-model.sml
+bsq-pitchtrack/continuous-pitch-state-model.sml
+bsq-pitchtrack/discrete-pitch-state-model.sml
 bsq-pitchtrack/cepstral-pitchtrack.sml
 
 (* UTF-8 encoder and decoder *)

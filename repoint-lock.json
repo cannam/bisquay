@@ -1,10 +1,10 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "c34ab9a28379"
+      "pin": "f26267d772c4"
     },
     "ext/mlton-cutdown": {
-      "pin": "80b0ac2514bc"
+      "pin": "f406c4fed0ac"
     },
     "sml-csv": {
       "pin": "b4f14f58ca04"
@@ -106,10 +106,10 @@
       "pin": "631a4696990e"
     },
     "bsq-hmm": {
-      "pin": "a1cb0e1beb7a"
+      "pin": "f25a5bf93bed"
     },
     "bsq-pitchtrack": {
-      "pin": "fa9dd1d334cf"
+      "pin": "a6a42e9fba3b"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
