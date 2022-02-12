@@ -1,10 +1,10 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "f26267d772c4"
+      "pin": "1a4fd3f3e753"
     },
     "ext/mlton-cutdown": {
-      "pin": "f406c4fed0ac"
+      "pin": "39fa8518c646"
     },
     "sml-csv": {
       "pin": "b4f14f58ca04"
@@ -19,7 +19,7 @@
       "pin": "3da179a6ce0c"
     },
     "sml-log": {
-      "pin": "8b9297d69100"
+      "pin": "9a988f0c1af9"
     },
     "sml-timing": {
       "pin": "23e6b95d7172"
@@ -94,7 +94,7 @@
       "pin": "1dc1dd1a79fa"
     },
     "bsq-randomaccess": {
-      "pin": "2b85521acecd"
+      "pin": "125a7902aaa3"
     },
     "bsq-component": {
       "pin": "3e3060fdcdc9"
@@ -109,7 +109,7 @@
       "pin": "f25a5bf93bed"
     },
     "bsq-pitchtrack": {
-      "pin": "a6a42e9fba3b"
+      "pin": "00efccda3aa2"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
