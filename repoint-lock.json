@@ -10,13 +10,13 @@
       "pin": "b4f14f58ca04"
     },
     "sml-stringinterpolate": {
-      "pin": "82b6a5a4fc8d"
+      "pin": "43f1f886a92f"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
     },
     "sml-smlnj-containers": {
-      "pin": "3da179a6ce0c"
+      "pin": "7746b5e77368"
     },
     "sml-log": {
       "pin": "9a988f0c1af9"
@@ -28,7 +28,7 @@
       "pin": "1f54f815c146"
     },
     "sml-trie": {
-      "pin": "89310846066c"
+      "pin": "0299b00a7d3a"
     },
     "sml-utf8": {
       "pin": "fe154fc33446"
@@ -106,10 +106,10 @@
       "pin": "631a4696990e"
     },
     "bsq-hmm": {
-      "pin": "f25a5bf93bed"
+      "pin": "74150b779de9"
     },
     "bsq-pitchtrack": {
-      "pin": "00efccda3aa2"
+      "pin": "8a3fcf88cfb0"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
