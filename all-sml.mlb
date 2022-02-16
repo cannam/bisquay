@@ -23,6 +23,9 @@ sml-smlnj-containers/ord-map-sig.sml
 sml-smlnj-containers/redblack-set-fn.sml
 sml-smlnj-containers/redblack-map-fn.sml
 sml-smlnj-containers/int-redblack-map.sml
+sml-smlnj-containers/splaytree-sig.sml
+sml-smlnj-containers/splaytree.sml
+sml-smlnj-containers/splay-map-fn.sml
 sml-smlnj-containers/hash-key-sig.sml
 sml-smlnj-containers/hash-table-rep.sml
 sml-smlnj-containers/mono-hash-table-sig.sml

@@ -16,7 +16,7 @@
       "pin": "be0fe9bb81d3"
     },
     "sml-smlnj-containers": {
-      "pin": "7746b5e77368"
+      "pin": "4af7b3dd9d46"
     },
     "sml-log": {
       "pin": "9a988f0c1af9"
@@ -106,10 +106,10 @@
       "pin": "631a4696990e"
     },
     "bsq-hmm": {
-      "pin": "74150b779de9"
+      "pin": "d62116577e70"
     },
     "bsq-pitchtrack": {
-      "pin": "8a3fcf88cfb0"
+      "pin": "ca178260434c"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
