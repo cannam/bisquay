@@ -1,7 +1,7 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "1a4fd3f3e753"
+      "pin": "de0a01e79cff"
     },
     "ext/mlton-cutdown": {
       "pin": "39fa8518c646"
