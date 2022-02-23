@@ -277,6 +277,10 @@ sml-i18n/ts-loader.sml
 sml-i18n/i18n.sig
 sml-i18n/i18n.sml
 
+(* Simplistic plotting *)
+bsq-plot/plot.sig
+bsq-plot/plot.sml
+
 (* Waveform renderer *)
 bsq-waveform/waveform-types.sml
 bsq-waveform/waveform-renderer.sig
@@ -297,10 +301,6 @@ sml-utf8/simple-wide-string.sig
 sml-utf8/simple-wide-string.sml
 sml-utf8/codepoint-io.sig
 sml-utf8/codepoint-io.sml
-
-(* Simplistic plotting *)
-bsq-plot/plot.sig
-bsq-plot/plot.sml
 
 (* RDF/Turtle parser, serialiser, in-memory datastore *)
 sml-ttl/src/rdf-base/log.sml
