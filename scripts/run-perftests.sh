@@ -17,30 +17,57 @@ fi
 # long to build (even longer than mlton_release)
 buildtypes="polyml mlton_noffi mlton_release"
 
+arches="native"
+if [ -d /Applications ]; then
+    arches="arm64 amd64"
+fi
+
 ippdir=/opt/intel/ipp
 if [ -d "$ippdir" ]; then
     buildtypes="$buildtypes mlton_ipp"
 fi
 
 for b in $buildtypes; do
-    sml_buildtype="$b"
-    extra_args=""
-    if [ "$b" = "mlton_ipp" ]; then
-        sml_buildtype="mlton_release"
-        extra_args="-Dipp_path=$ippdir"
+    arches_here="$arches"
+    if [ "$b" = "polyml" ]; then
+	arches_here="native"
     fi
-    if [ -f "tmp_perfbuild_$b/build.ninja" ]; then
-        meson "tmp_perfbuild_$b" -D"sml_buildtype=$sml_buildtype" $extra_args --reconfigure
-    else 
-        meson "tmp_perfbuild_$b" -D"sml_buildtype=$sml_buildtype" $extra_args
-    fi
-    time ninja -C "tmp_perfbuild_$b" bsq_perftest
-    echo
-    echo "Built $b"
-    echo
+    for a in $arches_here; do
+	dir="tmp_perfbuild_${b}_$a"
+	sml_buildtype="$b"
+	extra_args=""
+	if [ "$a" = "native" ]; then
+	    if [ "$b" = "mlton_ipp" ]; then
+		sml_buildtype="mlton_release"
+		extra_args="-Dipp_path=$ippdir"
+	    fi
+	else
+	    extra_args="--cross-file cross/cross_$a.txt"
+	fi
+	if [ -f "$dir/build.ninja" ]; then
+            meson "$dir" -D"sml_buildtype=$sml_buildtype" $extra_args --reconfigure --wipe
+	else 
+            meson "$dir" -D"sml_buildtype=$sml_buildtype" $extra_args
+	fi
+	echo "Configured $b for $a arch"
+    done
 done
 
-tests=$(tmp_perfbuild_polyml/bsq_perftest |
+for b in $buildtypes; do
+    arches_here="$arches"
+    if [ "$b" = "polyml" ]; then
+	arches_here="native"
+    fi
+    for a in $arches_here; do
+	dir="tmp_perfbuild_${b}_$a"
+	time ninja -C "$dir" bsq_perftest
+	echo
+	echo "Built $b for $a arch"
+	echo
+    done
+done
+
+tests=$(tmp_perfbuild_polyml_native/bsq_perftest |
             grep 'one of' |
             sed 's/^.*one of: //' |
             sed 's/,//g')
@@ -64,48 +91,57 @@ for b in $buildtypes; do
 done
 echo -e "mem/polyml\tmem/release"
 
-for test in $tests; do
-    mem_polyml=
-    mem_release=
-    echo -ne "   $test\t\t"
-    for b in $buildtypes; do
-        args=""
-        case "$b" in
-            polyml) args="--minheap 200M";;
-            *) ;;
-        esac
-        mem="(n/a)"
-	if [ -d /Applications ]; then
-            elapsed=$(/usr/bin/time "tmp_perfbuild_$b/bsq_perftest" \
-                                    $args "$test" "$infile" 2>&1 >/dev/null |
-			  grep 'real' |
-			  awk '{ print $1; }')
-	else 
-            measurements=$(/usr/bin/time -f '\n%E %M' \
-                                         "tmp_perfbuild_$b/bsq_perftest" \
-                                         $args "$test" "$infile" 2>&1 |
-			       tail -1)
-            elapsed=$(echo "$measurements" | awk '{ print $1; }')
-            mem=$(echo "$measurements" | awk '{ print $2; }')
-            mem=$(($mem / 1024))
-            mem="$mem"M
-	fi
-        case "$b" in
-            polyml) mem_polyml="$mem";;
-            mlton_release) mem_release="$mem";;
-            *) ;;
-        esac
-        echo -ne "$elapsed\t\t"
+for a in $arches; do
+    if [ "$a" != "native" ]; then
+	echo "   [$a]"
+    fi
+    for test in $tests; do
+	mem_polyml=
+	mem_release=
+	echo -ne "   $test\t\t"
+	for b in $buildtypes; do
+	    if [ "$b" = "polyml" ]; then
+		dir="tmp_perfbuild_${b}_native"
+	    else
+		dir="tmp_perfbuild_${b}_$a"
+	    fi
+            args=""
+            case "$b" in
+		polyml) args="--minheap 200M";;
+		*) ;;
+            esac
+            mem="(n/a)"
+	    if [ -d /Applications ]; then
+		elapsed=$(/usr/bin/time "$dir/bsq_perftest" \
+					$args "$test" "$infile" 2>&1 >/dev/null |
+			      grep 'real' |
+			      awk '{ print $1; }')
+	    else 
+		measurements=$(/usr/bin/time -f '\n%E %M' \
+                                             "$dir/bsq_perftest" \
+                                             $args "$test" "$infile" 2>&1 |
+				   tail -1)
+		elapsed=$(echo "$measurements" | awk '{ print $1; }')
+		mem=$(echo "$measurements" | awk '{ print $2; }')
+		mem=$(($mem / 1024))
+		mem="$mem"M
+	    fi
+            case "$b" in
+		polyml) mem_polyml="$mem";;
+		mlton_release) mem_release="$mem";;
+		*) ;;
+            esac
+            echo -ne "$elapsed\t\t"
+	done
+	echo -e "$mem_polyml\t\t$mem_release"
     done
-    echo -e "$mem_polyml\t\t$mem_release"
 done
-
 done
 
 echo
 
 for b in $buildtypes; do
-    rm -rf "tmp_perfbuild_$b"
+    rm -rf "tmp_perfbuild_${b}_*"
 done
 
 
