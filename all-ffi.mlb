@@ -280,6 +280,10 @@ sml-i18n/ts-loader.sml
 sml-i18n/i18n.sig
 sml-i18n/i18n.sml
 
+(* Simplistic plotting *)
+bsq-plot/plot.sig
+bsq-plot/plot.sml
+
 (* Waveform renderer *)
 bsq-waveform/waveform-types.sml
 bsq-waveform/waveform-renderer.sig
@@ -290,6 +294,7 @@ bsq-waveform/waveform-renderer.sml
 (* Pitch tracking *)
 bsq-pitchtrack/continuous-pitch-state-model.sml
 bsq-pitchtrack/discrete-pitch-state-model.sml
+bsq-pitchtrack/hybrid-sung-pitch-state-model.sml
 bsq-pitchtrack/cepstral-pitchtrack.sml
 
 (* UTF-8 encoder and decoder *)
