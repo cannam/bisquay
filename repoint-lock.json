@@ -7,7 +7,7 @@
       "pin": "39fa8518c646"
     },
     "sml-csv": {
-      "pin": "b4f14f58ca04"
+      "pin": "94d9b37e23f0"
     },
     "sml-stringinterpolate": {
       "pin": "b11ce3b45873"
@@ -109,7 +109,7 @@
       "pin": "2dd2140c6d85"
     },
     "bsq-pitchtrack": {
-      "pin": "c5db66b219cb"
+      "pin": "4cbda570dd0b"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
@@ -124,7 +124,7 @@
       "pin": "152b25e2b9d7"
     },
     "bsq-perftest": {
-      "pin": "660e3668c69e"
+      "pin": "f039c9b06b5c"
     },
     "bsq-plot": {
       "pin": "a85b4d470ed7"
