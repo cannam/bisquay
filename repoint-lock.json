@@ -7,7 +7,7 @@
       "pin": "39fa8518c646"
     },
     "sml-csv": {
-      "pin": "94d9b37e23f0"
+      "pin": "15e53b62bccc"
     },
     "sml-stringinterpolate": {
       "pin": "b11ce3b45873"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "6e9d87086e55"
+      "pin": "d49261410b80"
     },
     "bsq-json": {
       "pin": "95434a9b9796"
@@ -109,7 +109,7 @@
       "pin": "2dd2140c6d85"
     },
     "bsq-pitchtrack": {
-      "pin": "4cbda570dd0b"
+      "pin": "19aeb6bbcdca"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"

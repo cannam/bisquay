@@ -118,6 +118,7 @@ bsq-signalbits/types.sml
 bsq-signalbits/realtime.sig
 bsq-signalbits/realtime.sml
 bsq-signalbits/pitch.sml
+bsq-signalbits/level.sml
 bsq-signalbits/mathmisc.sml
 bsq-signalbits/vecmisc.sml
 bsq-signalbits/seqmisc.sml
