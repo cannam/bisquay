@@ -106,10 +106,10 @@
       "pin": "b81376c844c0"
     },
     "bsq-hmm": {
-      "pin": "2dd2140c6d85"
+      "pin": "30c21fe25c53"
     },
     "bsq-pitchtrack": {
-      "pin": "19aeb6bbcdca"
+      "pin": "b3fdcc94d628"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
@@ -124,7 +124,7 @@
       "pin": "152b25e2b9d7"
     },
     "bsq-perftest": {
-      "pin": "f039c9b06b5c"
+      "pin": "b38320597d4b"
     },
     "bsq-plot": {
       "pin": "a85b4d470ed7"
