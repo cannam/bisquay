@@ -10,15 +10,15 @@ ML</a>.</p>
   contains a <a href="https://github.com/cannam/repoint"
   target=_blank>Repoint</a> manifest that defines a multitude of
   modules to pull in as subdirectories, plus a build file to build the
-  tests for them and produce this combined documentation index. A real
-  user could perfectly well pull the individual subdirectories into
-  their project directly, without ever referring to Bisquay
-  itself. Indeed, several of these modules are third-party, or were
-  written for other purposes, and are brought in just because they are
-  useful.</p>
+  tests for them and produce this combined documentation index. In a
+  real project, one could perfectly well pull the individual
+  subdirectories into the project directly without ever referring to
+  Bisquay itself. Indeed, several of these modules are third-party, or
+  were written for other purposes and are included because they
+  have proved useful.</p>
 
 <p>Bisquay does, however, also contain quite a bit of code written
-  specifically for it: these modules live in repositories beginning
+  specifically for it. These modules live in repositories beginning
   with <code>bsq_</code>, and they comprise the majority of the
   signatures and structures listed here. They follow some development
   principles:
@@ -27,38 +27,49 @@ ML</a>.</p>
 <h4>Principles:</h4>
 
 <ul>
-  <li>Compilation is driven from <code>.mlb</code> files
+  <li>Compilation is driven from <code>.mlb</code> files. (We also
+    have a top-level Meson script that builds the whole thing
+    including FFI libraries, but it uses <code>.mlb</code> files to
+    decide what SML code to build.)
   <li>The default <code>.mlb</code> files provided should always work
     with at least <a href="https://polyml.org"
     target=_blank>Poly/ML</a> (using <code>polybuild</code>, found
     in <code><a href="https://hg.sr.ht/~cannam/sml-buildscripts"
     target=_blank>sml-buildscripts</a></code>)
-    and <a href="http://mlton.org/" target=_blank>MLton</a>
+    and <a href="http://mlton.org/" target=_blank>MLton</a>.
   <li>Some modules may come with alternative implementations that use
     the foreign-function interface (FFI) support in one compiler or
     another (primarily MLton) to integrate native platform libraries;
     these should usually offer the same API as the pure-SML versions,
-    and are not documented separately here
+    and are not documented separately here.
   <li>The idea is that you should be able to build code with essential
     functionality using the default <code>.mlb</code> file and
     Poly/ML, which compiles quite quickly; then rebuild the same code
     using MLton and the FFI-driven version of the <code>.mlb</code>
     file for faster performance. Bisquay's Meson build script allows
     you to choose which build you want
-    via configuration options, listed in <code>meson_options.txt</code>
+    via configuration options, listed in <code>meson_options.txt</code>.
   <li>Performance is crucial, and a release build using FFI should
     perform roughly as well as any native implementation. If that
     means much of the work ends up in FFI code, that's fine. But we
     must also always have a pure SML equivalent that works, even if
-    it's much slower. This is often a useful discipline anyway
+    it's much slower. This is often a useful discipline anyway.
 </ul>
-    
+
+<h4>Documentation:</h4>
+
+<p>The goal is to provide inline documentation for every non-trivial
+signature and functor. Structures that conform to a named signature
+are not usually documented &ndash; refer to the signature for
+details. Signatures, structures, and functors that have documentation
+are shown in bold in the overview list.</p>
+
 <h4>Naming and file conventions:</h4>
 
-<p>These are typical but not universal: in several places multiple
+<p>These are typical but not universal. In several places multiple
 signatures and structures appear in the same file, some code uses
-snake case for function and variable names, etc, but most new code
-follows these.</p>
+snake case for function and variable names, and so on. But most new
+code follows these.</p>
 
 <table cellpadding=5 cellspacing=0 border=0><tr>
     <td><b>Kind of thing</b></td>
@@ -83,22 +94,22 @@ follows these.</p>
   <tr>
     <td>Variable and function</td>
     <td><code>variableName</code></td>
-    <td>&ndash;</td>
+    <td></td>
   </tr>
   <tr>
     <td>Type name</td>
     <td><code>type_name</code></td>
-    <td>&ndash;</td>
+    <td></td>
   </tr>
   <tr>
     <td>Datatype constructor</td>
     <td><code>DATATYPE_CONSTRUCTOR</code></td>
-    <td>&ndash;</td>
+    <td></td>
   </tr>
   <tr>
     <td>Exception</td>
     <td><code>ExceptionName</code></td>
-    <td>&ndash;</td>
+    <td></td>
   </tr>
 </table>
 </ul>
