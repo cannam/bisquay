@@ -293,6 +293,7 @@ bsq-waveform/interpolating-renderer.sml
 bsq-waveform/waveform-renderer.sml
 
 (* Pitch tracking *)
+bsq-pitchtrack/pitch-peak-types.sml
 bsq-pitchtrack/continuous-pitch-state-model.sml
 bsq-pitchtrack/discrete-pitch-state-model.sml
 bsq-pitchtrack/hybrid-sung-pitch-state-model.sml
