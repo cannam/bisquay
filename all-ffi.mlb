@@ -187,6 +187,7 @@ bsq-samplestreams/summarising-fn.sml
 bsq-samplestreams/frequency-domain-types.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
+bsq-samplestreams/fixed-lag-stream-fn.sml
 
 (* Random access sample modules *)
 bsq-randomaccess/sparse-persistent-array.sig
@@ -294,6 +295,7 @@ bsq-waveform/waveform-renderer.sml
 
 (* Pitch tracking *)
 bsq-pitchtrack/pitch-peak-types.sml
+bsq-pitchtrack/pitch-state-model.sig
 bsq-pitchtrack/continuous-pitch-state-model.sml
 bsq-pitchtrack/discrete-pitch-state-model.sml
 bsq-pitchtrack/hybrid-sung-pitch-state-model.sml
