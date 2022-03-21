@@ -61,7 +61,7 @@
       "pin": "6f0edf21abe7"
     },
     "ext/bqaudioio": {
-      "pin": "80912d12e4c1"
+      "pin": "837b107363df"
     },
     "ext/bqresample": {
       "pin": "1645e7be5e9f"
@@ -79,7 +79,7 @@
       "pin": "8c0030dcec8e"
     },
     "bsq-resampler": {
-      "pin": "a59417e6c462"
+      "pin": "0cc05e8fcd38"
     },
     "bsq-complex": {
       "pin": "215cbece4628"
@@ -88,7 +88,7 @@
       "pin": "09de1e35eef4"
     },
     "bsq-bq": {
-      "pin": "e3a308a3275e"
+      "pin": "d7544c4c4565"
     },
     "bsq-samplestreams": {
       "pin": "f6911a0b8272"
@@ -130,7 +130,7 @@
       "pin": "a85b4d470ed7"
     },
     "bsq-rrloop": {
-      "pin": "e98b4e7cbb0b"
+      "pin": "d0c21da68bd8"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"
