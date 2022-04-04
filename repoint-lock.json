@@ -91,13 +91,13 @@
       "pin": "d7544c4c4565"
     },
     "bsq-samplestreams": {
-      "pin": "f6911a0b8272"
+      "pin": "44739cf4de48"
     },
     "bsq-randomaccess": {
       "pin": "00a5e6591ab1"
     },
     "bsq-component": {
-      "pin": "17b7ca3482ef"
+      "pin": "e7d8557e4e3d"
     },
     "bsq-cqt": {
       "pin": "3d204d0d5e26"
@@ -109,7 +109,7 @@
       "pin": "b2a75ec4ca0e"
     },
     "bsq-pitchtrack": {
-      "pin": "f3f9099d1c45"
+      "pin": "35d38bbb4e3e"
     },
     "bsq-dtw": {
       "pin": "e5fd91afb8b5"
