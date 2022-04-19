@@ -7,7 +7,7 @@
       "pin": "39fa8518c646"
     },
     "sml-csv": {
-      "pin": "15e53b62bccc"
+      "pin": "80c3302d2110"
     },
     "sml-stringinterpolate": {
       "pin": "b11ce3b45873"
@@ -22,7 +22,7 @@
       "pin": "9a988f0c1af9"
     },
     "sml-timing": {
-      "pin": "23e6b95d7172"
+      "pin": "aa237b2c7827"
     },
     "sml-i18n": {
       "pin": "1f54f815c146"
@@ -37,7 +37,7 @@
       "pin": "606236f5d8fc"
     },
     "sml-svg": {
-      "pin": "6aebe32e3a9c"
+      "pin": "293cb0b225fc"
     },
     "sml-simplejson": {
       "pin": "7d75cf1278cf"
