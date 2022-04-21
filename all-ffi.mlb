@@ -188,6 +188,7 @@ bsq-samplestreams/frequency-domain-types.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
 bsq-samplestreams/fixed-lag-stream-fn.sml
+bsq-samplestreams/stream-map-fn.sml
 
 (* Random access sample modules *)
 bsq-randomaccess/sparse-persistent-array.sig
