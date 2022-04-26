@@ -121,6 +121,7 @@ bsq-signalbits/mathmisc.sml
 bsq-signalbits/vecmisc.sml
 bsq-signalbits/seqmisc.sml
 bsq-signalbits/listmisc.sml
+bsq-signalbits/peakpick.sml
 bsq-signalbits/normalise.sml
 bsq-signalbits/summarise.sml
 bsq-signalbits/distance.sig
