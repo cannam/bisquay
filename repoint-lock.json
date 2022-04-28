@@ -58,7 +58,7 @@
       "pin": "3560080ff66c"
     },
     "ext/bqaudiostream": {
-      "pin": "fae51b1b633d"
+      "pin": "e7a04eb72042"
     },
     "ext/bqaudioio": {
       "pin": "837b107363df"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "fec8e98d0811"
+      "pin": "16c47cf9e10e"
     },
     "bsq-json": {
       "pin": "95434a9b9796"
@@ -85,16 +85,16 @@
       "pin": "215cbece4628"
     },
     "bsq-matrix": {
-      "pin": "3ef3361e4ae4"
+      "pin": "3c25df83313e"
     },
     "bsq-bq": {
       "pin": "d7544c4c4565"
     },
     "bsq-samplestreams": {
-      "pin": "933fe268e376"
+      "pin": "0a77a6816f1c"
     },
     "bsq-randomaccess": {
-      "pin": "26336558041d"
+      "pin": "49aa92176d81"
     },
     "bsq-component": {
       "pin": "e7d8557e4e3d"
