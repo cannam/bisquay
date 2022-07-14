@@ -7,7 +7,8 @@ language.
 
  * Bisquay is *quixotic* because SML is not an obvious choice of
 language for this purpose and there is no existing library of
-applicable code to build on. It's done for fun.
+applicable code to build on. It's an epic struggle against an invented
+adversary.
 
  * Bisquay is a *compendium* because this repository contains (almost)
 no code, just a [Repoint](https://github.com/cannam/repoint) manifest
