@@ -220,10 +220,6 @@ bsq-cqt/cqt.sml
 bsq-cqt/cqspectrogram-fn.sml
 bsq-cqt/chromagram-fn.sml
 
-(* Vamp plugin API *)
-bsq-vamp/vamp-types.sml
-bsq-vamp/vamp.sig
-
 (* Hidden Markov models and sparse state models *)
 bsq-hmm/hmm.sig
 bsq-hmm/hmm.sml

@@ -7,10 +7,10 @@
       "pin": "39fa8518c646"
     },
     "sml-csv": {
-      "pin": "80c3302d2110"
+      "pin": "953de9a0ccf7"
     },
     "sml-stringinterpolate": {
-      "pin": "b11ce3b45873"
+      "pin": "6873fb002b3e"
     },
     "sml-smlnj-base64": {
       "pin": "be0fe9bb81d3"
@@ -25,13 +25,13 @@
       "pin": "aa237b2c7827"
     },
     "sml-i18n": {
-      "pin": "1f54f815c146"
+      "pin": "1b23ae108666"
     },
     "sml-trie": {
       "pin": "0299b00a7d3a"
     },
     "sml-utf8": {
-      "pin": "fe154fc33446"
+      "pin": "94eac34903aa"
     },
     "sml-ttl": {
       "pin": "606236f5d8fc"
@@ -43,7 +43,7 @@
       "pin": "7d75cf1278cf"
     },
     "sml-subxml": {
-      "pin": "7b667f4146be"
+      "pin": "d235363e286f"
     },
     "sml-wavefile": {
       "pin": "d231891c7cb9"
@@ -70,67 +70,64 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "25c0b777b032"
+      "pin": "398d8d820f89"
     },
     "bsq-json": {
-      "pin": "95434a9b9796"
+      "pin": "69b65d18c165"
     },
     "bsq-test": {
-      "pin": "8c0030dcec8e"
+      "pin": "f34a678189c3"
     },
     "bsq-resampler": {
-      "pin": "0cc05e8fcd38"
+      "pin": "66f43f2fa2ed"
     },
     "bsq-complex": {
-      "pin": "215cbece4628"
+      "pin": "6189a5d0566a"
     },
     "bsq-matrix": {
-      "pin": "6aad30f1c926"
+      "pin": "62b8202b688b"
     },
     "bsq-bq": {
-      "pin": "d7544c4c4565"
+      "pin": "130f6ea562a9"
     },
     "bsq-samplestreams": {
-      "pin": "7fb22371231b"
+      "pin": "d3a2a28c0f4e"
     },
     "bsq-randomaccess": {
-      "pin": "7ba4e67f9631"
+      "pin": "17ced43acacc"
     },
     "bsq-component": {
-      "pin": "e7d8557e4e3d"
+      "pin": "eb40d395a47c"
     },
     "bsq-cqt": {
-      "pin": "3d204d0d5e26"
+      "pin": "9f10a8aaf767"
     },
     "bsq-waveform": {
-      "pin": "b81376c844c0"
+      "pin": "127d1cd93791"
     },
     "bsq-hmm": {
-      "pin": "b2a75ec4ca0e"
+      "pin": "c7503a126e8c"
     },
     "bsq-pitchtrack": {
-      "pin": "19c6aefa98ce"
+      "pin": "923065ab21a3"
     },
     "bsq-dtw": {
-      "pin": "e5fd91afb8b5"
+      "pin": "29606da62d24"
     },
     "bsq-image": {
-      "pin": "e6dda97f1050"
-    },
-    "bsq-vamp": {
-      "pin": "e6c44e9c7770"
+      "pin": "b961c5080829"
     },
     "bsq-windowsshim": {
-      "pin": "152b25e2b9d7"
+      "pin": "ab45568bc44b"
     },
     "bsq-perftest": {
-      "pin": "3adde8bfc9f0"
+      "pin": "443a7a434ea8"
     },
     "bsq-plot": {
-      "pin": "a85b4d470ed7"
+      "pin": "c4d816e36307"
     },
     "bsq-rrloop": {
-      "pin": "d0c21da68bd8"
+      "pin": "dd35ff282c6c"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"

@@ -120,9 +120,6 @@
 	"bsq-image": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
-	"bsq-vamp": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
-	},
 	"bsq-windowsshim": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
