@@ -70,64 +70,64 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "398d8d820f89"
+      "pin": "3d14f3e50800"
     },
     "bsq-json": {
-      "pin": "69b65d18c165"
+      "pin": "78309c8fd7d8"
     },
     "bsq-test": {
-      "pin": "f34a678189c3"
+      "pin": "a214de5d5e62"
     },
     "bsq-resampler": {
-      "pin": "66f43f2fa2ed"
+      "pin": "a1f4a0696f3b"
     },
     "bsq-complex": {
-      "pin": "6189a5d0566a"
+      "pin": "1f342ae5b62b"
     },
     "bsq-matrix": {
-      "pin": "62b8202b688b"
+      "pin": "2e811d12481a"
     },
     "bsq-bq": {
-      "pin": "130f6ea562a9"
+      "pin": "cca6ea3ce010"
     },
     "bsq-samplestreams": {
-      "pin": "d3a2a28c0f4e"
+      "pin": "339178289526"
     },
     "bsq-randomaccess": {
-      "pin": "17ced43acacc"
+      "pin": "cf8b96c95129"
     },
     "bsq-component": {
-      "pin": "eb40d395a47c"
+      "pin": "de51092e456a"
     },
     "bsq-cqt": {
-      "pin": "9f10a8aaf767"
+      "pin": "2b69b24212e3"
     },
     "bsq-waveform": {
-      "pin": "127d1cd93791"
+      "pin": "7a6d95ef7b26"
     },
     "bsq-hmm": {
-      "pin": "c7503a126e8c"
+      "pin": "de2d1962874f"
     },
     "bsq-pitchtrack": {
-      "pin": "923065ab21a3"
+      "pin": "ab67df0a6b28"
     },
     "bsq-dtw": {
-      "pin": "29606da62d24"
+      "pin": "0bbb617e7d52"
     },
     "bsq-image": {
-      "pin": "b961c5080829"
+      "pin": "521ab8625844"
     },
     "bsq-windowsshim": {
-      "pin": "ab45568bc44b"
+      "pin": "fa33b0c31971"
     },
     "bsq-perftest": {
-      "pin": "443a7a434ea8"
+      "pin": "8603c584d991"
     },
     "bsq-plot": {
-      "pin": "c4d816e36307"
+      "pin": "df09e7e21d30"
     },
     "bsq-rrloop": {
-      "pin": "dd35ff282c6c"
+      "pin": "b769d55ca9f2"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"
