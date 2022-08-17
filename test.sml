@@ -17,6 +17,7 @@ fun all_tests () =
     prefixed "randomaccess" randomaccess_tests @
     prefixed "component" component_tests @
     prefixed "cqt" cqt_tests @
+    prefixed "dtw" dtw_tests @
     prefixed "hmm" hmm_tests
 
 fun main () =
