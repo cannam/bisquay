@@ -1,9 +1,9 @@
 
 # Bisquay
 
-A quixotic compendium of code for audio-processing applications
-written in the [Standard ML](https://smlfamily.github.io/) programming
-language.
+A quixotic compendium of code written in the [Standard
+ML](https://smlfamily.github.io/) programming language. Intended for
+audio-processing applications, though some parts are more generic.
 
  * Bisquay is *quixotic* because SML is not an obvious choice of
 language for this purpose and there is no existing library of
