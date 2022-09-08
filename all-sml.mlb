@@ -226,6 +226,7 @@ bsq-hmm/sparse-hmm.sig
 bsq-hmm/sparse-hmm-fn.sml
 
 (* Dynamic time-warping *)
+bsq-dtw/dtw-types.sml
 bsq-dtw/dtw.sig
 bsq-dtw/naive-dtw-fn.sml
 
