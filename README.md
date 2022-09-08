@@ -19,6 +19,11 @@ beginning `bsq`) were written specifically for this.
 
 All Bisquay code is licensed under a BSD/MIT or equivalent licence.
 
+## Contents
+
+See the file [CONTENTS.md](CONTENTS.md) for a list of the libraries
+included, with links to their individual repositories online.
+
 ## To build
 
 Requires the Meson build system and either MLton or Poly/ML SML
