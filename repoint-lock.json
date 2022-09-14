@@ -28,7 +28,7 @@
       "pin": "1b23ae108666"
     },
     "sml-trie": {
-      "pin": "0299b00a7d3a"
+      "pin": "fdabfb38085a"
     },
     "sml-utf8": {
       "pin": "94eac34903aa"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "214692c1c2dc"
+      "pin": "864bcf5689a2"
     },
     "bsq-json": {
       "pin": "f3e8a555f75f"
@@ -112,7 +112,7 @@
       "pin": "ab67df0a6b28"
     },
     "bsq-dtw": {
-      "pin": "254165704d92"
+      "pin": "30c40483a6b7"
     },
     "bsq-image": {
       "pin": "5c042b03aa9d"
