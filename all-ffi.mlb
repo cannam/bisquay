@@ -232,6 +232,7 @@ bsq-hmm/sparse-hmm-fn.sml
 bsq-dtw/dtw-types.sml
 bsq-dtw/dtw.sig
 bsq-dtw/naive-dtw-fn.sml
+bsq-dtw/constrained-dtw-fn.sml
 
 (* JSON parser and serialiser *)
 sml-simplejson/json.sml
