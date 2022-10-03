@@ -58,7 +58,7 @@
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "71b9ecc06b21"
+      "pin": "054c59f62379"
     },
     "ext/bqaudioio": {
       "pin": "837b107363df"
@@ -103,7 +103,7 @@
       "pin": "2b69b24212e3"
     },
     "bsq-waveform": {
-      "pin": "7a6d95ef7b26"
+      "pin": "275ab3c98a0d"
     },
     "bsq-hmm": {
       "pin": "de2d1962874f"
@@ -121,7 +121,7 @@
       "pin": "2b035762f4d4"
     },
     "bsq-perftest": {
-      "pin": "1b56f9f911ce"
+      "pin": "a71823530df7"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"
