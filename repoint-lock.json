@@ -37,7 +37,7 @@
       "pin": "606236f5d8fc"
     },
     "sml-svg": {
-      "pin": "48c4c2cba7c7"
+      "pin": "c744f7db5fca"
     },
     "sml-simplejson": {
       "pin": "7d75cf1278cf"
@@ -58,7 +58,7 @@
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "054c59f62379"
+      "pin": "78549bea0a91"
     },
     "ext/bqaudioio": {
       "pin": "837b107363df"
@@ -88,7 +88,7 @@
       "pin": "9490801c3677"
     },
     "bsq-bq": {
-      "pin": "a240750e696c"
+      "pin": "0678841e0b6b"
     },
     "bsq-samplestreams": {
       "pin": "c0f3f60602bb"
@@ -112,7 +112,7 @@
       "pin": "ab67df0a6b28"
     },
     "bsq-dtw": {
-      "pin": "551cc9c16c0d"
+      "pin": "76b247b09ff1"
     },
     "bsq-image": {
       "pin": "5c042b03aa9d"
@@ -127,7 +127,7 @@
       "pin": "dbdb44147707"
     },
     "bsq-rrloop": {
-      "pin": "b769d55ca9f2"
+      "pin": "7002e0656575"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"
