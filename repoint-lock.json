@@ -58,7 +58,7 @@
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "78549bea0a91"
+      "pin": "a4da53b696db"
     },
     "ext/bqaudioio": {
       "pin": "837b107363df"
@@ -121,7 +121,7 @@
       "pin": "2b035762f4d4"
     },
     "bsq-perftest": {
-      "pin": "828d707a5048"
+      "pin": "550d23549e79"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"
