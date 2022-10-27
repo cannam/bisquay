@@ -199,6 +199,7 @@ bsq-randomaccess/sparse-persistent-array-slice.sml
 bsq-randomaccess/randomaccess-types.sml
 bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
+bsq-randomaccess/audiofile.sml
 bsq-randomaccess/summarising-fn.sml
 bsq-randomaccess/summary-tower.sig
 bsq-randomaccess/summary-tower-fn.sml
