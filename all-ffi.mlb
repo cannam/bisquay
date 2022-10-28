@@ -123,6 +123,7 @@ bsq-signalbits/mathmisc.sml
 bsq-signalbits/vecmisc.sml
 bsq-signalbits/seqmisc.sml
 bsq-signalbits/listmisc.sml
+bsq-signalbits/filemisc.sml
 bsq-signalbits/peakpick.sml
 bsq-signalbits/normalise.sml
 bsq-signalbits/summarise.sml
@@ -140,6 +141,8 @@ bsq-signalbits/autocorrelation.sml
 bsq-signalbits/mean-filter.sml
 bsq-signalbits/median-filter.sml
 bsq-signalbits/dct.sml
+bsq-signalbits/backing-file.sig
+bsq-signalbits/backing-file-fn.sml
 bsq-signalbits/progress.sml
 
 (* Trie containers *)
@@ -199,6 +202,8 @@ bsq-randomaccess/sparse-persistent-array-slice.sml
 bsq-randomaccess/randomaccess-types.sml
 bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
+bsq-randomaccess/linear-randomaccess-fn.sml
+bsq-randomaccess/columnar-randomaccess-fn.sml
 bsq-randomaccess/audiofile.sml
 bsq-randomaccess/summarising-fn.sml
 bsq-randomaccess/summary-tower.sig
