@@ -68,8 +68,8 @@ for b in $buildtypes; do
 done
 
 tests=$(tmp_perfbuild_polyml_native/bsq_perftest |
-            grep 'one of' |
-            sed 's/^.*one of: //' |
+            grep 'waveform' |
+            sed 's/^ *//' |
             sed 's/,//g')
 echo "Tests are: $tests"
 
