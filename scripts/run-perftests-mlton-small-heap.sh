@@ -26,7 +26,8 @@ for c in $configs; do
         ;;
     esac
     if [ -f "$dir/build.ninja" ]; then
-        meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args" --reconfigure --wipe
+        #        meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args" --reconfigure --wipe
+        :
     else 
         meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args"
     fi
@@ -57,9 +58,10 @@ for counter in 1; do
 
 echo
 echo -ne "\t\t\t"
-for b in $buildtypes; do
-    echo -ne "$b\t" ;; # longer text, one tab
+for c in $configs; do
+    echo -ne "$c\t"
 done
+echo
 
 for test in $tests; do
     echo -ne "   $test\t\t"
@@ -67,9 +69,9 @@ for test in $tests; do
         extra_args=""
         case "$c" in
             *-fixedheap)
-                extra_args="@MLton fixed-heap 600m --" ;;
+                extra_args="@MLton fixed-heap 200m --" ;;
             *-maxheap)
-                extra_args="@MLton max-heap 600m --" ;;
+                extra_args="@MLton max-heap 200m --" ;;
             *) ;;
         esac
 	dir="tmp_perfbuild_${c}"
@@ -87,6 +89,7 @@ for test in $tests; do
 	fi
         echo -ne "$elapsed\t\t"
     done
+    echo
 done
 done
 
