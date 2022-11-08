@@ -13,6 +13,7 @@ architecture = host_machine.cpu_family()
 
 ipp_path = get_option('ipp_path')
 sml_buildtype = get_option('sml_buildtype')
+mlton_extra_args = get_option('mlton_extra_args')
 
 run_target(
   'doc',
@@ -265,6 +266,7 @@ elif sml_buildtype == 'mlton_noffi'
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_extra_args,
       '-default-type', 'int64',
       '-output', '@OUTPUT@',
       '@INPUT@',
@@ -280,6 +282,7 @@ elif sml_buildtype == 'mlton_noffi'
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_extra_args,
       '-default-type', 'int64',
       '-output', '@OUTPUT@',
       '@INPUT@',
@@ -353,6 +356,7 @@ else
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_extra_args,
       '-default-type', 'int64',
       '-default-ann', 'allowFFI true',
       '-export-header', '@OUTPUT@',
@@ -367,6 +371,7 @@ else
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_extra_args,
       '-default-type', 'int64',
       '-default-ann', 'allowFFI true',
       '-export-header', '@OUTPUT@',
@@ -450,6 +455,7 @@ else
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_extra_args,
       mlton_system_opts,
       mlton_profile_opts,
       mlton_debug_opts,
@@ -483,6 +489,7 @@ else
     command: [
       mlb_deps_program,
       mlton_program,
+      mlton_extra_args,
       mlton_system_opts,
       '-codegen', 'c',
       mlton_profile_opts,

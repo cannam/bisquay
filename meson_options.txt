@@ -13,3 +13,9 @@ option(
   value: '',
   description: 'Path to Intel IPP libraries, if IPP is to be used. Leave empty otherwise. Only relevant to MLton builds using FFI.'
 )
+option(
+  'mlton_extra_args',
+  type: 'array',
+  value: [],
+  description: 'Additional arguments to give to MLton when compiling. Only relevant to MLton builds.'
+)
