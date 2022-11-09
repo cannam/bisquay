@@ -13,7 +13,7 @@ if [ ! -f "$infile" ]; then
    exit 1
 fi
 
-configs="default-default default-fixed default-max gen10-default gen10-fixed gen10-max"
+configs="default-default default-max gen10-default gen10-max"
 
 for c in $configs; do
     dir="tmp_perfbuild_${c}"
@@ -26,8 +26,7 @@ for c in $configs; do
         ;;
     esac
     if [ -f "$dir/build.ninja" ]; then
-        #        meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args" --reconfigure --wipe
-        :
+        meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args" --reconfigure --wipe
     else 
         meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args"
     fi
@@ -42,7 +41,7 @@ for c in $configs; do
     echo
 done
 
-tests=$(tmp_perfbuild_default/bsq_perftest |
+tests=$(tmp_perfbuild_default-default/bsq_perftest |
             grep 'waveform' |
             sed 's/^ *//' |
             sed 's/,//g')
