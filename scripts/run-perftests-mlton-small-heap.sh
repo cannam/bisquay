@@ -13,14 +13,14 @@ if [ ! -f "$infile" ]; then
    exit 1
 fi
 
-configs="default default-fixedheap default-maxheap copygen10-fixedheap copygen10-maxheap"
+configs="default-default default-fixed default-max gen10-default gen10-fixed gen10-max"
 
 for c in $configs; do
     dir="tmp_perfbuild_${c}"
     sml_buildtype="mlton_release"
     extra_args="[]"
     case "$c" in
-        copygen10-*)
+        gen10-*)
             extra_args="['-runtime','copy-generational-ratio 10.0']";;
         *)
         ;;
@@ -66,15 +66,23 @@ echo
 for test in $tests; do
     echo -ne "   $test\t\t"
     for c in $configs; do
+
+        small_heap=100m
+        case "$test" in
+            reassigning) small_heap=1000m ;;
+            *-max*) small_heap=200m ;;
+        esac
+        
         extra_args=""
         case "$c" in
-            *-fixedheap)
-                extra_args="@MLton fixed-heap 200m --" ;;
-            *-maxheap)
-                extra_args="@MLton max-heap 200m --" ;;
+            *-fixed)
+                extra_args="@MLton fixed-heap $small_heap --" ;;
+            *-max)
+                extra_args="@MLton max-heap $small_heap --" ;;
             *) ;;
         esac
 	dir="tmp_perfbuild_${c}"
+        mem="?"
 	if [ -d /Applications ]; then
 	    elapsed=$(/usr/bin/time "$dir/bsq_perftest" \
 				    $extra_args "$test" "$infile" 2>&1 >/dev/null |
@@ -86,8 +94,11 @@ for test in $tests; do
                                          $extra_args "$test" "$infile" 2>&1 |
 			       tail -1)
 	    elapsed=$(echo "$measurements" | awk '{ print $1; }')
+	    mem=$(echo "$measurements" | awk '{ print $2; }')
+	    mem=$(($mem / 1024))
+	    mem="$mem"M
 	fi
-        echo -ne "$elapsed\t\t"
+        echo -ne "$elapsed/$mem\t"
     done
     echo
 done
