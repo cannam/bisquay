@@ -8,25 +8,35 @@ if [ ! -f scripts/run-perftests.sh ] ; then
     exit 1
 fi
 infile=bsq-perftest/audio/50ft.wav
+#infile="/data/Datasets/alignment/Going Home/wav/04-My Little Airport-Going Home.wav"
 if [ ! -f "$infile" ]; then
    echo "Unable to find input audio file $infile"
    exit 1
 fi
 
-configs="default-default default-max gen10-default gen10-max"
+configs="default-default default-max gen10-default gen10-max gen10-lr4-max gen12-lr6-max gen20-max nogen-max"
 
 for c in $configs; do
     dir="tmp_perfbuild_${c}"
     sml_buildtype="mlton_release"
     extra_args="[]"
     case "$c" in
+        gen10-lr4-*)
+            extra_args="['-runtime','copy-generational-ratio 10.0','-runtime','copy-ratio 4.0','-runtime','live-ratio 4.0']";;
+        gen12-lr6-*)
+            extra_args="['-runtime','copy-generational-ratio 12.0','-runtime','copy-ratio 4.0','-runtime','live-ratio 6.0']";;
         gen10-*)
             extra_args="['-runtime','copy-generational-ratio 10.0']";;
+        gen20-*)
+            extra_args="['-runtime','copy-generational-ratio 20.0']";;
+        nogen-*)
+            extra_args="['-mark-cards','false']";;
         *)
         ;;
     esac
     if [ -f "$dir/build.ninja" ]; then
-        meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args" --reconfigure --wipe
+        meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args" --reconfigure
+        #--wipe
     else 
         meson "$dir" -D"sml_buildtype=mlton_release" -Dmlton_extra_args="$extra_args"
     fi
@@ -46,6 +56,14 @@ tests=$(tmp_perfbuild_default-default/bsq_perftest |
             sed 's/^ *//' |
             sed 's/,//g')
 echo "Tests are: $tests"
+
+echo
+echo "Values reported are: <total> <max-pause> <max-heap>"
+echo "where:"
+echo "   <total>     - total execution time in milliseconds"
+echo "   <max-pause> - maximum GC pause time in milliseconds"
+echo "   <max-heap>  - maximum size of heap in megabytes"
+echo
 
 echo
 hg id
@@ -82,22 +100,13 @@ for test in $tests; do
         esac
 	dir="tmp_perfbuild_${c}"
         mem="?"
-	if [ -d /Applications ]; then
-	    elapsed=$(/usr/bin/time "$dir/bsq_perftest" \
-				    $extra_args "$test" "$infile" 2>&1 >/dev/null |
-			  grep 'real' |
-			  awk '{ print $1; }')
-	else 
-	    measurements=$(/usr/bin/time -f '\n%E %M' \
-                                         "$dir/bsq_perftest" \
-                                         $extra_args "$test" "$infile" 2>&1 |
-			       tail -1)
-	    elapsed=$(echo "$measurements" | awk '{ print $1; }')
-	    mem=$(echo "$measurements" | awk '{ print $2; }')
-	    mem=$(($mem / 1024))
-	    mem="$mem"M
-	fi
-        echo -ne "$elapsed/$mem\t"
+        measurements=$("$dir/bsq_perftest" @MLton gc-summary -- $extra_args "$test" "$infile" 2>&1 >/tmp/tmp.out.txt | grep ': ')
+        elapsed=$(echo "$measurements" | grep '^total time: ' | sed 's/^.*: //' | sed 's/[ ,]//g' | sed 's/ms//')
+        mem=$(echo "$measurements" | grep '^max heap size: ' | sed 's/^.*: //' | sed 's/ bytes//' | sed 's/,//g')
+	mem=$(($mem / 1048576))
+	mem="$mem"m
+        max_pause=$(echo "$measurements" | grep '^max pause time: ' | sed 's/^.*: //' | sed 's/[ ,]//g' | sed 's/ms//')
+        echo -ne "$elapsed $max_pause $mem\t"
     done
     echo
 done
@@ -105,8 +114,8 @@ done
 
 echo
 
-for c in $configs; do
-    rm -rf "tmp_perfbuild_${c}_*"
-done
+#for c in $configs; do
+#    rm -rf "tmp_perfbuild_${c}_*"
+#done
 
 
