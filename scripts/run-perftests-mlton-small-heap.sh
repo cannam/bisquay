@@ -16,11 +16,15 @@ fi
 
 configs="default-default default-max gen10-default gen10-max gen10-lr4-max gen12-lr6-max gen20-max nogen-max"
 
+#configs="compact-max"
+
 for c in $configs; do
     dir="tmp_perfbuild_${c}"
     sml_buildtype="mlton_release"
     extra_args="[]"
     case "$c" in
+        compact-*)
+            extra_args="['-runtime','ram-slop 0.0625','-runtime','mark-compact-ratio 1.2','-runtime','copy-generational-ratio 8.0','-runtime','copy-ratio 4.0','-runtime','live-ratio 4.0','-runtime','may-page-heap false']";;
         gen10-lr4-*)
             extra_args="['-runtime','copy-generational-ratio 10.0','-runtime','copy-ratio 4.0','-runtime','live-ratio 4.0']";;
         gen12-lr6-*)
