@@ -191,6 +191,7 @@ bsq-samplestreams/summarising-fn.sml
 bsq-samplestreams/frequency-domain-types.sml
 bsq-samplestreams/frequency-domain.sig
 bsq-samplestreams/frequency-domain-fn.sml
+bsq-samplestreams/feature-fn.sml
 bsq-samplestreams/fixed-lag-stream-fn.sml
 bsq-samplestreams/stream-map-fn.sml
 
@@ -200,6 +201,7 @@ bsq-randomaccess/randomaccess.sig
 bsq-randomaccess/randomaccess-fn.sml
 bsq-randomaccess/linear-randomaccess-fn.sml
 bsq-randomaccess/columnar-randomaccess-fn.sml
+bsq-randomaccess/filler-fn.sml
 bsq-randomaccess/audiofile.sml
 bsq-randomaccess/summarising-fn.sml
 bsq-randomaccess/summary-tower.sig
@@ -214,6 +216,7 @@ bsq-component/component-selector.sml
 bsq-component/component-blockstream.sig
 bsq-component/component-blockstream-fn.sml
 bsq-component/frequency-component-fn.sml
+bsq-component/stereo-component-fn.sml
 bsq-component/component-summary-tower.sml
 
 (* Constant-Q transform *)
