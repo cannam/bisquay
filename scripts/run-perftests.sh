@@ -45,9 +45,9 @@ for b in $buildtypes; do
 	    extra_args="--cross-file cross/cross_$a.txt"
 	fi
 	if [ -f "$dir/build.ninja" ]; then
-            meson "$dir" -D"sml_buildtype=$sml_buildtype" $extra_args --reconfigure --wipe
+            meson setup "$dir" -D"sml_buildtype=$sml_buildtype" $extra_args --reconfigure --wipe
 	else 
-            meson "$dir" -D"sml_buildtype=$sml_buildtype" $extra_args
+            meson setup "$dir" -D"sml_buildtype=$sml_buildtype" $extra_args
 	fi
 	echo "Configured $b for $a arch"
     done
