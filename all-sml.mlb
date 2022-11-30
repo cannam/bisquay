@@ -141,6 +141,7 @@ bsq-signalbits/dct.sml
 bsq-signalbits/backing-file.sig
 bsq-signalbits/backing-file-fn.sml
 bsq-signalbits/progress.sml
+bsq-signalbits/pack-word-64.sml
 
 (* Trie containers *)
 sml-trie/trie-map.sig
