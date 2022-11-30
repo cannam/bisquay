@@ -22,7 +22,8 @@ fail() {
     exit 1
 }
 
-sml=mlton
+sml="mlton"
+sml_args="-disable-pass deepFlatten"
 
 for dir in sml-* bsq-* ; do
     if [ "$dir" = "sml-buildscripts" ]; then
@@ -41,19 +42,19 @@ for dir in sml-* bsq-* ; do
                   fail "Build failed using Makefile"
           fi
       elif [ -f test.mlb ]; then
-          ( "$sml" test.mlb && ./test ) > "$tmpfile" 2>&1 ||
+          ( "$sml" $sml_args test.mlb && ./test ) > "$tmpfile" 2>&1 ||
               fail "Build-and-test failed using test.mlb"
       elif [ -f "$dir".mlb ]; then
-          ( "$sml" "$dir".mlb ) > "$tmpfile" 2>&1 ||
+          ( "$sml" $sml_args "$dir".mlb ) > "$tmpfile" 2>&1 ||
               fail "Build failed using $dir.mlb"
       elif [ -f "$name".mlb ]; then
-          ( "$sml" "$name".mlb ) > "$tmpfile" 2>&1 ||
+          ( "$sml" $sml_args "$name".mlb ) > "$tmpfile" 2>&1 ||
               fail "Build failed using $name.mlb"
       elif [ -f "$dir"-sml.mlb ]; then # sometimes in opposition to $dir-ffi.mlb
-          ( "$sml" "$dir"-sml.mlb ) > "$tmpfile" 2>&1 ||
+          ( "$sml" $sml_args "$dir"-sml.mlb ) > "$tmpfile" 2>&1 ||
               fail "Build failed using $dir-sml.mlb"
       elif [ -f "$name"-sml.mlb ]; then
-          ( "$sml" "$name"-sml.mlb ) > "$tmpfile" 2>&1 ||
+          ( "$sml" $sml_args "$name"-sml.mlb ) > "$tmpfile" 2>&1 ||
               fail "Build failed using $name-sml.mlb"
       else
           echo > "$tmpfile"
