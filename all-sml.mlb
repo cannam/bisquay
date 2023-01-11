@@ -127,6 +127,8 @@ bsq-signalbits/normalise.sml
 bsq-signalbits/summarise.sml
 bsq-signalbits/distance.sig
 bsq-signalbits/distance.sml
+bsq-signalbits/scale-intervals.sig
+bsq-signalbits/scale-intervals.sml
 bsq-signalbits/greek.sml
 bsq-signalbits/window.sig
 bsq-signalbits/window.sml
