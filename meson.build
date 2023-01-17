@@ -310,6 +310,7 @@ else
     'ext/bqfft/src/FFT.cpp',
     'ext/bqresample/src/Resampler.cpp',
     'ext/bqresample/src/BQResampler.cpp',
+    'ext/bqresample/src/common.cpp',
     'ext/bqvec/src/Allocators.cpp',
     'ext/bqvec/src/Barrier.cpp',
     'ext/bqvec/src/VectorOpsComplex.cpp',
