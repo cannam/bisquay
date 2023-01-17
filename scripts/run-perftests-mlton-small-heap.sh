@@ -118,8 +118,8 @@ done
 
 echo
 
-#for c in $configs; do
-#    rm -rf "tmp_perfbuild_${c}_*"
-#done
+for c in $configs; do
+    rm -rf "tmp_perfbuild_${c}_*"
+done
 
 
