@@ -1,7 +1,7 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "b20243323a2a"
+      "pin": "98cad770d543"
     },
     "ext/mlton-cutdown": {
       "pin": "81f7d871468f"
@@ -61,7 +61,7 @@
       "pin": "85868b0f215a"
     },
     "ext/bqaudioio": {
-      "pin": "837b107363df"
+      "pin": "e85272f8a6ad"
     },
     "ext/bqresample": {
       "pin": "1645e7be5e9f"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "60bfb99d7677"
+      "pin": "6b899439345c"
     },
     "bsq-json": {
       "pin": "f3e8a555f75f"
@@ -94,13 +94,13 @@
       "pin": "2bf7d191e629"
     },
     "bsq-randomaccess": {
-      "pin": "7fd7b203f465"
+      "pin": "f9c18cc1368a"
     },
     "bsq-component": {
       "pin": "0373dfc8b1fd"
     },
     "bsq-cqt": {
-      "pin": "2b69b24212e3"
+      "pin": "ed1396e1142a"
     },
     "bsq-waveform": {
       "pin": "8bba14c81230"
@@ -115,13 +115,13 @@
       "pin": "76b247b09ff1"
     },
     "bsq-image": {
-      "pin": "5c042b03aa9d"
+      "pin": "522af6507609"
     },
     "bsq-windowsshim": {
       "pin": "20d47155dbe2"
     },
     "bsq-perftest": {
-      "pin": "3275f9bab6e4"
+      "pin": "228fddde2dee"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"
