@@ -141,7 +141,7 @@ elif system == 'linux'
 
   platform_feature_defines = [
     '-DUSE_BUILTIN_FFT',
-    '-DUSE_BQRESAMPLER',
+    '-DHAVE_LIBSPEEXDSP',
     '-DHAVE_PORTAUDIO',
     '-DHAVE_LIBPULSE',
     '-DHAVE_JACK',
@@ -156,7 +156,7 @@ elif system == 'linux'
   ]
   platform_feature_libs = [
     '-lcblas',
-    '-lportaudio', '-lpulse', '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-loggz', '-lfishsound', '-logg', '-ldl', '-lz',
+    '-lportaudio', '-lpulse', '-lspeexdsp', '-lopusfile', '-lopusenc', '-lopus', '-loggz', '-lfishsound', '-logg', '-ldl', '-lz',
   ]
   platform_general_libs = [
     '-lpthread', '-lstdc++',
