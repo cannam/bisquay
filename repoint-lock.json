@@ -100,7 +100,7 @@
       "pin": "0373dfc8b1fd"
     },
     "bsq-cqt": {
-      "pin": "2b69b24212e3"
+      "pin": "ed1396e1142a"
     },
     "bsq-waveform": {
       "pin": "8bba14c81230"
@@ -121,7 +121,7 @@
       "pin": "20d47155dbe2"
     },
     "bsq-perftest": {
-      "pin": "3275f9bab6e4"
+      "pin": "228fddde2dee"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"
