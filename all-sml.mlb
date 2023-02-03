@@ -11,6 +11,8 @@ sml-stringinterpolate/string-buffer.sml
 sml-log/log.sig
 sml-log/log.sml
 sml-log/category-log-fn.sml
+sml-log/size-log.sig
+sml-log/size-log-null.sml
 
 (* Containers and sorting, needed for mapped JSON, tries, timing, tests, etc *)
 sml-smlnj-containers/lib-base-sig.sml
