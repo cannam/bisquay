@@ -20,15 +20,39 @@ fun all_tests () =
     prefixed "dtw" dtw_tests @
     prefixed "hmm" hmm_tests
 
+fun usage () =
+    (print ("Usage: " ^ CommandLine.name () ^ " [testname]\n");
+     print ("The default is to run all tests.\n");
+     OS.Process.exit OS.Process.failure)    
+             
 fun main () =
-    (Log.resetElapsedTime ();
-     if (foldl (fn (t, acc) => if TestRunner.run t
-                               then acc
-                               else false)
-               true
-               (all_tests ()))
-     then OS.Process.exit OS.Process.success
-     else (print "Some tests failed\n"; OS.Process.exit OS.Process.failure))
+    let val tests = all_tests ()
+        val () = Log.resetElapsedTime ()
+    in
+        case CommandLine.arguments () of
+            [test] =>
+            (case foldl (fn ((name, tests), (found, succeeded)) =>
+                            if name = test
+                            then (true, TestRunner.run (name, tests) andalso
+                                        succeeded)
+                            else (found, succeeded))
+                        (false, true)
+                        tests of
+                 (false, _) => (print ("Unknown test \"" ^ test ^ "\"\n");
+                                usage ())
+               | (_, false) => OS.Process.exit OS.Process.failure
+               | _ => OS.Process.exit OS.Process.success)
+          | [] =>
+            if (foldl (fn (t, acc) => if TestRunner.run t
+                                      then acc
+                                      else false)
+                      true
+                      tests)
+            then OS.Process.exit OS.Process.success
+            else (print "Some tests failed\n";
+                  OS.Process.exit OS.Process.failure)
+          | _ => usage ()
+    end
     handle ex =>
            (TextIO.output (TextIO.stdErr,
                            "Exception caught at top level: " ^ exnMessage ex ^
