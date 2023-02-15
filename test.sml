@@ -21,7 +21,8 @@ fun all_tests () =
     prefixed "hmm" hmm_tests
 
 fun usage () =
-    (print ("Usage: " ^ CommandLine.name () ^ " [testname]\n");
+    (print ("Usage: " ^ CommandLine.name () ^ " [prefix]\n");
+     print ("If prefix is provided, run testsuites whose names start with that prefix.\n");
      print ("The default is to run all tests.\n");
      OS.Process.exit OS.Process.failure)    
              
@@ -30,15 +31,16 @@ fun main () =
         val () = Log.resetElapsedTime ()
     in
         case CommandLine.arguments () of
-            [test] =>
+            [prefix] =>
             (case foldl (fn ((name, tests), (found, succeeded)) =>
-                            if name = test
+                            if String.isPrefix prefix name
                             then (true, TestRunner.run (name, tests) andalso
                                         succeeded)
                             else (found, succeeded))
                         (false, true)
                         tests of
-                 (false, _) => (print ("Unknown test \"" ^ test ^ "\"\n");
+                 (false, _) => (print ("No testsuites match prefix \"" ^
+                                       prefix ^ "\"\n");
                                 usage ())
                | (_, false) => OS.Process.exit OS.Process.failure
                | _ => OS.Process.exit OS.Process.success)
