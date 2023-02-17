@@ -94,13 +94,13 @@
       "pin": "8406412c9b80"
     },
     "bsq-randomaccess": {
-      "pin": "c6b4382bba11"
+      "pin": "e44ec0d00430"
     },
     "bsq-component": {
       "pin": "066b11204f8b"
     },
     "bsq-cqt": {
-      "pin": "abf2bed4a48b"
+      "pin": "241e850ba793"
     },
     "bsq-waveform": {
       "pin": "8bba14c81230"
@@ -121,7 +121,7 @@
       "pin": "20d47155dbe2"
     },
     "bsq-perftest": {
-      "pin": "500d6d06e2e5"
+      "pin": "67a4607f4322"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"
