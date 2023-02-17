@@ -103,8 +103,7 @@
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-cqt": {
-	    "vcs": "hg", "service": "sourcehut", "owner": "cannam",
-            "branch": "without-reader-adapter"
+	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
 	},
 	"bsq-waveform": {
 	    "vcs": "hg", "service": "sourcehut", "owner": "cannam"
