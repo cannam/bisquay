@@ -19,7 +19,7 @@
       "pin": "4af7b3dd9d46"
     },
     "sml-log": {
-      "pin": "ef62a4b2c130"
+      "pin": "1ccb2b24a767"
     },
     "sml-timing": {
       "pin": "cbac551c8318"
@@ -52,19 +52,19 @@
       "pin": "d686d3c53e30"
     },
     "ext/bqvec": {
-      "pin": "97eea3bdd5d2"
+      "pin": "291cde50db9d"
     },
     "ext/bqfft": {
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "279f572ac0c0"
+      "pin": "1ac3beeccf36"
     },
     "ext/bqaudioio": {
       "pin": "e85272f8a6ad"
     },
     "ext/bqresample": {
-      "pin": "6e5d4f06d3c8"
+      "pin": "38c3e524416a"
     },
     "ext/bqthingfactory": {
       "pin": "2e4bd170f57f"
@@ -127,7 +127,7 @@
       "pin": "dbdb44147707"
     },
     "bsq-rrloop": {
-      "pin": "bef8d6876445"
+      "pin": "c68c9798ff56"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"
