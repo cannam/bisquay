@@ -91,10 +91,10 @@
       "pin": "449cbcee8117"
     },
     "bsq-samplestreams": {
-      "pin": "fd344efd1ba4"
+      "pin": "9b9bbe4da606"
     },
     "bsq-randomaccess": {
-      "pin": "c220ab94c41e"
+      "pin": "9fa42b4082fa"
     },
     "bsq-component": {
       "pin": "066b11204f8b"
@@ -109,7 +109,7 @@
       "pin": "de2d1962874f"
     },
     "bsq-pitchtrack": {
-      "pin": "ab67df0a6b28"
+      "pin": "d39d8942397d"
     },
     "bsq-dtw": {
       "pin": "8947e8e95a89"
@@ -121,13 +121,13 @@
       "pin": "20d47155dbe2"
     },
     "bsq-perftest": {
-      "pin": "67a4607f4322"
+      "pin": "27b3fffbc224"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"
     },
     "bsq-rrloop": {
-      "pin": "c68c9798ff56"
+      "pin": "71af482a93b1"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"
