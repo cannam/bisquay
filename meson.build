@@ -79,7 +79,7 @@ elif system == 'darwin'
                        language: 'cpp'
                       )
   platform_feature_defines = [
-    '-DHAVE_LIBSPEEXDSP',
+    '-DUSE_BQRESAMPLER',
     '-DHAVE_PORTAUDIO',
     '-DHAVE_COREAUDIO',
     '-DHAVE_VDSP',
@@ -124,7 +124,7 @@ elif system == 'darwin'
   endif # end architecture
 
   platform_feature_libs += [
-    '-lspeexdsp', '-lopusfile', '-lopusenc', '-lopus', '-logg', '-lportaudio',
+    '-lsamplerate', '-lopusfile', '-lopusenc', '-lopus', '-logg', '-lportaudio',
     '-framework', 'Accelerate', '-framework', 'CoreAudio',
     '-framework', 'AudioUnit', '-framework', 'AudioToolbox',
     '-framework', 'CoreFoundation', '-framework', 'CoreServices',
