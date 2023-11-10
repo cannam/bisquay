@@ -312,6 +312,8 @@ bsq-pitchtrack/continuous-pitch-state-model.sml
 bsq-pitchtrack/discrete-pitch-state-model.sml
 bsq-pitchtrack/hybrid-sung-pitch-state-model.sml
 bsq-pitchtrack/duration-aware-pitch-state-model.sml
+bsq-pitchtrack/peak-stream-statistics.sml
+bsq-pitchtrack/component-refine.sml
 bsq-pitchtrack/cepstral-pitchtrack.sml
 
 (* UTF-8 encoder and decoder *)
