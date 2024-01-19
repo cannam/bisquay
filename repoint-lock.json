@@ -58,10 +58,10 @@
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "1ac3beeccf36"
+      "pin": "8b3eb99f88e5"
     },
     "ext/bqaudioio": {
-      "pin": "e85272f8a6ad"
+      "pin": "88520ab5b8e5"
     },
     "ext/bqresample": {
       "pin": "38c3e524416a"
@@ -91,7 +91,7 @@
       "pin": "1e0eb6374c7f"
     },
     "bsq-samplestreams": {
-      "pin": "e7d3c5ed511e"
+      "pin": "60dd197938b8"
     },
     "bsq-randomaccess": {
       "pin": "91bfce6b932b"
@@ -127,7 +127,7 @@
       "pin": "dbdb44147707"
     },
     "bsq-rrloop": {
-      "pin": "71af482a93b1"
+      "pin": "ce933c6be044"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"
