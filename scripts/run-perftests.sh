@@ -16,6 +16,7 @@ fi
 # Not mlton_profile for general repeated testing - it just takes too
 # long to build (even longer than mlton_release)
 buildtypes="polyml mlton_noffi mlton_release"
+#buildtypes="mlton_noffi mlton_release"
 
 arches="native"
 if [ -d /Applications ]; then
@@ -67,7 +68,11 @@ for b in $buildtypes; do
     done
 done
 
-tests=$(tmp_perfbuild_polyml_native/bsq_perftest |
+any_perftest_program=tmp_perfbuild_polyml_native/bsq_perftest
+if [ ! -x "$any_perftest_program" ]; then
+    any_perftest_program=tmp_perfbuild_mlton_noffi_arm64/bsq_perftest
+fi
+tests=$("$any_perftest_program" |
             grep 'waveform' |
             sed 's/^ *//' |
             sed 's/,//g')
@@ -112,10 +117,13 @@ for a in $arches; do
             esac
             mem="(n/a)"
 	    if [ -d /Applications ]; then
-		elapsed=$(/usr/bin/time "$dir/bsq_perftest" \
-					$args "$test" "$infile" 2>&1 >/dev/null |
-			      grep 'real' |
-			      awk '{ print $1; }')
+		measurements=$(/usr/bin/time -l "$dir/bsq_perftest" \
+					     $args "$test" "$infile" 2>&1 >/dev/null)
+                elapsed=$(echo "$measurements" | grep 'real' | head -1 | awk '{ print $1; }')
+                mem=$(echo "$measurements" | grep 'maximum resident set' | awk '{ print $1; }')
+                mem=$(($mem / 1024))
+                mem=$(($mem / 1024))
+                mem="$mem"M
 	    else 
 		measurements=$(/usr/bin/time -f '\n%E %M' \
                                              "$dir/bsq_perftest" \

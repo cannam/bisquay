@@ -236,6 +236,7 @@ if sml_buildtype == 'polyml'
     command: [
       mlb_deps_program,
       polybuild_program,
+      '-u',
       '-o', '@OUTPUT@',
       '@INPUT@',
     ],
@@ -250,6 +251,7 @@ if sml_buildtype == 'polyml'
     command: [
       mlb_deps_program,
       polybuild_program,
+      '-u',
       '-o', '@OUTPUT@',
       '@INPUT@',
     ],
