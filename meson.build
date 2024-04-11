@@ -336,6 +336,7 @@ else
   
   bq_flags = [
     '-DNO_EXCEPTIONS',
+    '-O3',
   ]
   
   bq_lib = static_library(
@@ -405,6 +406,12 @@ else
     ],
   )
 
+  mlton_cc_opts = []
+  foreach opt : bq_flags
+    mlton_cc_opts += '-cc-opt-quote'
+    mlton_cc_opts += opt
+  endforeach
+  
   mlton_link_opts = []
   foreach opt : platform_feature_libs
     mlton_link_opts += '-link-opt-quote'
@@ -468,6 +475,7 @@ else
       '-default-ann', 'allowFFI true',
       '-default-ann', 'allowPrim true',
       '-disable-pass', 'deepFlatten',
+      mlton_cc_opts,
       '-link-opt', '-L.',
       '-link-opt', '-lbq',
       mlton_link_opts,
@@ -478,6 +486,7 @@ else
       meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
       meson.current_source_dir() / 'bsq-rrloop/ffi/rr-support.c',
       meson.current_source_dir() / 'bsq-signalbits/ffi/window-post.c',
+      meson.current_source_dir() / 'bsq-signalbits/ffi/distance.c',
     ],
     depends: [
       bq_lib,
@@ -503,6 +512,7 @@ else
       '-default-ann', 'allowFFI true',
       '-default-ann', 'allowPrim true',
       '-disable-pass', 'deepFlatten',
+      mlton_cc_opts,
       '-link-opt', '-L.',
       '-link-opt', '-lbq',
       mlton_link_opts,
@@ -513,6 +523,7 @@ else
       meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
       meson.current_source_dir() / 'bsq-rrloop/ffi/rr-support.c',
       meson.current_source_dir() / 'bsq-signalbits/ffi/window-post.c',
+      meson.current_source_dir() / 'bsq-signalbits/ffi/distance.c',
     ],
     depends: [
       bq_lib,
