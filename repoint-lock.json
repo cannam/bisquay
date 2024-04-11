@@ -4,7 +4,7 @@
       "pin": "98cad770d543"
     },
     "ext/mlton-cutdown": {
-      "pin": "8197e53bf7b1"
+      "pin": "4b80a943df24"
     },
     "sml-csv": {
       "pin": "953de9a0ccf7"
@@ -58,7 +58,7 @@
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "45385f94f9d0"
+      "pin": "cb76f04384cf"
     },
     "ext/bqaudioio": {
       "pin": "88520ab5b8e5"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "fc39b5ae7fbf"
+      "pin": "f5d34ef5202f"
     },
     "bsq-json": {
       "pin": "f3e8a555f75f"
@@ -94,7 +94,7 @@
       "pin": "60dd197938b8"
     },
     "bsq-randomaccess": {
-      "pin": "91bfce6b932b"
+      "pin": "f59a3c5baadd"
     },
     "bsq-component": {
       "pin": "470dfc36043f"
