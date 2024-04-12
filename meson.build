@@ -336,7 +336,8 @@ else
   
   bq_flags = [
     '-DNO_EXCEPTIONS',
-    '-O3',
+    '-O1',
+    '-ftree-vectorize',
   ]
   
   bq_lib = static_library(
