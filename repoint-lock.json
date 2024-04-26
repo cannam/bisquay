@@ -46,7 +46,7 @@
       "pin": "d235363e286f"
     },
     "sml-wavefile": {
-      "pin": "d231891c7cb9"
+      "pin": "7dcfa253e494"
     },
     "sml-fft": {
       "pin": "d686d3c53e30"
@@ -58,7 +58,7 @@
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "faf1c8e68a3e"
+      "pin": "73fd7555ad14"
     },
     "ext/bqaudioio": {
       "pin": "88520ab5b8e5"
@@ -88,13 +88,13 @@
       "pin": "b9f8ca0b21a6"
     },
     "bsq-bq": {
-      "pin": "3efc65664c2a"
+      "pin": "40460a200248"
     },
     "bsq-samplestreams": {
       "pin": "60dd197938b8"
     },
     "bsq-randomaccess": {
-      "pin": "f59a3c5baadd"
+      "pin": "944930ab2fb5"
     },
     "bsq-component": {
       "pin": "470dfc36043f"
@@ -103,7 +103,7 @@
       "pin": "270022f961a0"
     },
     "bsq-waveform": {
-      "pin": "6e46f4686762"
+      "pin": "158649c1be6b"
     },
     "bsq-hmm": {
       "pin": "de2d1962874f"
