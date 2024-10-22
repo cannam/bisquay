@@ -23,9 +23,13 @@ if [ -d /Applications ]; then
     arches="arm64 amd64"
 fi
 
-ippdir=/opt/intel/ipp
+ippdir=/opt/intel/oneapi/ipp/latest
 if [ -d "$ippdir" ]; then
     buildtypes="$buildtypes mlton_ipp"
+    mkldir=/opt/intel/oneapi/mkl/latest
+    if [ ! -d "$mkldir" ]; then
+        echo "Unable to find MKL when IPP is defined - this script expects both or neither, not just one of them"
+    fi
 fi
 
 for b in $buildtypes; do
@@ -40,7 +44,7 @@ for b in $buildtypes; do
 	if [ "$a" = "native" ]; then
 	    if [ "$b" = "mlton_ipp" ]; then
 		sml_buildtype="mlton_release"
-		extra_args="-Dipp_path=$ippdir"
+		extra_args="-Dipp_path=$ippdir -Dmkl_path=$mkldir"
 	    fi
 	else
 	    extra_args="--cross-file cross/cross_$a.txt"

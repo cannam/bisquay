@@ -12,6 +12,7 @@ system = host_machine.system()
 architecture = host_machine.cpu_family()
 
 ipp_path = get_option('ipp_path')
+mkl_path = get_option('mkl_path')
 sml_buildtype = get_option('sml_buildtype')
 mlton_extra_args = get_option('mlton_extra_args')
 
@@ -71,6 +72,22 @@ if system == 'windows'
     ]
   endif
   
+  if mkl_path != ''
+    platform_feature_defines += [
+      '-DHAVE_MKL',
+      '-I' + mkl_path / 'include',
+      '-I' + mkl_path / 'include/mkl'
+    ]
+    platform_feature_libs += [
+      '-L' + (mkl_path / 'lib'),
+      '-lmkl_intel_lp64', '-lmkl_sequential', '-lmkl_core',
+    ]
+  else # begin mkl_path == ''
+    platform_feature_libs += [
+      '-lopenblas',
+    ]
+  endif # end mkl_path
+    
 elif system == 'darwin'
 
   add_global_arguments([
@@ -136,6 +153,9 @@ elif system == 'darwin'
   if ipp_path != ''
     error('IPP is not used on this platform, ipp_path should be left empty')
   endif
+  if mkl_path != ''
+    error('MKL is not used on this platform, mkl_path should be left empty')
+  endif
 
 elif system == 'linux'
 
@@ -155,7 +175,6 @@ elif system == 'linux'
     '/usr/include/opus',
   ]
   platform_feature_libs = [
-    '-lcblas',
     '-lportaudio', '-lpulse', '-lopusfile', '-lopusenc', '-lopus', '-loggz', '-lfishsound', '-logg', '-ldl', '-lz',
   ]
   platform_general_libs = [
@@ -167,13 +186,30 @@ elif system == 'linux'
       '-DHAVE_IPP',
     ]
     platform_feature_includedirs += [
-      ipp_path / 'include'
+      ipp_path / 'include',
+      ipp_path / 'include/ipp'
     ]
     platform_feature_libs += [
-      '-L' + (ipp_path / 'lib/intel64'),
+      '-L' + (ipp_path / 'lib'),
       '-Wl,-Bstatic', '-lipps', '-lippvm', '-lippcore', '-Wl,-Bdynamic',
     ]
   endif # end ipp_path
+
+  if mkl_path != ''
+    platform_feature_defines += [
+      '-DHAVE_MKL',
+      '-I' + mkl_path / 'include',
+      '-I' + mkl_path / 'include/mkl'
+    ]
+    platform_feature_libs += [
+      '-L' + (mkl_path / 'lib'),
+      '-Wl,-Bstatic', '-lmkl_intel_lp64', '-lmkl_sequential', '-lmkl_core', '-Wl,-Bdynamic',
+    ]
+  else # begin mkl_path == ''
+    platform_feature_libs += [
+      '-lcblas',
+    ]
+  endif # end mkl_path
 
 endif
 

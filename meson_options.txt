@@ -14,6 +14,12 @@ option(
   description: 'Path to Intel IPP libraries, if IPP is to be used. Leave empty otherwise. Only relevant to MLton builds using FFI.'
 )
 option(
+  'mkl_path',
+  type: 'string',
+  value: '',
+  description: 'Path to Intel MKL libraries, if MKL is to be used. Leave empty otherwise. Only relevant to MLton builds using FFI.'
+)
+option(
   'mlton_extra_args',
   type: 'array',
   value: [],
