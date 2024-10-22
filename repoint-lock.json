@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "414c5e4f3162"
+      "pin": "2aa76c1ab124"
     },
     "bsq-json": {
       "pin": "f3e8a555f75f"
@@ -94,7 +94,7 @@
       "pin": "60dd197938b8"
     },
     "bsq-randomaccess": {
-      "pin": "9c83f9bca0aa"
+      "pin": "edfa676fb887"
     },
     "bsq-component": {
       "pin": "32b386bc4d69"
@@ -121,7 +121,7 @@
       "pin": "20d47155dbe2"
     },
     "bsq-perftest": {
-      "pin": "3eb084673049"
+      "pin": "37ab616ece9e"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"
