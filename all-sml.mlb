@@ -221,6 +221,7 @@ bsq-component/component-blockstream-fn.sml
 bsq-component/frequency-component-fn.sml
 bsq-component/stereo-component-fn.sml
 bsq-component/component-summary-tower.sml
+bsq-component/component-without-time.sml
 
 (* Constant-Q transform *)
 bsq-cqt/cqkernel.sml
