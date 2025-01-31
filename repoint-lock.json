@@ -1,7 +1,7 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "98cad770d543"
+      "pin": "f09bb2f592af"
     },
     "ext/mlton-cutdown": {
       "pin": "45a1612aec4d"
@@ -121,7 +121,7 @@
       "pin": "20d47155dbe2"
     },
     "bsq-perftest": {
-      "pin": "035a34c6abd5"
+      "pin": "7668f255b93f"
     },
     "bsq-plot": {
       "pin": "dbdb44147707"

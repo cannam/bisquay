@@ -16,6 +16,13 @@ mkl_path = get_option('mkl_path')
 sml_buildtype = get_option('sml_buildtype')
 mlton_extra_args = get_option('mlton_extra_args')
 
+config_summary = { 'System': system,
+                   'Architecture': architecture,
+                   'IPP Path': ipp_path,
+                   'MKL Path': mkl_path,
+                   'SML Build Type': sml_buildtype
+                 }
+
 run_target(
   'doc',
   command: meson.current_source_dir() / 'scripts/doc.sh'
@@ -571,3 +578,4 @@ else
 
 endif
 
+summary(config_summary, section: 'Configuration', bool_yn: true)
