@@ -1,7 +1,7 @@
 {
   "libraries": {
     "sml-buildscripts": {
-      "pin": "f09bb2f592af"
+      "pin": "5583f8f90db6"
     },
     "ext/mlton-cutdown": {
       "pin": "45a1612aec4d"
@@ -91,10 +91,10 @@
       "pin": "ce7d11059587"
     },
     "bsq-samplestreams": {
-      "pin": "8e20474044b2"
+      "pin": "14c63c3154cf"
     },
     "bsq-randomaccess": {
-      "pin": "677170302df2"
+      "pin": "25109c0c4809"
     },
     "bsq-component": {
       "pin": "8f6efd612f41"
@@ -112,7 +112,7 @@
       "pin": "59a57b2ecd64"
     },
     "bsq-dtw": {
-      "pin": "9adfc3db1195"
+      "pin": "a87bdf73e7a8"
     },
     "bsq-image": {
       "pin": "522af6507609"
