@@ -58,7 +58,7 @@
       "pin": "d41a117b8cbe"
     },
     "ext/bqaudiostream": {
-      "pin": "243b5dceebcb"
+      "pin": "495b3242c489"
     },
     "ext/bqaudioio": {
       "pin": "017ab3ed3a33"
@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "3e72d20f5ac6"
+      "pin": "46b1d661f7b0"
     },
     "bsq-json": {
       "pin": "f3e8a555f75f"
@@ -127,7 +127,7 @@
       "pin": "dbdb44147707"
     },
     "bsq-rrloop": {
-      "pin": "ce933c6be044"
+      "pin": "874becae2c72"
     },
     "ext/smldoc": {
       "pin": "97d53b3acfa0adf0c929d248f45d4282bf7a5f8a"

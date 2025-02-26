@@ -1,6 +1,6 @@
 project(
   'Bisquay',
-  'cpp',  # For the FFI bits; the SML code is built via "custom targets"
+  'c', 'cpp',  # For the FFI bits; the SML code is built via "custom targets"
   default_options: [
     'cpp_std=c++14',
     'warning_level=3',
@@ -431,7 +431,9 @@ else
   
   ffi_bundle_archive = static_library(
     'ffi_bundle',
-    [ 'bsq-bq/ffi/impl-bundle.cpp' ],
+    [
+      'ffi-bundle.cpp',
+    ],
     [ ffi_export_header_target, ffi_impl_header_target ],
     include_directories: bq_inc,
     cpp_args: [
@@ -442,10 +444,10 @@ else
   ffi_bundle_target = custom_target(
     'ffi_bundle',
     input: ffi_bundle_archive,
-    output: 'bsq-bq_ffi_impl-bundle.cpp.o',
+    output: 'ffi-bundle.cpp.o',
     command: [
       cp,
-      '@INPUT@.p/bsq-bq_ffi_impl-bundle.cpp.o',
+      '@INPUT@.p/ffi-bundle.cpp.o',
       '@OUTPUT@'
     ],
   )
@@ -526,11 +528,6 @@ else
       '-output', '@OUTPUT@',
       '@INPUT@',
       ffi_bundle_target,
-      meson.current_source_dir() / 'sml-stringinterpolate/number-string.c',
-      meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
-      meson.current_source_dir() / 'bsq-rrloop/ffi/rr-support.c',
-      meson.current_source_dir() / 'bsq-signalbits/ffi/window-post.c',
-      meson.current_source_dir() / 'bsq-signalbits/ffi/distance.c',
     ],
     depends: [
       bq_lib,
@@ -563,11 +560,6 @@ else
       '-output', '@OUTPUT@',
       '@INPUT@',
       ffi_bundle_target,
-      meson.current_source_dir() / 'sml-stringinterpolate/number-string.c',
-      meson.current_source_dir() / 'bsq-matrix/ffi/copyvec.c',
-      meson.current_source_dir() / 'bsq-rrloop/ffi/rr-support.c',
-      meson.current_source_dir() / 'bsq-signalbits/ffi/window-post.c',
-      meson.current_source_dir() / 'bsq-signalbits/ffi/distance.c',
     ],
     depends: [
       bq_lib,
