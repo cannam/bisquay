@@ -70,7 +70,7 @@
       "pin": "2e4bd170f57f"
     },
     "bsq-signalbits": {
-      "pin": "60169b038e75"
+      "pin": "a1fcb11aeb54"
     },
     "bsq-json": {
       "pin": "f3e8a555f75f"
@@ -91,7 +91,7 @@
       "pin": "ce7d11059587"
     },
     "bsq-samplestreams": {
-      "pin": "a64214e80f45"
+      "pin": "79ac5dd636a3"
     },
     "bsq-randomaccess": {
       "pin": "97bf0d95dac9"
